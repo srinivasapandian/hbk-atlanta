@@ -1,0 +1,87 @@
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c96a"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a07830"/>
+    </linearGradient>
+    <linearGradient id="goldG2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0d878"/>
+      <stop offset="100%" stop-color="#b8922a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background for logo context -->
+  <rect width="600" height="320" fill="#111111"/>
+
+  <!-- Outer decorative ring -->
+  <circle cx="300" cy="150" r="108" fill="none" stroke="url(#goldG)" stroke-width="1.2" opacity="0.35" stroke-dasharray="4 3"/>
+  <circle cx="300" cy="150" r="96" fill="none" stroke="url(#goldG)" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Central emblem background -->
+  <circle cx="300" cy="150" r="78" fill="#0f0d08" opacity="0.9"/>
+  <circle cx="300" cy="150" r="76" fill="none" stroke="url(#goldG)" stroke-width="1.5"/>
+
+  <!-- Banana leaf silhouette -->
+  <path d="M300 92 C318 104 330 124 328 147 C326 167 315 182 300 190 C285 182 274 167 272 147 C270 124 282 104 300 92 Z"
+        fill="none" stroke="url(#goldG2)" stroke-width="1" opacity="0.5"/>
+  <line x1="300" y1="94" x2="300" y2="188" stroke="url(#goldG2)" stroke-width="0.6" opacity="0.4"/>
+  <line x1="300" y1="122" x2="315" y2="134" stroke="url(#goldG2)" stroke-width="0.4" opacity="0.3"/>
+  <line x1="300" y1="122" x2="285" y2="134" stroke="url(#goldG2)" stroke-width="0.4" opacity="0.3"/>
+  <line x1="300" y1="140" x2="320" y2="148" stroke="url(#goldG2)" stroke-width="0.4" opacity="0.3"/>
+  <line x1="300" y1="140" x2="280" y2="148" stroke="url(#goldG2)" stroke-width="0.4" opacity="0.3"/>
+  <line x1="300" y1="157" x2="318" y2="162" stroke="url(#goldG2)" stroke-width="0.4" opacity="0.3"/>
+  <line x1="300" y1="157" x2="282" y2="162" stroke="url(#goldG2)" stroke-width="0.4" opacity="0.3"/>
+
+  <!-- Kolam dots -->
+  <circle cx="300" cy="92" r="2.5" fill="url(#goldG)" opacity="0.8"/>
+  <circle cx="300" cy="210" r="2.5" fill="url(#goldG)" opacity="0.8"/>
+  <circle cx="225" cy="150" r="2.5" fill="url(#goldG)" opacity="0.8"/>
+  <circle cx="375" cy="150" r="2.5" fill="url(#goldG)" opacity="0.8"/>
+  <circle cx="246" cy="106" r="1.8" fill="url(#goldG)" opacity="0.5"/>
+  <circle cx="354" cy="106" r="1.8" fill="url(#goldG)" opacity="0.5"/>
+  <circle cx="246" cy="194" r="1.8" fill="url(#goldG)" opacity="0.5"/>
+  <circle cx="354" cy="194" r="1.8" fill="url(#goldG)" opacity="0.5"/>
+
+  <!-- Top flourish -->
+  <path d="M270 80 Q285 70 300 74 Q315 70 330 80" fill="none" stroke="url(#goldG)" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="270" cy="80" r="2" fill="url(#goldG)" opacity="0.7"/>
+  <circle cx="330" cy="80" r="2" fill="url(#goldG)" opacity="0.7"/>
+  <circle cx="300" cy="72" r="3" fill="url(#goldG)" opacity="0.9"/>
+
+  <!-- Bottom flourish -->
+  <path d="M270 220 Q285 230 300 226 Q315 230 330 220" fill="none" stroke="url(#goldG)" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="270" cy="220" r="2" fill="url(#goldG)" opacity="0.7"/>
+  <circle cx="330" cy="220" r="2" fill="url(#goldG)" opacity="0.7"/>
+  <circle cx="300" cy="228" r="3" fill="url(#goldG)" opacity="0.9"/>
+
+  <!-- Main wordmark -->
+  <text x="300" y="272" text-anchor="middle" font-family="'Palatino Linotype','Palatino','Book Antiqua',Georgia,serif"
+        font-size="32" font-weight="700" fill="url(#goldG)" letter-spacing="5" filter="url(#glow)">SOUTH INDIA</text>
+
+  <!-- Divider lines -->
+  <line x1="60" y1="284" x2="175" y2="284" stroke="url(#goldG)" stroke-width="0.7" opacity="0.5"/>
+  <circle cx="60" cy="284" r="2" fill="url(#goldG)" opacity="0.5"/>
+  <line x1="425" y1="284" x2="540" y2="284" stroke="url(#goldG)" stroke-width="0.7" opacity="0.5"/>
+  <circle cx="540" cy="284" r="2" fill="url(#goldG)" opacity="0.5"/>
+
+  <!-- Tagline -->
+  <text x="300" y="288" text-anchor="middle" font-family="'Arial','Helvetica',sans-serif"
+        font-size="9" fill="#c9a84c" letter-spacing="4" opacity="0.85">AUTHENTIC CUISINE</text>
+  <text x="300" y="302" text-anchor="middle" font-family="'Arial','Helvetica',sans-serif"
+        font-size="7.5" fill="#a07830" letter-spacing="3" opacity="0.7">EST. 2026</text>
+
+  <!-- Side decorative lines -->
+  <line x1="30" y1="140" x2="168" y2="140" stroke="url(#goldG)" stroke-width="0.6" opacity="0.3"/>
+  <line x1="432" y1="140" x2="570" y2="140" stroke="url(#goldG)" stroke-width="0.6" opacity="0.3"/>
+  <text x="100" y="150" text-anchor="middle" font-family="'Arial',sans-serif"
+        font-size="7" fill="#c9a84c" letter-spacing="2.5" opacity="0.55"
+        transform="rotate(-90 100 150)">RESTAURANT</text>
+  <text x="500" y="150" text-anchor="middle" font-family="'Arial',sans-serif"
+        font-size="7" fill="#c9a84c" letter-spacing="2.5" opacity="0.55"
+        transform="rotate(90 500 150)">RESTAURANT</text>
+</svg>

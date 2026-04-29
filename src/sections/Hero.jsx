@@ -1,6 +1,6 @@
 import Img from '../components/Img';
 import './Hero.css';
-import heroBg from '../assets/imgs/beefSteak.jpg';
+import heroBg from '../assets/imgs/biriyaniInTaj.png';
 import featImg1 from '../assets/imgs/friedRice-360.webp';
 import featImg2 from '../assets/imgs/frenchSoup-360.webp';
 
@@ -9,15 +9,16 @@ export default function Hero() {
     <section id="home" className="hero">
       <img
         src={heroBg}
-        alt="South India signature dish"
+        alt="House of Biryanis & Kebabs signature dish"
         className="hero-bg-image"
         fetchPriority="high"
       />
       <div className="hero-overlay" />
+
       <div className="hero-content">
-        <p className="hero-sub">DISCOVER THE SOUL OF</p>
+        <p className="hero-sub">WELCOME TO</p>
         <h1 className="hero-title">
-          <span>SOUTH INDIA</span>
+          HOUSE OF BIRYANIS &amp; KEBABS
           <span
             style={{
               position: 'absolute', width: 1, height: 1, padding: 0,
@@ -25,11 +26,12 @@ export default function Hero() {
               whiteSpace: 'nowrap', border: 0,
             }}
           >
-            Authentic South Indian Restaurant &amp; Cuisine – Dosas, Idlis &amp; More
+            House of Biryanis & Kebabs – Authentic Indian Restaurant
           </span>
         </h1>
       </div>
 
+      {/* Floating featured dish card — bottom right of hero */}
       <div className="featured-card">
         <div className="featured-inner">
           <div className="featured-item">
@@ -39,8 +41,8 @@ export default function Hero() {
               alt="Veg Biryani"
               loading="lazy"
               decoding="async"
-              width="313"
-              height="470"
+              width="160"
+              height="120"
             />
             <div className="feat-text">
               <span className="feat-name">Veg Biryani</span>
@@ -52,15 +54,15 @@ export default function Hero() {
             <Img
               className="feat-img"
               src={featImg2}
-              alt="Mushroom Soup"
+              alt="Creamy Mushroom Soup"
               loading="lazy"
               decoding="async"
-              width="313"
-              height="313"
+              width="160"
+              height="120"
             />
             <div className="feat-text">
               <span className="feat-name">Creamy Mushroom Soup</span>
-              <span className="feat-desc">Creamy, smooth mushroom soup with rich flavor.</span>
+              <span className="feat-desc">Rich and smooth with a deep umami depth.</span>
             </div>
           </div>
         </div>

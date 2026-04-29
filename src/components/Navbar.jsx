@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import './Navbar.css';
 import { navItems } from "../data/navData";
 import logoImg from "../assets/house_of_biriyani_and_kebabs.svg";
+import badge1 from "../assets/imgs/halalCertificate.png";
+import badge2 from "../assets/imgs/30+location.jpg";
 
 const routeToSection = {
   "/": "home",
@@ -50,45 +52,20 @@ export default function Navbar({ isMobile }) {
   }
 
   function isActive(item) {
-    if (item.id === activeSection) return true;
-    if (item.id === "about" && activeSection === "home" && isHome) return false;
-    return false;
+    return item.id === activeSection;
   }
 
   return (
     <nav className="nav">
-      <div className="nav-inner">
-        <Link to="/" onClick={() => setMenuOpen(false)}>
-          <img
-            src={logoImg}
-            alt="South India Restaurant Logo"
-            className="navbar-logo-img"
-          />
-        </Link>
-
-        {!isMobile && (
-          <div className="nav-links">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                className={`nav-link${isActive(item) ? " nav-link-active" : ""}`}
-                onClick={() => handleNavClick(item)}
-              >
-                {item.name}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {!isMobile && (
-          <button
-            className="order-btn-wrapper"
-            onClick={() => navigate("/menu")}
-          >
-            ORDER ONLINE
-          </button>
-        )}
-
+      {/* Top row: Halal badge | Logo | 30+ Locations badge */}
+      <div className="nav-top-row">
+        <div className="nav-badge-group">
+          <img src={badge1} alt="Halal Certified" className="nav-badge-img" />
+          <Link to="/" className="nav-logo-link" onClick={() => setMenuOpen(false)}>
+            <img src={logoImg} alt="House of Biryanis & Kebabs" className="navbar-logo-img" />
+          </Link>
+          <img src={badge2} alt="30+ Locations" className="nav-badge-img" />
+        </div>
         {isMobile && (
           <button
             className="hamburger"
@@ -100,6 +77,30 @@ export default function Navbar({ isMobile }) {
         )}
       </div>
 
+      {/* Bottom row: nav links + order online button */}
+      {!isMobile && (
+        <div className="nav-bottom-row">
+          <div className="nav-links">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                className={`nav-link${isActive(item) ? " nav-link-active" : ""}`}
+                onClick={() => handleNavClick(item)}
+              >
+                {item.name}
+              </button>
+            ))}
+          </div>
+          <button
+            className="order-btn-wrapper"
+            onClick={() => navigate("/menu")}
+          >
+            ORDER ONLINE
+          </button>
+        </div>
+      )}
+
+      {/* Mobile dropdown */}
       {isMobile && menuOpen && (
         <div className="mobile-menu">
           {navItems.map((item) => (
@@ -112,8 +113,7 @@ export default function Navbar({ isMobile }) {
             </button>
           ))}
           <button
-            className="order-btn-wrapper"
-            style={{ marginTop: 8 }}
+            className="mobile-order-btn"
             onClick={() => {
               setMenuOpen(false);
               navigate("/menu");

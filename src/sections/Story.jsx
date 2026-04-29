@@ -11,10 +11,9 @@ export default function Story({ isMobile }) {
         <div className="story-left-bottom">
           <div className="story-callout">
             <p className="story-callout-text">
-              Serve authentic South Indian cuisine
+              Where every biryani tells a story of tradition, spice, and love.
             </p>
           </div>
-          
         </div>
       </div>
 
@@ -30,28 +29,25 @@ export default function Story({ isMobile }) {
       {/* Right */}
       <div className="story-right">
         <p className="story-para">
-          At Indian Restaurant, we are proud to share the vibrant flavors of South India with our community. Inspired by family recipes passed down through generations, our chefs craft dishes that honor tradition while embracing modern tastes. Every spice is carefully selected, every recipe thoughtfully prepared, and every dish served with care. From the comforting aroma of freshly made sambar to the crisp perfection of golden dosas, we bring the essence of South Indian kitchens straight to your table.
+          At House of Biryanis &amp; Kebabs, we celebrate the art of slow cooking and bold spice. Born from a passion for authentic Mughlai and South Indian flavors, our kitchen blends generations of culinary tradition with a warm, welcoming spirit. Every grain of rice in our biryani is cooked to perfection — fragrant with saffron, enriched with whole spices, and layered with care. From our signature kebabs to creamy curries, each plate carries the soul of our heritage.
         </p>
         <Link to="/menu" className="explore-btn-wrapper">
-            <span className="explore-line-long" />
-            <span className="explore-line-short" />
-            <span className="explore-btn-text">EXPLORE MENU</span>
-            <span className="explore-line-short" />
-            <span className="explore-line-long" />
-          </Link>
+          <span className="explore-line-long" />
+          <span className="explore-line-short" />
+          <span className="explore-btn-text">EXPLORE MENU</span>
+          <span className="explore-line-short" />
+          <span className="explore-line-long" />
+        </Link>
         <div className="veg-steak-card">
           <div className="veg-steak-overlay" />
           <div className="veg-steak-content">
             <div className="veg-steak-vertical-line" />
             <div className="veg-steak-text-wrap">
               <span className="veg-steak-label">Veg Steak</span>
-              <span className="veg-steak-desc">
-                Signature grilled specialty
-              </span>
+              <span className="veg-steak-desc">Signature grilled specialty</span>
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   );

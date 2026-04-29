@@ -3,19 +3,27 @@
   --font-halant: "Halant", serif;
   --font-judson: "Judson", serif;
   --font-lateef: "Lateef", serif;
-  --color-gold: #F5C400;
-  --color-gold-light: #e8c76a;
-  --color-bg: #000;
-  --color-bg2: #000;
+  --font-cinzel: "Cinzel", serif;
+  --font-playfair: "Playfair Display", serif;
+  --color-gold: #c8960c;
+  --color-gold-light: #d4a82a;
+  --color-bg: #0a0a0a;
+  --color-bg2: #111;
   --color-white: #f5f0e8;
   --color-gray: #aaa;
-  --navbar-height: 84px;
+  --navbar-height: 130px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 80px;
+  }
 }
 
 * { box-sizing: border-box; }
 
 body, html {
-  background-color: #000;
+  background-color: #0a0a0a;
   margin: 0;
   padding: 0;
 }

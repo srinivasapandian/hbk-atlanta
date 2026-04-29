@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import './Footer.css';
 import { quickLinks } from "../data/navData";
 import logoImg from "../assets/house_of_biriyani_and_kebabs.svg";
+import maghilImg from "../assets/imgs/maghil.png";
 
 const serviceLinks = ["Dine-in", "Take way", "Delivery", "Catering", "Private Events"];
 const newsletterItems = ["Offer", "Updates", "Announcements"];
@@ -10,25 +11,23 @@ export default function Footer({ isMobile }) {
   const navigate = useNavigate();
 
   function handleQuickLink(name) {
-    const map = {
-      Home: "/",
-      "About Us": {
-        path: "/",
-        state: { scrollTo: "about", scrollRequestId: Date.now() },
-      },
-      Menu: "/menu",
-      Blog: "/",
-      Events: "/events",
-      "Contact Us": "/contact",
+    const sectionMap = {
+      Home: "home",
+      "About Us": "about",
+      Menu: "menu",
+      Blog: "home",
+      Events: "events",
+      "Contact Us": "contact",
     };
-    const target = map[name];
-    if (!target) return;
-    if (typeof target === "string") navigate(target);
-    else navigate(target.path, { state: target.state });
+    const sectionId = sectionMap[name];
+    if (!sectionId) return;
+    navigate("/", {
+      state: { scrollTo: sectionId, scrollRequestId: Date.now() },
+    });
   }
 
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-top">
         {/* Column 1 – Logo */}
         <div className="footer-brand">
@@ -81,7 +80,7 @@ export default function Footer({ isMobile }) {
         {/* Column 5 – Lets Stay In Touch */}
         <div className="footer-col">
           <h3 className="footer-col-title-no-underline">Lets Stay In Touch</h3>
-          <a href="/menu" className="order-online-btn">ORDER ONLINE</a>
+          <a href="/" className="order-online-btn">ORDER ONLINE</a>
           <p className="footer-hours-text">Mon–Sun: 11:00</p>
           <p className="footer-hours-text">AM – 10:00 PM</p>
 
@@ -89,7 +88,11 @@ export default function Footer({ isMobile }) {
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copy">© Power By Maghil 2026</p>
+        <span className="footer-copy">© Power By&nbsp;</span>
+        <a href="https://maghil.com" target="_blank" rel="noopener noreferrer" className="footer-maghil-link">
+          <img src={maghilImg} alt="Maghil" className="footer-maghil-img" />
+        </a>
+        <span className="footer-copy">&nbsp;2026</span>
       </div>
     </footer>
   );

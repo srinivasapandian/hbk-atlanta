@@ -34,7 +34,7 @@ export default function MiniMenu() {
   }, []);
 
   return (
-    <section className="home-mini-menu-wrap">
+    <section id="menu" className="home-mini-menu-wrap">
       <div className="home-mini-menu-card">
         <div className="home-mini-menu-image-panel">
           {featuredItem && (

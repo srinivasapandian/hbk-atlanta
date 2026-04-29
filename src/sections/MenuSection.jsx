@@ -1,4 +1,5 @@
 import { useState, useRef, useMemo, useEffect } from 'react';
+import './MenuSection.css';
 import Img from '../components/Img';
 import { allCategories, menuGrouped } from '../data/menuData';
 

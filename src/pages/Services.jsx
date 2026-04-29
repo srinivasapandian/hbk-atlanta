@@ -1,4 +1,5 @@
 import { services } from '../data/servicesData';
+import './Services.css';
 
 export default function Services() {
   return (

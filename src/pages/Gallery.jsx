@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import './Gallery.css';
 import Img from '../components/Img';
 import { galleryImages } from '../data/galleryData';
 

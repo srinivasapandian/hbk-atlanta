@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './Story.css';
 import foodImg from "../assets/imgs/paaniPori.webp";
 
 export default function Story({ isMobile }) {
@@ -34,7 +35,7 @@ export default function Story({ isMobile }) {
         <Link to="/menu" className="explore-btn-wrapper">
             <span className="explore-line-long" />
             <span className="explore-line-short" />
-            <span className="explore-btn-text">EXPLORE MENU -></span>
+            <span className="explore-btn-text">EXPLORE MENU</span>
             <span className="explore-line-short" />
             <span className="explore-line-long" />
           </Link>

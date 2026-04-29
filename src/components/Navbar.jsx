@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import './Navbar.css';
 import { navItems } from "../data/navData";
 import logoImg from "../assets/house_of_biriyani_and_kebabs.svg";
 

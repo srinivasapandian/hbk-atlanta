@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import './EventsSection.css';
 import { Link } from 'react-router-dom';
 import { events } from '../data/eventsData';
+import redirectIcon from '../assets/imgs/redirect.png';
 
 function EventCard({ event, expanded, onClick, isMobile }) {
   return (
@@ -12,9 +14,7 @@ function EventCard({ event, expanded, onClick, isMobile }) {
       <img src={event.image} alt={event.title} className="event-img" loading="lazy" />
       <div className="event-overlay" />
       <span className="event-date">{event.date}</span>
-      <a href="/events" className="event-go-btn" onClick={(e) => e.stopPropagation()} aria-label="View event">
-        →
-      </a>
+      
       <div className={`event-body ${expanded ? 'event-body-visible' : 'event-body-hidden'}`}>
         <h3 className="event-title">{event.title}</h3>
         <p className="event-desc">{event.desc}</p>

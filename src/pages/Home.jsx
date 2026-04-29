@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import './Home.css';
 import { useLocation } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import Navbar from '../components/Navbar';

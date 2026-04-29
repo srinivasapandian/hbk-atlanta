@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import './Footer.css';
 import { quickLinks } from "../data/navData";
 import logoImg from "../assets/house_of_biriyani_and_kebabs.svg";
 

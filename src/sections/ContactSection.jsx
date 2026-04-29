@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import './ContactSection.css';
 import Button from '../components/Button';
 
 const EMPTY = { name: '', email: '', phone: '', message: '' };

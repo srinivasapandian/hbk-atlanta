@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState } from 'react';
+import './MiniMenu.css';
 import Img from '../components/Img';
 import { menuByCategory } from '../data/menuData';
 

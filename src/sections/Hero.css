@@ -1,0 +1,19 @@
+.hero { background: linear-gradient(160deg, #0d0d0d 0%, #1a1008 40%, #0d0a00 100%); justify-content: center; align-items: center; min-height: 90vh; padding-bottom: 120px; display: flex; position: relative; overflow: visible; }
+.hero-bg-image { object-fit: cover; object-position: center 66%; opacity: .64; width: 100%; height: 112%; position: absolute; top: 0; left: 0; }
+.hero-overlay { pointer-events: none; background: radial-gradient(at 60% 40%, #5a320059 0%, #0000 70%); position: absolute; inset: 0; }
+.hero-content { text-align: center; z-index: 2; padding: 0 20px; transform: translateY(-18px); }
+.hero-sub { font-family: var(--font-judson); letter-spacing: 4px; color: var(--color-gold, #c9a84c); text-decoration: underline; text-decoration-color: var(--color-gold, #c9a84c); text-underline-offset: 6px; margin-bottom: 12px; font-size: 12px; font-weight: 400; text-decoration-thickness: 1px; }
+.hero-title { font-family: var(--font-halant); letter-spacing: .06em; color: var(--color-white); text-shadow: 0 0 60px #c9a84c40; margin: 0; font-size: clamp(2.5rem, 7.2vw, 5.4rem); font-weight: 900; }
+.featured-card { z-index: 10; background: #fff; border-radius: 8px; width: min(1000px, 92vw); padding: 20px; position: absolute; bottom: 0; right: 24px; overflow: hidden; transform: translateY(33%); box-shadow: 0 8px 32px rgba(0,0,0,0.18); }
+.featured-inner { grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr); align-items: stretch; gap: 0; display: grid; }
+.featured-item { flex-direction: row; flex: 1; align-items: stretch; gap: 20px; min-width: 0; display: flex; }
+.feat-img { object-fit: cover; border-radius: 8px; flex: 180px; height: 175px; }
+.feat-text { flex-direction: column; flex: 140px; justify-content: flex-end; gap: 6px; min-width: 140px; display: flex; }
+.feat-name { color: var(--color-gold, #c9a84c); font-size: 18px; font-weight: 700; font-family: var(--font-halant); }
+.feat-desc { color: #555; font-family: var(--font-dm-sans); }
+.feat-divider { flex-shrink: 0px; background: #ddd; align-self: stretch; width: 1px; height: auto; }
+
+@media (width <= 1024px) {
+  .featured-inner { grid-template-columns: 1fr; gap: 5px; }
+  .feat-divider { display: none; }
+}

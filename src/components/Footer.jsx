@@ -17,6 +17,7 @@ export default function Footer({ isMobile }) {
         state: { scrollTo: "about", scrollRequestId: Date.now() },
       },
       Menu: "/menu",
+      Blog: "/",
       Events: "/events",
       "Contact Us": "/contact",
     };
@@ -81,7 +82,9 @@ export default function Footer({ isMobile }) {
         <div className="footer-col">
           <h3 className="footer-col-title-no-underline">Lets Stay In Touch</h3>
           <a href="/menu" className="order-online-btn">ORDER ONLINE</a>
-          <p className="footer-hours-text">Mon–Sun: 11:00 AM – 10:00 PM</p>
+          <p className="footer-hours-text">Mon–Sun: 11:00</p>
+          <p className="footer-hours-text">AM – 10:00 PM</p>
+
         </div>
       </div>
 

@@ -85,9 +85,7 @@ export default function Navbar({ isMobile }) {
             className="order-btn-wrapper"
             onClick={() => navigate("/menu")}
           >
-            <span className="order-btn-line-long" />
-            <span className="order-btn-text">ORDER NOW</span>
-            <span className="order-btn-line-short" />
+            ORDER ONLINE
           </button>
         )}
 
@@ -121,9 +119,7 @@ export default function Navbar({ isMobile }) {
               navigate("/menu");
             }}
           >
-            <span className="order-btn-line-long" />
-            <span className="order-btn-text">ORDER NOW</span>
-            <span className="order-btn-line-short" />
+            ORDER ONLINE
           </button>
         </div>
       )}

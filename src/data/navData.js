@@ -9,5 +9,5 @@ export const navItems = [
 ];
 
 export const quickLinks = {
-  'Quick Link': ['Home', 'About Us', 'Menu', 'Events', 'Contact Us'],
+  'Quick Link': ['Home', 'About Us', 'Menu', 'Blog', 'Events', 'Contact Us'],
 };

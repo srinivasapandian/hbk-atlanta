@@ -34,6 +34,9 @@
 }
 
 @media (width <= 768px) {
-  .story { margin-top: 72px; }
+  .story { grid-template-columns: 1fr; margin-top: 40px; gap: 24px; }
+  .story-left { min-height: unset; }
+  .story-center { max-width: 100%; }
+  .story-main-img { height: 260px; }
   .explore-btn-wrapper { width: 190px; }
 }

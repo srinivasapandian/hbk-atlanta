@@ -100,10 +100,10 @@ export default function EventsSection({ isMobile, standalone = false }) {
         </div>
       )}
 
-      <div className="events-actions">
+      {/* <div className="events-actions">
         <Link to="/events" className="events-action-btn">VIEW ALL EVENTS</Link>
         <Link to="/contact" className="events-action-btn">BOOK A TABLE</Link>
-      </div>
+      </div> */}
     </section>
   );
 }

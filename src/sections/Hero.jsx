@@ -1,6 +1,6 @@
 import Img from "../components/Img";
 import "./Hero.css";
-import heroBg from "../assets/imgs/biriyaniInTaj.png";
+import heroBg from "../assets/imgs/biriyaniInLeaf.png";
 import featImg1 from "../assets/imgs/friedRice-360.webp";
 import featImg2 from "../assets/imgs/frenchSoup-360.webp";
 

@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 28px;
   position: absolute;
   top: 0;
   left: 0;
@@ -23,12 +23,12 @@
 .nav-badge-group {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 23px;
 }
 
 .nav-badge-img {
   width: auto;
-  height: 50px;
+  height: 58px;
   object-fit: contain;
   opacity: 0.88;
 }
@@ -41,7 +41,7 @@
 .navbar-logo-img {
   object-fit: contain;
   width: auto;
-  height: 54px;
+  height: 62px;
   display: block;
 }
 

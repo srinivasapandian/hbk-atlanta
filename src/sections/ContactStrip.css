@@ -1,0 +1,160 @@
+.contact-strip {
+  padding: 0 24px 70px;
+  margin-top: -26px;
+}
+
+.contact-strip-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 26px 48px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.4fr;
+  align-items: center;
+  gap: 40px;
+  background: radial-gradient(
+    circle at 50% 0%,
+    #1a1a1a,
+    #0c0c0c 55%,
+    #070707 100%
+  );
+  border: 1px solid #ffffff1a;
+  border-radius: 90px;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.65),
+    inset 0 0 30px rgba(255, 255, 255, 0.04);
+}
+
+.contact-strip-col {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-strip-col-right {
+  justify-content: flex-end;
+}
+
+.contact-strip-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-gold);
+  color: var(--color-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-strip-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-strip-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-strip-text {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-dm-sans);
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.contact-strip-text-strong {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.contact-strip-label {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-judson);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-strip-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+
+.contact-strip-badge {
+  height: 58px;
+  width: auto;
+  opacity: 0.95;
+}
+
+.contact-strip-logo {
+  height: 70px;
+  width: auto;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.45));
+}
+
+@media (width <= 1024px) {
+  .contact-strip-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 24px;
+    border-radius: 44px;
+    padding: 28px 32px;
+  }
+
+  .contact-strip-col,
+  .contact-strip-col-right {
+    justify-content: center;
+  }
+
+  .contact-strip-text-wrap {
+    align-items: center;
+  }
+}
+
+@media (width <= 768px) {
+  .contact-strip {
+    padding: 0 16px 60px;
+    margin-top: -16px;
+  }
+
+  .contact-strip-inner {
+    padding: 24px 22px;
+    border-radius: 32px;
+  }
+
+  .contact-strip-text {
+    font-size: 16px;
+  }
+
+  .contact-strip-label {
+    font-size: 16px;
+  }
+
+  .contact-strip-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-strip-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-strip-center {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .contact-strip-badge {
+    height: 50px;
+  }
+
+  .contact-strip-logo {
+    height: 58px;
+  }
+}

@@ -1,9 +1,11 @@
 .nav {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78%;
+  padding-top: 70px;
 }
 
 /* ── Top row: badges + logo ── */
@@ -11,12 +13,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 24px 8px;
-  position: relative;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav-badge-group {
@@ -47,42 +48,45 @@
 /* ── Bottom row: nav links ── */
 .nav-bottom-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 2px 24px 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.055);
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 22px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  width: 100%;
 }
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0;
+  gap: 28px;
+  flex: 1;
 }
 
 .nav-link {
   cursor: pointer;
-  color: rgba(245, 240, 232, 0.75);
-  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
   font-family: var(--font-dm-sans);
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
   background: none;
   border: none;
-  padding: 9px 13px;
+  padding: 0;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav-link:hover {
-  color: var(--color-white);
+  color: #fff;
 }
 .nav-link-active {
-  color: var(--color-gold);
+  color: #fff;
 }
 
 /* ORDER ONLINE — desktop (scoped to nav-bottom-row) */
@@ -90,25 +94,23 @@
   cursor: pointer;
   flex-shrink: 0;
   background: transparent;
-  color: var(--color-gold);
-  font-size: 10.5px;
-  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
   font-family: var(--font-dm-sans);
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  border: 1.5px solid var(--color-gold);
-  border-radius: 3px;
-  padding: 7px 16px;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  border: 1px solid #d4a017;
+  border-radius: 30px;
+  padding: 10px 22px;
   transition:
     background 0.2s,
     color 0.2s;
-  position: absolute;
-  right: 24px;
 }
 
 .nav-bottom-row .order-btn-wrapper:hover {
-  background: var(--color-gold);
-  color: #000;
+  background: #d4a017;
+  color: #fff;
 }
 
 /* ── Mobile ── */

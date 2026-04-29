@@ -48,23 +48,25 @@
 /* ── Bottom row: nav links ── */
 .nav-bottom-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding: 12px 22px;
-  background: rgba(0, 0, 0, 0.35);
+  padding: 10px 20px;
+  gap: 0;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 50px;
-  width: 100%;
+  width: fit-content;
+  min-width: unset;
+  margin: 0 auto;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center;
-  gap: 28px;
-  flex: 1;
+  align-items: center;
+  gap: 24px;
+  flex: unset;
 }
 
 .nav-link {
@@ -93,6 +95,7 @@
 .nav-bottom-row .order-btn-wrapper {
   cursor: pointer;
   flex-shrink: 0;
+  margin-left: 20px;
   background: transparent;
   color: #fff;
   font-size: 14px;
@@ -121,7 +124,7 @@
   border: none;
   font-size: 22px;
   position: absolute;
-  right: 24px;
+  left: 100%;
   top: 50%;
   transform: translateY(-50%);
 }

@@ -1,7 +1,7 @@
 import vegBBQ from '../assets/imgs/vegBBQ.jpg';
 import idli from '../assets/imgs/idli.webp';
 import paneerChili from '../assets/imgs/paneerChili.webp';
-import vegBiriyani from '../assets/imgs/vegBiriyani.webp';
+import vegBiriyani from '../assets/imgs/biriyaniTaj.jpg';
 import uttapam from '../assets/imgs/uttapam.webp';
 import channa from '../assets/imgs/channa.webp';
 import kesari from '../assets/imgs/kesari.webp';
@@ -28,7 +28,7 @@ export const events = [
   },
   {
     date: '27 March 2026',
-    title: 'Veg Biryani 50% Offer',
+    title: 'Biryani 50% Offer',
     desc: 'Fragrant basmati rice layered with fresh vegetables and authentic spices — now at half the price. Limited time offer. Don\'t miss out!',
     image: vegBiriyani,
   },

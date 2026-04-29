@@ -18,7 +18,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.45;
+  
 }
 
 .hero-overlay {
@@ -86,7 +86,7 @@
   padding: 0;
   position: absolute;
   bottom: calc(var(--card-height) * -0.5);
-  left: 62%;
+  left: 72%;
   transform: translateX(-50%);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
   border: 1.5px solid rgba(212, 160, 23, 0.6);
@@ -95,15 +95,17 @@
   overflow: hidden;
 }
 
-.featured-card::after {
-  content: "\2197";
+.featured-card-icon {
   color: #888;
-  font-size: 16px;
   line-height: 1;
   position: absolute;
   top: 12px;
   right: 14px;
   pointer-events: none;
+}
+
+.featured-card-icon svg {
+  display: block;
 }
 
 .featured-inner {
@@ -192,8 +194,61 @@
 @media (max-width: 768px) {
   .featured-card {
     left: 50%;
-    bottom: 20%;
+    bottom: 10px;
+    width: 90%;
+    max-width: 420px;
+    height: auto;
+    min-height: unset;
+    margin: 0 auto;
   }
+
+  .featured-inner {
+    flex-direction: column;
+  }
+
+  .featured-item {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .feat-img-wrap {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    padding: 0;
+  }
+
+  .feat-img {
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+  }
+
+  .feat-text {
+    justify-content: center;
+    padding: 0 12px;
+  }
+
+  .feat-name {
+    font-size: 14px;
+  }
+
+  .feat-desc {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .feat-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .featured-card-icon {
+    top: 10px;
+    right: 10px;
+  }
+
   .hero {
     padding-bottom: 40px;
   }

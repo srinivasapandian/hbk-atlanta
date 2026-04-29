@@ -180,6 +180,7 @@
     grid-template-columns: 1fr;
     margin-top: 40px;
     gap: 24px;
+    padding-top: 120px;
   }
   .story-left {
     min-height: unset;

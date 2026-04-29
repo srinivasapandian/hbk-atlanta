@@ -2,7 +2,7 @@ import { useMemo, useRef, useState } from 'react';
 import './MiniMenu.css';
 import Img from '../components/Img';
 import { menuByCategory } from '../data/menuData';
-
+import menuImg from '../assets/imgs/biriyaniwithLegPiece.png'
 const TABS = ['ALL FOODS', 'APPETIZERS', 'ENTREES', 'DESSERTS'];
 
 export default function MiniMenu() {
@@ -39,7 +39,7 @@ export default function MiniMenu() {
         <div className="home-mini-menu-image-panel">
           {featuredItem && (
             <Img
-              src={featuredItem.imageUrl}
+              src={menuImg}
               alt={featuredItem.name}
               className="home-mini-menu-image"
               loading="lazy"

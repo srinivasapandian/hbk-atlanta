@@ -16,9 +16,10 @@ import masalaChai from '../assets/imgs/Masala-Chai-Featured.webp';
 import miniIdliSambar from '../assets/imgs/MiniIdliSambar-1.webp';
 import uttapam from '../assets/imgs/uttapam.webp';
 import payasam from '../assets/imgs/Payasam-1.webp';
-
+import biriyani from '../assets/imgs/biriyaniTaj.jpg'
+import biriyaniTaj from '../assets/imgs/biriyaniwithLegPiece.png'
 export const galleryImages = [
-  vada, kesari, channa, paaniPori, paneerFry, friedRice,
+  biriyani ,vada, kesari, channa, paaniPori,biriyaniTaj, paneerFry, friedRice,
   idli, paneerChili, vegBiriyani, curdrice, frenchSoup,
   karnaKelanguFry, filterCoffee, mangoLassi, masalaChai,
   miniIdliSambar, uttapam, payasam,

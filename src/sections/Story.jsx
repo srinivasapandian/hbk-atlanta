@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './Story.css';
-import foodImg from "../assets/imgs/paaniPori.webp";
+import foodImg from "../assets/imgs/storysecImage.png";
 
 export default function Story({ isMobile }) {
   return (
@@ -43,8 +43,8 @@ export default function Story({ isMobile }) {
           <div className="veg-steak-content">
             <div className="veg-steak-vertical-line" />
             <div className="veg-steak-text-wrap">
-              <span className="veg-steak-label">Veg Steak</span>
-              <span className="veg-steak-desc">Signature grilled specialty</span>
+              <span className="veg-steak-label">Chicken Kebab</span>
+              <span className="veg-steak-desc">Juicy Tandoori chicken Kebab served with savory sauce.</span>
             </div>
           </div>
         </div>

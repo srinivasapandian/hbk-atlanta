@@ -7,8 +7,8 @@
   --font-playfair: "Playfair Display", serif;
   --color-gold: #c8960c;
   --color-gold-light: #d4a82a;
-  --color-bg: #0a0a0a;
-  --color-bg2: #111;
+  --color-bg: #000000;
+  --color-bg2: #000000;
   --color-white: #f5f0e8;
   --color-gray: #aaa;
   --navbar-height: 130px;
@@ -23,7 +23,7 @@
 * { box-sizing: border-box; }
 
 body, html {
-  background-color: #0a0a0a;
+  background-color: #000000;
   margin: 0;
   padding: 0;
 }

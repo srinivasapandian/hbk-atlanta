@@ -93,14 +93,16 @@
 }
 
 /* ORDER ONLINE — desktop (scoped to nav-bottom-row) */
-.nav-bottom-row .order-btn-wrapper {
+.nav-bottom-row .order-btn-wrapper,
+.nav-bottom-row .order-btn-wrapper:link,
+.nav-bottom-row .order-btn-wrapper:visited {
   cursor: pointer;
   flex-shrink: 0;
   margin-left: 20px;
   background: transparent;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 500;
   font-family: var(--font-dm-sans);
   letter-spacing: 0.4px;
   text-transform: none;
@@ -113,8 +115,8 @@
 }
 
 .nav-bottom-row .order-btn-wrapper:hover {
-  background: #d4a017;
-  color: #fff;
+  background: var(--color-gold);
+  color: #000;
 }
 
 /* ── Mobile ── */

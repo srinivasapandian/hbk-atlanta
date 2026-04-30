@@ -80,7 +80,7 @@ export default function Footer({ isMobile }) {
         {/* Column 5 – Lets Stay In Touch */}
         <div className="footer-col">
           <h3 className="footer-col-title-no-underline">Lets Stay In Touch</h3>
-          <a href="/" className="order-online-btn">ORDER ONLINE</a>
+          <a href="/" className="order-online-btn">Order Online</a>
           <p className="footer-hours-text">Mon–Sun: 11:00</p>
           <p className="footer-hours-text">AM – 10:00 PM</p>
 

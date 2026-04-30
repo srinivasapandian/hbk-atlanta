@@ -91,7 +91,7 @@ export default function Navbar({ isMobile }) {
             className="order-btn-wrapper"
             onClick={() => scrollToSection("menu")}
           >
-            ORDER ONLINE
+            Order Online
           </button>
         </div>
       )}
@@ -115,7 +115,7 @@ export default function Navbar({ isMobile }) {
               scrollToSection("menu");
             }}
           >
-            ORDER ONLINE
+            Order Online
           </button>
         </div>
       )}

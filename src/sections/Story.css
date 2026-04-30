@@ -78,7 +78,7 @@
 
 .explore-btn-wrapper {
   cursor: pointer;
-  align-self: flex-start;
+  align-self: center;
   align-items: center;
   justify-content: center;
   gap: 0;
@@ -206,5 +206,6 @@
   }
   .explore-btn-wrapper {
     width: 190px;
+    align-self: center;
   }
 }

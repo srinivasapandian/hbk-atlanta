@@ -271,13 +271,18 @@
     transform: translate(-50%, -50%);
   }
   .hero-title {
-    font-size: clamp(1.6rem, 7vw, 2.6rem);
+    font-size: clamp(1.2rem, 5.5vw, 2.6rem);
+    white-space: normal;
+    max-width: 95vw;
+    line-height: 40px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(1.4rem, 8vw, 2rem);
+    font-size: clamp(1rem, 5vw, 1.6rem);
     letter-spacing: 0.02em;
+    white-space: normal;
+    max-width: 95vw;
   }
 }

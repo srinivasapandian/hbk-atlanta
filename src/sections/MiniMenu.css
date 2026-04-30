@@ -172,7 +172,14 @@
 @media (width <= 768px) {
   .home-mini-menu-wrap {
     margin-top: 92px;
-    padding: 0 16px;
+    padding: 0 12px;
+    overflow-x: hidden;
+  }
+  .home-mini-menu-card {
+    overflow: hidden;
+  }
+  .home-mini-menu-content {
+    padding: 20px 16px;
   }
   .home-mini-menu-tabs {
     display: flex;
@@ -187,41 +194,75 @@
   }
   .home-mini-menu-tab {
     flex: 0 0 auto;
-    padding: 0 20px 6px;
+    padding: 0 14px 6px;
+  }
+  .home-mini-menu-tab-text {
+    font-size: 16px;
   }
   .home-mini-menu-item-head {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    display: flex;
     align-items: center;
-    column-gap: 8px;
+    gap: 8px;
     min-width: 0;
   }
   .home-mini-menu-item-dotline {
-    display: none;
+    display: block;
+    flex: 1;
+    border-bottom: 1px dashed #d4a017b0;
+    transform: translateY(2px);
+    min-width: 8px;
   }
   .home-mini-menu-item-name {
-    min-width: 0;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    font-size: 1rem;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 60%;
   }
   .home-mini-menu-item-price {
-    display: none;
-  }
-  .home-mini-menu-item-name {
-    font-size: 1.15rem;
-  }
-  .home-mini-menu-item-price {
-    font-size: 1.15rem;
+    display: block;
+    font-size: 1rem;
+    flex-shrink: 0;
   }
   .home-mini-menu-item-desc {
-    display: none;
+    display: block;
+    font-size: 12px;
   }
   .home-mini-menu-list {
-    max-height: 320px;
-    padding-right: 12px;
+    max-height: 420px;
+    padding-right: 10px;
+    overflow-x: hidden;
   }
   .home-mini-menu-scroll-progress {
     right: 2px;
+  }
+}
+
+@media (width <= 480px) {
+  .home-mini-menu-wrap {
+    padding: 0 8px;
+  }
+  .home-mini-menu-content {
+    padding: 16px 12px;
+  }
+  .home-mini-menu-tab {
+    padding: 0 10px 6px;
+  }
+  .home-mini-menu-tab-text {
+    font-size: 14px;
+  }
+  .home-mini-menu-item-name {
+    font-size: 0.95rem;
+  }
+  .home-mini-menu-item-price {
+    font-size: 0.95rem;
+  }
+  .home-mini-menu-item-desc {
+    font-size: 11px;
+  }
+  .home-mini-menu-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
   }
 }

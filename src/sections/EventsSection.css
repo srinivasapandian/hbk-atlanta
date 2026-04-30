@@ -8,11 +8,13 @@
   margin-top: 130px;
 }
 .event-section-title {
-  font-family: var(--font-halant);
-  color: var(--color-white);
-  margin: 0 0 24px;
-  font-size: clamp(2.1rem, 3.6vw, 4rem);
-  font-weight: 400;
+  font-family: var(--font-cinzel);
+  color: var(--color-copper);
+  margin: 0 0 28px;
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .events-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));

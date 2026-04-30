@@ -21,12 +21,13 @@
 /* "Our Story" heading — golden amber */
 .story-our-story {
   font-family: var(--font-cinzel);
-  color: var(--color-gold);
+  color: var(--color-copper);
   margin: 0;
   font-size: clamp(2rem, 3.8vw, 3.2rem);
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .story-left-bottom {
@@ -158,7 +159,8 @@
   position: relative;
 }
 .veg-steak-vertical-line {
-  background-color: rgba(200, 150, 12, 0.7);
+  background-color: var(--color-copper);
+  opacity: 0.7;
   width: 2px;
   height: 54px;
 }

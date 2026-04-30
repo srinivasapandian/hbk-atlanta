@@ -62,7 +62,7 @@ export default function EventsSection({ isMobile, standalone = false }) {
   if (standalone) {
     return (
       <section id="events" className={`events events-standalone`}>
-        <h2 className="event-section-title">Events &amp; Offers</h2>
+        <h2 className="event-section-title">Events</h2>
         <div className="events-grid events-grid-standalone">
           {events.map((event, i) => (
             <div key={i} className="event-card" style={{ minHeight: 380 }}>
@@ -108,7 +108,7 @@ export default function EventsSection({ isMobile, standalone = false }) {
 
   return (
     <section id="events" className="events">
-      <h2 className="event-section-title">Events &amp; Offers</h2>
+      <h2 className="event-section-title">Events</h2>
 
       {isMobile ? (
         <div className={`events-expandable-grid events-expandable-grid-mobile`}>

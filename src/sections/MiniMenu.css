@@ -28,12 +28,14 @@
   background: #000;
 }
 .home-mini-menu-title {
-  color: var(--color-white);
-  font-size: clamp(2.25rem, 4vw, 3.2rem);
-  font-family: var(--font-halant);
+  color: var(--color-copper);
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-family: var(--font-cinzel);
   text-align: center;
-  margin: 0 0 20px;
-  font-weight: 400;
+  margin: 0 0 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .home-mini-menu-tabs {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -67,10 +69,10 @@
   transition: background-color 0.2s;
 }
 .home-mini-menu-tab.is-active .home-mini-menu-tab-underline {
-  background: #d4a017;
+  background: var(--color-copper);
 }
 .home-mini-menu-tab.is-active .home-mini-menu-tab-text {
-  color: #d4a017;
+  color: var(--color-copper);
 }
 .home-mini-menu-list-wrap {
   position: relative;
@@ -99,7 +101,7 @@
   right: 6px;
 }
 .home-mini-menu-scroll-thumb {
-  background: var(--color-gold-light);
+  background: var(--color-copper);
   border-radius: 999px;
   width: 100%;
   position: absolute;
@@ -125,7 +127,8 @@
   line-height: 1.2;
 }
 .home-mini-menu-item-dotline {
-  border-bottom: 1px dashed #d4a017b0;
+  border-bottom: 1px dashed var(--color-copper);
+  opacity: 0.7;
   flex: 1;
   transform: translateY(2px);
 }

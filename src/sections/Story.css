@@ -20,7 +20,7 @@
 
 /* "Our Story" heading — golden amber */
 .story-our-story {
-  font-family: var(--font-cinzel);
+  font-family: var(--font-judson);
   color: var(--color-copper);
   margin: 0;
   font-size: clamp(2rem, 3.8vw, 3.2rem);
@@ -45,7 +45,7 @@
 }
 
 .story-callout-text {
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   color: var(--color-white);
   margin: 0;
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
@@ -96,7 +96,7 @@
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   letter-spacing: 0.4px;
   text-transform: none;
   border: 1px solid #d4a017;
@@ -189,7 +189,7 @@
   color: var(--color-white);
   font-size: 20px;
   font-weight: 700;
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   letter-spacing: 1px;
   display: block;
 }

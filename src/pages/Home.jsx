@@ -44,6 +44,9 @@ const sectionRouteMap = {
   "/home": "home",
   "/events": "events",
   "/contact": "contact",
+  "/about-us": "about",
+  "/services": "services",
+  "/gallery": "gallery",
 };
 const lazyMap = { services: "services", gallery: "gallery" };
 

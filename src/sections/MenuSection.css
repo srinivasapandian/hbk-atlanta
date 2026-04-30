@@ -18,7 +18,7 @@
   text-align: center;
   font-size: 48px;
   font-weight: 400;
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   margin: 0 0 24px;
 }
 .tab-bar {
@@ -71,7 +71,7 @@
   width: 100%;
   height: 44px;
   color: var(--color-white);
-  font-family: var(--font-lateef);
+  font-family: var(--font-judson);
   letter-spacing: 1.5px;
   text-transform: uppercase;
   background: #ffffff0d;
@@ -158,7 +158,7 @@
 .tab-text {
   color: #fffc;
   font-size: 14px;
-  font-family: var(--font-lateef);
+  font-family: var(--font-judson);
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin: 4px 0;
@@ -207,7 +207,7 @@
   color: #f5c400;
   letter-spacing: 1px;
   font-size: 22px;
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   margin: 0;
   font-weight: 600;
 }
@@ -251,7 +251,7 @@
   color: var(--color-white);
   font-size: 20px;
   font-weight: 400;
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
 }
 .menu-item-price {
   color: var(--color-white);

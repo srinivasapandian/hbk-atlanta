@@ -36,7 +36,17 @@ export default function Navbar({ isMobile }) {
 
   function handleNavClick(item) {
     setMenuOpen(false);
-    scrollToSection(item.id);
+    const pageRoutes = {
+      events: "/events",
+      contact: "/contact",
+      home: "/",
+    };
+
+    if (pageRoutes[item.id]) {
+      navigate(pageRoutes[item.id]);
+    } else {
+      scrollToSection(item.id);
+    }
   }
 
   function isActive(item) {
@@ -89,7 +99,8 @@ export default function Navbar({ isMobile }) {
           </div>
           <button
             className="order-btn-wrapper"
-            onClick={() => scrollToSection("menu")}
+            style={{ cursor: 'default' }}
+            onClick={(e) => e.preventDefault()}
           >
             Order Online
           </button>
@@ -110,10 +121,8 @@ export default function Navbar({ isMobile }) {
           ))}
           <button
             className="mobile-order-btn"
-            onClick={() => {
-              setMenuOpen(false);
-              scrollToSection("menu");
-            }}
+            style={{ cursor: 'default' }}
+            onClick={(e) => e.preventDefault()}
           >
             Order Online
           </button>

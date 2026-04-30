@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './Story.css';
 import foodImg from "../assets/imgs/storysecImage.png";
 
 export default function Story({ isMobile }) {
+  const navigate = useNavigate();
+  const scrollToMenu = () => {
+    navigate("/", {
+      state: { scrollTo: "menu", scrollRequestId: Date.now() },
+    });
+  };
   return (
     <section id="about" className="story">
       {/* Left */}
@@ -31,9 +37,9 @@ export default function Story({ isMobile }) {
         <p className="story-para">
           At Indian Restaurant, we are proud to share the vibrant flavors of South India with our community. Inspired by family recipes passed down through generations, our chefs craft dishes that honor tradition while embracing modern tastes. Every spice is carefully selected, every recipe thoughtfully prepared, and every dish served with care. From the comforting aroma of freshly made sambar to the crisp perfection of golden dosas, we bring the essence of South Indian kitchens straight to your table.
         </p>
-        <Link to="/menu" className="explore-btn-wrapper">
+        <div className="explore-btn-wrapper" style={{ cursor: 'default' }}>
           <span className="explore-btn-text">Explore Menu &rarr;</span>
-        </Link>
+        </div>
         <div className="veg-steak-card">
           <div className="veg-steak-overlay" />
           <div className="veg-steak-content">

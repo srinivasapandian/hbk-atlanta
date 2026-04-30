@@ -35,7 +35,7 @@
 .home-mini-menu-title {
   color: var(--color-copper);
   font-size: clamp(2rem, 3.8vw, 3.2rem);
-  font-family: var(--font-cinzel);
+  font-family: var(--font-judson);
   text-align: center;
   margin: 0 0 24px;
   font-weight: 700;
@@ -64,7 +64,7 @@
 }
 
 .home-mini-menu-tab-text {
-  font-family: var(--font-lateef);
+  font-family: var(--font-judson);
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 20px;
@@ -138,7 +138,7 @@
 
 .home-mini-menu-item-name {
   color: var(--color-white);
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   white-space: nowrap;
   margin: 0;
   font-size: clamp(1.2rem, 1.9vw, 1.4rem);
@@ -155,7 +155,7 @@
 
 .home-mini-menu-item-price {
   color: var(--color-white);
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   font-size: clamp(1.2rem, 1.9vw, 1.4rem);
   font-weight: 400;
   text-align: right;

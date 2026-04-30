@@ -74,7 +74,7 @@
   cursor: pointer;
   color: rgba(255, 255, 255, 0.88);
   font-size: 15px;
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-judson);
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
@@ -103,7 +103,7 @@
   color: var(--color-white);
   font-size: 15px;
   font-weight: 500;
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-judson);
   letter-spacing: 0.4px;
   text-transform: none;
   border: 1px solid rgba(212, 160, 23, 0.7);
@@ -147,7 +147,7 @@
   text-align: left;
   color: rgba(245, 240, 232, 0.7);
   font-size: 12px;
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-judson);
   letter-spacing: 2px;
   text-transform: uppercase;
   background: none;
@@ -173,7 +173,7 @@
   color: var(--color-gold);
   font-size: 11px;
   font-weight: 600;
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-judson);
   letter-spacing: 2.5px;
   text-transform: uppercase;
   border: 1.5px solid var(--color-gold);

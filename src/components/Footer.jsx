@@ -11,19 +11,25 @@ export default function Footer({ isMobile }) {
   const navigate = useNavigate();
 
   function handleQuickLink(name) {
-    const sectionMap = {
-      Home: "home",
-      "About Us": "about",
-      Menu: "menu",
-      Blog: "home",
-      Events: "events",
-      "Contact Us": "contact",
+    const pageMap = {
+      Home: "/",
+      "About Us": "/#about",
+      Menu: "/#menu",
+      Blog: "/",
+      Events: "/events",
+      "Contact Us": "/contact",
     };
-    const sectionId = sectionMap[name];
-    if (!sectionId) return;
-    navigate("/", {
-      state: { scrollTo: sectionId, scrollRequestId: Date.now() },
-    });
+    const path = pageMap[name];
+    if (!path) return;
+    
+    if (path.startsWith("/#")) {
+      const sectionId = path.substring(2);
+      navigate("/", {
+        state: { scrollTo: sectionId, scrollRequestId: Date.now() },
+      });
+    } else {
+      navigate(path);
+    }
   }
 
   return (
@@ -80,7 +86,11 @@ export default function Footer({ isMobile }) {
         {/* Column 5 – Lets Stay In Touch */}
         <div className="footer-col">
           <h3 className="footer-col-title-no-underline">Lets Stay In Touch</h3>
-          <a href="/" className="order-online-btn">Order Online</a>
+          <button 
+            className="order-online-btn" 
+            style={{ cursor: 'default' }}
+            onClick={(e) => e.preventDefault()}
+          >Order Online</button>
           <p className="footer-hours-text">Mon–Sun: 11:00</p>
           <p className="footer-hours-text">AM – 10:00 PM</p>
 

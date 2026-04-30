@@ -9,7 +9,7 @@
 }
 .contact-page-title {
   color: var(--color-copper);
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   margin: 0 0 8px;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 400;
@@ -76,7 +76,7 @@
 }
 .contact-field {
   color: var(--color-white);
-  font-family: var(--font-halant);
+  font-family: var(--font-judson);
   flex-direction: column;
   gap: 6px;
   display: flex;
@@ -104,7 +104,7 @@
 .contact-submit-btn {
   border: 1px solid var(--color-gold);
   color: var(--color-white);
-  font-family: var(--font-lateef);
+  font-family: var(--font-judson);
   letter-spacing: 1.5px;
   background: 0 0;
   border-radius: 999px;

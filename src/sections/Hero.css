@@ -73,7 +73,7 @@
 }
 
 .hero-title {
-  font-family: var(--font-cinzel);
+  font-family: var(--font-judson);
   letter-spacing: 3px;
   color: #B87333;
   text-shadow: none;
@@ -176,7 +176,7 @@
   color: #c8960c;
   font-size: 15px;
   font-weight: 600;
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-judson);
   line-height: 1.2;
   margin-bottom: 6px;
 }

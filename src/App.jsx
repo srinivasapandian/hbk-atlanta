@@ -38,10 +38,10 @@ export default function App() {
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/home" element={<Navigate to="/" replace />} />
-          <Route path="/about-us" element={<Navigate to="/" replace />} />
-          <Route path="/services" element={<Navigate to="/" replace />} />
-          <Route path="/gallery" element={<Navigate to="/" replace />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about-us" element={<Home />} />
+          <Route path="/services" element={<Home />} />
+          <Route path="/gallery" element={<Home />} />
           <Route path="/contact-us" element={<Navigate to="/contact" replace />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

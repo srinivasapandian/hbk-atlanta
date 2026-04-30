@@ -71,16 +71,16 @@ export default function MiniMenu() {
 
           <div className="home-mini-menu-list-wrap">
             <div ref={listRef} onScroll={handleListScroll} className="home-mini-menu-list">
-            {displayItems.map((item) => (
-              <article key={item.id} className="home-mini-menu-item">
-                <div className="home-mini-menu-item-head">
-                  <h3 className="home-mini-menu-item-name">{item.name}</h3>
-                  <span className="home-mini-menu-item-dotline" aria-hidden="true" />
-                  <span className="home-mini-menu-item-price">{item.price}</span>
-                </div>
-                <p className="home-mini-menu-item-desc">{item.description}</p>
-              </article>
-            ))}
+              {displayItems.map((item) => (
+                <article key={item.id} className="home-mini-menu-item">
+                  <div className="home-mini-menu-item-head">
+                    <h3 className="home-mini-menu-item-name">{item.name}</h3>
+                    <span className="home-mini-menu-item-dotline" aria-hidden="true" />
+                    <span className="home-mini-menu-item-price">{item.price}</span>
+                  </div>
+                  <p className="home-mini-menu-item-desc">{item.description}</p>
+                </article>
+              ))}
             </div>
             <div className="home-mini-menu-scroll-progress" aria-hidden="true">
               <div
@@ -90,7 +90,7 @@ export default function MiniMenu() {
             </div>
           </div>
 
-          <Link to="/menu" className="explore-btn-wrapper" style={{ marginTop: '20px',  }}>
+          <Link to="/menu" className="explore-btn-wrapper" style={{ marginTop: '20px', }}>
             <span className="explore-line-long" />
             <span className="explore-line-short" />
             <span className="explore-btn-text">EXPLORE MENU</span>

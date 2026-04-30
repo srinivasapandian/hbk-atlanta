@@ -1,6 +1,6 @@
 import vegBBQ from '../assets/imgs/vegBBQ.jpg';
 import idli from '../assets/imgs/idli.webp';
-import paneerChili from '../assets/imgs/paneerChili.webp';
+import paneerChili from '../assets/imgs/pannerChilli.png';
 import vegBiriyani from '../assets/imgs/biriyaniTaj.jpg';
 import uttapam from '../assets/imgs/uttapam.webp';
 import channa from '../assets/imgs/channa.webp';

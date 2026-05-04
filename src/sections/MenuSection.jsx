@@ -237,18 +237,7 @@ export default function MenuSection({ isMobile, standalone = false }) {
           )}
         </div>
 
-        <div
-          className="explore-btn-wrapper"
-          style={{
-            marginTop: "40px",
-            alignSelf: "center",
-            cursor: "default",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <span className="explore-btn-text">View More &rarr;</span>
-        </div>
+
       </div>
     </section>
   );

@@ -14,21 +14,6 @@ const routeToSection = {
   "/contact": "contact",
 };
 
-const mobileDrawerOrder = [
-  "home",
-  "about",
-  "menu",
-  "services",
-  "events",
-  "gallery",
-  "contact",
-];
-
-const mobileLabelOverrides = {
-  services: "Catering",
-  events: "Blog",
-  gallery: "Buffet",
-};
 
 export default function Navbar({ isMobile }) {
   const location = useLocation();
@@ -84,13 +69,6 @@ export default function Navbar({ isMobile }) {
     return item.id === activeSection;
   }
 
-  const mobileDrawerLinks = mobileDrawerOrder
-    .map((id) => navItems.find((item) => item.id === id))
-    .filter(Boolean)
-    .map((item) => ({
-      ...item,
-      name: mobileLabelOverrides[item.id] || item.name,
-    }));
 
   return (
     <>
@@ -192,7 +170,7 @@ export default function Navbar({ isMobile }) {
               ✕
             </button>
             <nav className="drawer-nav">
-              {mobileDrawerLinks.map((item) => (
+              {navItems.map((item) => (
                 <button
                   key={item.id}
                   className={`drawer-link${

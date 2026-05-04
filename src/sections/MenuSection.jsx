@@ -2,6 +2,18 @@ import { useState, useRef, useMemo, useEffect } from "react";
 import "./MenuSection.css";
 import { allCategories, menuGrouped } from "../data/menuData";
 
+const NON_VEG_KEYWORDS = [
+  "chicken","mutton","fish","prawn","shrimp","egg","lamb","beef",
+  "goat","seafood","kheema","keema","shawarma","crab","lobster",
+];
+
+function isNonVegItem(item) {
+  if (item.category.toUpperCase().includes("NON VEG")) return true;
+  const nameL = item.name.toLowerCase();
+  if (nameL.startsWith("veg ")) return false;
+  return NON_VEG_KEYWORDS.some((k) => nameL.includes(k));
+}
+
 function filterItems(groups, query) {
   const q = query.trim().toLowerCase();
   if (!q) return groups;
@@ -185,9 +197,7 @@ export default function MenuSection({ isMobile, standalone = false }) {
               <h3 className="menu-category-title">{group.category}</h3>
               <div className="menu-items-grid">
                 {group.items.map((item) => {
-                  const isNonVeg = item.category
-                    .toUpperCase()
-                    .includes("NON VEG");
+                  const isNonVeg = isNonVegItem(item);
                   return (
                     <article key={item.id} className="menu-item">
                       <div className="menu-item-top-row">
@@ -204,7 +214,14 @@ export default function MenuSection({ isMobile, standalone = false }) {
                             {item.name}
                           </span>
                         </div>
-                        <span className="menu-item-price">{item.price}</span>
+                        <div className="menu-item-price-col">
+                          <span className="menu-item-price">{item.price}</span>
+                          {item.familyPrice && (
+                            <span className="menu-item-family-price">
+                              Family&nbsp;{item.familyPrice}
+                            </span>
+                          )}
+                        </div>
                       </div>
                       <p className="menu-item-desc">{item.description}</p>
                     </article>

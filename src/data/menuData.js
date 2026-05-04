@@ -48,11 +48,20 @@ function formatVariants(variants) {
 }
 
 const menuItems = (Array.isArray(menuItemsRaw) ? menuItemsRaw : []).map(
-  (item) => ({
-    ...item,
-    imageUrl: normalizeImageUrl(item.imageUrl),
-    price: formatVariants(item.variants),
-  }),
+  (item) => {
+    const variants = Array.isArray(item.variants) ? item.variants : [];
+    const regularVariants = variants.filter((v) => v.type !== "family");
+    const familyVariants = variants.filter((v) => v.type === "family");
+    const familyPrice = familyVariants.length
+      ? familyVariants.map((v) => formatPriceValue(v.price)).join(" / ")
+      : null;
+    return {
+      ...item,
+      imageUrl: normalizeImageUrl(item.imageUrl),
+      price: formatVariants(regularVariants),
+      familyPrice,
+    };
+  },
 );
 
 export const categories = Array.from(

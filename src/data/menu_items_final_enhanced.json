@@ -1500,6 +1500,10 @@
       {
         "type": "base",
         "price": 13.99
+      },
+      {
+        "type": "family",
+        "price": 36.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1516,6 +1520,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 42.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1532,6 +1540,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 42.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1548,6 +1560,10 @@
       {
         "type": "base",
         "price": 14.99
+      },
+      {
+        "type": "family",
+        "price": 36.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1564,6 +1580,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 43.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1580,6 +1600,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 42.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1596,6 +1620,10 @@
       {
         "type": "base",
         "price": 16.99
+      },
+      {
+        "type": "family",
+        "price": 47.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1612,6 +1640,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 49.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1628,6 +1660,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 51.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1644,6 +1680,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 51.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1660,6 +1700,10 @@
       {
         "type": "base",
         "price": 19.99
+      },
+      {
+        "type": "family",
+        "price": 58.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1676,6 +1720,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 51.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1692,6 +1740,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 51.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1708,6 +1760,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 56.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1724,6 +1780,10 @@
       {
         "type": "base",
         "price": 16.99
+      },
+      {
+        "type": "family",
+        "price": 47.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1740,6 +1800,10 @@
       {
         "type": "base",
         "price": 19.99
+      },
+      {
+        "type": "family",
+        "price": 58.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1756,6 +1820,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 49.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1783,6 +1851,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 42.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1799,6 +1871,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 42.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1815,6 +1891,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 42.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1831,6 +1911,10 @@
       {
         "type": "base",
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 42.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1847,6 +1931,10 @@
       {
         "type": "base",
         "price": 16.99
+      },
+      {
+        "type": "family",
+        "price": 47.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1863,6 +1951,10 @@
       {
         "type": "base",
         "price": 16.99
+      },
+      {
+        "type": "family",
+        "price": 47.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1879,6 +1971,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 53.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1895,6 +1991,10 @@
       {
         "type": "base",
         "price": 16.99
+      },
+      {
+        "type": "family",
+        "price": 47.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1911,6 +2011,10 @@
       {
         "type": "base",
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 53.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1929,6 +2033,14 @@
       },
       {
         "price": 17.99
+      },
+      {
+        "type": "family",
+        "price": 41.99
+      },
+      {
+        "type": "family",
+        "price": 44.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1946,6 +2058,10 @@
       {
         "type": "base",
         "price": 18.99
+      },
+      {
+        "type": "family",
+        "price": 55.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -1967,6 +2083,18 @@
       },
       {
         "price": 15.99
+      },
+      {
+        "type": "family",
+        "price": 48.99
+      },
+      {
+        "type": "family",
+        "price": 52.99
+      },
+      {
+        "type": "family",
+        "price": 41.99
       }
     ],
     "category": "BIRYANIS AND PULAVS",
@@ -2124,11 +2252,9 @@
         "price": 15.99
       },
       {
-        "type": "variant_5",
         "price": 18.99
       },
       {
-        "type": "variant_6",
         "price": 19.99
       }
     ],

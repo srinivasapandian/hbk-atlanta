@@ -111,16 +111,18 @@ export default function MiniMenu() {
               />
             </div>
           </div>
-          <div
+          <Link
+            to="/menu"
             className="explore-btn-wrapper"
             style={{
               marginTop: "20px",
               alignSelf: "center",
-              cursor: "default",
+              cursor: "pointer",
+              textDecoration: "none",
             }}
           >
             <span className="explore-btn-text">View More &rarr;</span>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

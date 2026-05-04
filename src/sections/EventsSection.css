@@ -7,6 +7,15 @@
 .events-standalone {
   margin-top: 130px;
 }
+.event-section-subtitle {
+  font-family: var(--font-dm-sans);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: -20px 0 28px;
+}
+
 .event-section-title {
   font-family: var(--font-judson);
   color: var(--color-copper);

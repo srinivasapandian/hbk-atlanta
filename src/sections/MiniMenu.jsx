@@ -50,6 +50,7 @@ export default function MiniMenu() {
         </div>
         <div className="home-mini-menu-content">
           <h2 className="home-mini-menu-title">Menu</h2>
+          <p className="home-mini-menu-location-sub">Taste of South India, Right Here in Atlanta</p>
 
           <div
             className="home-mini-menu-tabs"

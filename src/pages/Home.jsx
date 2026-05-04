@@ -122,6 +122,9 @@ export default function Home() {
       </header>
       <main>
         <Hero />
+        <div className="location-strip">
+          📍 Now Serving Atlanta &amp; Surrounding Areas — Johns Creek, GA 30097
+        </div>
         <Story isMobile={isMobile} />
         <MiniMenu />
         <EventsSection isMobile={isMobile} />

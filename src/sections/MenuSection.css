@@ -1,46 +1,37 @@
+/* Offset so sticky tabs don't cover section headings on scroll */
 html {
-  scroll-padding-top: 220px;
+  scroll-padding-top: 90px;
 }
-.menu-section {
+
+@media (min-width: 769px) {
+  html {
+    scroll-padding-top: 90px;
+  }
+}
+
+/* ── Title area — handles top spacing to clear the absolute navbar ── */
+.menu-title-area {
   max-width: 1280px;
-  margin: 100px auto 60px;
+  margin: 0 auto;
   padding: 0 24px;
-  display: block;
+  box-sizing: border-box;
 }
-.menu-section-standalone {
-  margin-top: 170px;
+.menu-title-area-standalone {
+  margin-top: 250px;
 }
-.menu-right {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  display: flex;
-}
+
 .menu-title {
-  color: var(--color-white);
-  text-align: center;
-  font-size: 48px;
-  font-weight: 400;
-  font-family: var(--font-judson);
-  margin: 0 0 24px;
-  margin-top: 60px;
+  display: none;
 }
-.menu-tabs-sticky {
-  position: sticky;
-  top: 5px;
-  z-index: 900;
-  background: var(--color-bg);
-  border-bottom: 1px solid #ffffff14;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  display: flex;
-}
-.menu-dropdown-wrap {
+
+/* ── Mobile dropdown (restored) ── */
+.menu-dropdown-outer {
   position: relative;
+  max-width: 1280px;
   width: 100%;
-  padding: 10px 0;
+  margin: 0 auto;
+  padding: 10px 16px;
+  box-sizing: border-box;
 }
 .menu-dropdown-btn {
   width: 100%;
@@ -81,8 +72,8 @@ html {
 .menu-dropdown-list {
   position: absolute;
   top: calc(100% - 4px);
-  left: 0;
-  right: 0;
+  left: 16px;
+  right: 16px;
   z-index: 1000;
   background: #111008;
   border: 1px solid #c9a84c8c;
@@ -120,86 +111,98 @@ html {
   color: #f5c400;
   background: #f5c40010;
 }
-.tab-bar {
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  justify-content: flex-start;
-  gap: 16px;
+
+/* ── Category tabs — full-width sticky bar ── */
+.menu-category-tabs {
+  position: sticky;
+  top: -50px;
+  z-index: 200;
   width: 100%;
-  max-width: 860px;
-  margin-bottom: 12px;
-  padding: 10px 0 12px;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+.menu-category-tabs-inner {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  background: rgba(10, 8, 4, 0.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 8px 24px;
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
-.tab-bar::-webkit-scrollbar {
+
+.menu-category-tabs-inner::-webkit-scrollbar {
   display: none;
 }
-.menu-tabs-progress-container {
-  background: #fff3;
-  width: 100%;
-  max-width: 860px;
-  height: 3px;
-  margin-bottom: 16px;
-  position: relative;
-}
-.menu-tabs-progress-bar {
-  background: #f5c400;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.tab {
+
+.menu-tab-item {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  scroll-snap-align: center;
-  background: 0 0;
-  border: none;
-  flex-direction: column;
-  flex: 0 0 auto;
-  align-items: center;
-  gap: 4px;
-  padding: 0;
-  display: flex;
   white-space: nowrap;
+  color: rgba(255, 255, 255, 0.75);
+  background: transparent;
+  border: none;
+  transition: all 0.2s ease;
+  font-family: var(--font-dm-sans);
 }
-.tab-line-long {
-  background: #fff6;
+
+.menu-tab-item:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.menu-tab-item.active {
+  background: rgba(212, 160, 23, 0.15);
+  color: #c8960c;
+  border: 1px solid rgba(212, 160, 23, 0.5);
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* ── Main section ── */
+.menu-section {
+  max-width: 1280px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+  display: block;
+}
+.menu-section-standalone {
+  margin-top: 0;
+}
+.menu-right {
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 1px;
-  min-width: 40px;
-  transition: background 0.2s;
+  display: flex;
 }
-.tab-line-short {
-  background: #fff6;
-  width: 35%;
-  min-width: 14px;
-  height: 1px;
-  transition: background 0.2s;
-}
-.tab-text {
-  color: #fffc;
-  font-size: 14px;
-  font-family: var(--font-judson);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin: 4px 0;
-  transition: color 0.2s;
-}
-.tab-line-active {
-  background: #f5c400;
-}
-.tab-text-active {
-  color: #f5c400;
-}
+
+/* ── Controls / search ── */
 .menu-controls {
   flex-wrap: wrap;
   align-items: center;
   gap: 0;
   width: 100%;
   max-width: 1060px;
+  padding-top: 12px;
   margin-bottom: 28px;
   display: flex;
 }
@@ -215,6 +218,8 @@ html {
   min-width: 220px;
   padding: 0 14px;
 }
+
+/* ── Menu items ── */
 .menu-items-wrapper {
   flex-direction: column;
   gap: 32px;
@@ -333,36 +338,43 @@ html {
 }
 
 @media (width <= 1024px) {
+  .menu-title-area {
+    padding: 0 16px;
+  }
   .menu-section {
     width: 100%;
     max-width: 100vw;
-    overflow-x: clip;
     padding: 0 16px;
     box-sizing: border-box;
   }
   .menu-items-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .menu-title {
-    font-size: 42px;
-  }
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
   html {
-    scroll-padding-top: 190px;
+    scroll-padding-top: 90px;
+  }
+  .menu-title-area-standalone {
+    margin-top: 200px;
+  }
+  .menu-dropdown-outer {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: rgba(10, 8, 4, 0.97);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    
   }
   .menu-section {
-    margin-top: 92px;
-    overflow-x: clip;
+    margin-top: 0;
     width: 100%;
     box-sizing: border-box;
   }
   .menu-section-standalone {
-    margin-top: 160px;
-  }
-  .menu-tabs-sticky {
-    /* top: 130px; */
+    margin-top: 0;
   }
   .menu-controls {
     display: block;
@@ -370,7 +382,6 @@ html {
   .menu-items-grid {
     grid-template-columns: 1fr;
     width: 100%;
-    overflow-x: clip;
   }
   .menu-item {
     width: 100%;

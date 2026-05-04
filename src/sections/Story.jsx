@@ -35,7 +35,7 @@ export default function Story({ isMobile }) {
       {/* Right */}
       <div className="story-right">
         <p className="story-para">
-          At Indian Restaurant, we are proud to share the vibrant flavors of South India with our community. Inspired by family recipes passed down through generations, our chefs craft dishes that honor tradition while embracing modern tastes. Every spice is carefully selected, every recipe thoughtfully prepared, and every dish served with care. From the comforting aroma of freshly made sambar to the crisp perfection of golden dosas, we bring the essence of South Indian kitchens straight to your table.
+          At Indian Restaurant, we are proud to share the vibrant flavors of South India with our community. Proudly serving the Atlanta community, our doors have been open to food lovers across Georgia and beyond. Inspired by family recipes passed down through generations, our chefs craft dishes that honor tradition while embracing modern tastes. Every spice is carefully selected, every recipe thoughtfully prepared, and every dish served with care. From the comforting aroma of freshly made sambar to the crisp perfection of golden dosas, we bring the essence of South Indian kitchens straight to your table.
         </p>
         <Link to="/menu" className="explore-btn-wrapper" style={{ textDecoration: 'none' }}>
           <span className="explore-btn-text">Explore Menu &rarr;</span>

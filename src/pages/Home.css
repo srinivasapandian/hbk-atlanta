@@ -7,6 +7,28 @@
 .home-menu-card-btn { border: 1px solid var(--color-gold); color: var(--color-white); font-family: var(--font-judson); letter-spacing: 1.5px; background: 0 0; border-radius: 999px; margin-top: 4px; padding: 10px 22px; font-size: 18px; text-decoration: none; transition: background-color .2s, color .2s; }
 .home-menu-card-btn:hover { background: var(--color-gold); color: #000; }
 
+.location-strip {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  font-family: var(--font-dm-sans);
+  box-sizing: border-box;
+  margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+  .location-strip {
+    margin-top: 0;
+  }
+}
+
 .section-skeleton { max-width: 1200px; margin: 60px auto; padding: 0 24px; }
 .section-skeleton-line { background: linear-gradient(90deg, #ffffff14 25%, #ffffff2e 50%, #ffffff14 75%) 0 0 / 240% 100%; border-radius: 6px; width: 220px; height: 20px; margin-bottom: 12px; animation: 1.2s linear infinite sectionSkeletonShimmer; }
 .section-skeleton-line-short { width: 140px; margin-bottom: 20px; }

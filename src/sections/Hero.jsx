@@ -35,6 +35,8 @@ export default function Hero() {
             House of Biryanis & Kebabs – Authentic Indian Restaurant
           </span>
         </h1>
+        <div className="hero-location-divider" aria-hidden="true" />
+        <p className="hero-location"><span aria-hidden="true"></span> ATLANTA</p>
       </div>
 
       {/* Floating featured dish card — bottom right of hero */}
@@ -97,6 +99,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+        <span className="feat-atlanta-tag">📍 Available in Atlanta</span>
       </div>
     </section>
   );

@@ -63,6 +63,7 @@ export default function EventsSection({ isMobile, standalone = false }) {
     return (
       <section id="events" className={`events events-standalone`}>
         <h2 className="event-section-title">Events</h2>
+        <p className="event-section-subtitle">Join Us for Special Evenings in Johns Creek, Atlanta</p>
         <div className="events-grid events-grid-standalone">
           {events.map((event, i) => (
             <div key={i} className="event-card" style={{ minHeight: 380 }}>
@@ -109,6 +110,7 @@ export default function EventsSection({ isMobile, standalone = false }) {
   return (
     <section id="events" className="events">
       <h2 className="event-section-title">Events</h2>
+      <p className="event-section-subtitle">Join Us for Special Evenings in Johns Creek, Atlanta</p>
 
       {isMobile ? (
         <div className={`events-expandable-grid events-expandable-grid-mobile`}>

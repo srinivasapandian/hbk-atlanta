@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { navItems } from "../data/navData";
@@ -49,6 +50,11 @@ export default function Navbar({ isMobile }) {
     return () => cancelAnimationFrame(id);
   }, [menuOpen]);
 
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
   function scrollToSection(sectionId) {
     if (location.pathname !== "/") {
       navigate("/", {
@@ -63,9 +69,8 @@ export default function Navbar({ isMobile }) {
   function handleNavClick(item) {
     setMenuOpen(false);
     const pageRoutes = {
-      events: "/events",
-      contact: "/contact",
       home: "/",
+      menu: "/menu",
     };
 
     if (pageRoutes[item.id]) {
@@ -88,6 +93,7 @@ export default function Navbar({ isMobile }) {
     }));
 
   return (
+    <>
     <nav className="nav">
       {/* Desktop top row: Halal badge | Logo | 30+ Locations badge */}
       <div className="nav-top-row">
@@ -162,8 +168,10 @@ export default function Navbar({ isMobile }) {
         </button>
       </div>
 
-      {/* Mobile drawer */}
-      {menuOpen && (
+    </nav>
+
+      {/* Mobile drawer — rendered in <body> to escape nav's stacking context */}
+      {menuOpen && createPortal(
         <>
           <div
             className={`backdrop${drawerOpen ? " backdrop-open" : ""}`}
@@ -198,8 +206,9 @@ export default function Navbar({ isMobile }) {
               ))}
             </nav>
           </aside>
-        </>
+        </>,
+        document.body
       )}
-    </nav>
+    </>
   );
 }

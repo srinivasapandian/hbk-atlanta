@@ -1,6 +1,5 @@
 import { useState, useRef, useMemo, useEffect } from "react";
 import "./MenuSection.css";
-import Img from "../components/Img";
 import { allCategories, menuGrouped } from "../data/menuData";
 
 function filterItems(groups, query) {
@@ -22,42 +21,30 @@ function filterItems(groups, query) {
 export default function MenuSection({ isMobile, standalone = false }) {
   const [activeCategory, setActiveCategory] = useState("ALL");
   const [search, setSearch] = useState("");
-  const [tabsPinned, setTabsPinned] = useState(false);
   const [tabScrollPct, setTabScrollPct] = useState(0);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const sentinelRef = useRef(null);
-  const stickyRef = useRef(null);
   const tabBarRef = useRef(null);
   const itemsTopRef = useRef(null);
   const categoryRefs = useRef({});
-
-  const filteredGroups = useMemo(
-    () =>
-      filterItems(
-        activeCategory === "ALL"
-          ? menuGrouped
-          : menuGrouped.filter((g) => g.category === activeCategory),
-        search,
-      ),
-    [activeCategory, search],
-  );
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
-    const el = sentinelRef.current;
-    if (!el) return;
-    const navH =
-      parseInt(
-        getComputedStyle(document.documentElement).getPropertyValue(
-          "--navbar-height",
-        ),
-      ) || 84;
-    const observer = new IntersectionObserver(
-      ([entry]) => setTabsPinned(!entry.isIntersecting),
-      { root: null, threshold: 0, rootMargin: `-${navH}px 0px 0px 0px` },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+    if (!dropdownOpen) return;
+    function handleOutside(e) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleOutside);
+    return () => document.removeEventListener("mousedown", handleOutside);
+  }, [dropdownOpen]);
+
+  // Only filter by search — tabs scroll to sections, never hide categories
+  const filteredGroups = useMemo(
+    () => filterItems(menuGrouped, search),
+    [search],
+  );
 
   function handleTabScrollPct() {
     const el = tabBarRef.current;
@@ -70,23 +57,12 @@ export default function MenuSection({ isMobile, standalone = false }) {
   function selectCategory(cat) {
     setActiveCategory(cat);
     requestAnimationFrame(() => {
-      const navH =
-        parseInt(
-          getComputedStyle(document.documentElement).getPropertyValue(
-            "--navbar-height",
-          ),
-        ) || 84;
-      const stickyH = stickyRef.current?.offsetHeight || 0;
-      const target =
-        cat === "ALL" ? itemsTopRef.current : categoryRefs.current[cat];
-      if (!target) return;
-      const top =
-        target.getBoundingClientRect().top +
-        window.scrollY -
-        navH -
-        stickyH -
-        8;
-      window.scrollTo({ top: Math.max(top, 0), behavior: "smooth" });
+      if (cat === "ALL") {
+        itemsTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      const el = categoryRefs.current[cat];
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
 
@@ -99,30 +75,42 @@ export default function MenuSection({ isMobile, standalone = false }) {
       <div className="menu-right">
         <h2 className="menu-title">Menu</h2>
 
-        <div
-          ref={sentinelRef}
-          className="menu-tabs-start-sentinel"
-          aria-hidden="true"
-        />
-
-        <div
-          ref={stickyRef}
-          className={`menu-tabs-sticky${tabsPinned ? " menu-tabs-pinned" : ""}`}
-        >
+        <div className="menu-tabs-sticky">
           {isMobile ? (
-            <div className="menu-mobile-tabs-wrap">
-              <select
-                className="menu-category-dropdown"
-                value={activeCategory}
-                onChange={(e) => selectCategory(e.target.value)}
-                aria-label="Select menu category"
+            <div
+              ref={dropdownRef}
+              className="menu-dropdown-wrap"
+            >
+              <button
+                className="menu-dropdown-btn"
+                onClick={() => setDropdownOpen((o) => !o)}
+                aria-haspopup="listbox"
+                aria-expanded={dropdownOpen}
               >
-                {allCategories.map((cat) => (
-                  <option key={cat} value={cat}>
-                    {cat}
-                  </option>
-                ))}
-              </select>
+                <span>{activeCategory}</span>
+                <span
+                  className={`menu-dropdown-chevron${dropdownOpen ? " menu-dropdown-chevron-open" : ""}`}
+                  aria-hidden="true"
+                />
+              </button>
+              {dropdownOpen && (
+                <ul className="menu-dropdown-list" role="listbox">
+                  {allCategories.map((cat) => (
+                    <li
+                      key={cat}
+                      role="option"
+                      aria-selected={activeCategory === cat}
+                      className={`menu-dropdown-option${activeCategory === cat ? " menu-dropdown-option-active" : ""}`}
+                      onClick={() => {
+                        selectCategory(cat);
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      {cat}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ) : (
             <>
@@ -174,11 +162,6 @@ export default function MenuSection({ isMobile, standalone = false }) {
           )}
         </div>
 
-        <div
-          className={`menu-tabs-spacer${tabsPinned ? " menu-tabs-spacer-active" : ""}`}
-          aria-hidden="true"
-        />
-
         <div className="menu-controls">
           <input
             type="search"
@@ -201,30 +184,32 @@ export default function MenuSection({ isMobile, standalone = false }) {
             >
               <h3 className="menu-category-title">{group.category}</h3>
               <div className="menu-items-grid">
-                {group.items.map((item) => (
-                  <article key={item.id} className="menu-item">
-                    <Img
-                      src={item.imageUrl}
-                      className="menu-item-image"
-                      alt={item.name}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <div className="menu-item-content">
-                      <div className="menu-item-left">
-                        <span
-                          className="menu-item-name"
-                          title={item.name}
-                          tabIndex={0}
-                        >
-                          {item.name}
-                        </span>
+                {group.items.map((item) => {
+                  const isNonVeg = item.category
+                    .toUpperCase()
+                    .includes("NON VEG");
+                  return (
+                    <article key={item.id} className="menu-item">
+                      <div className="menu-item-top-row">
+                        <div className="menu-item-top-left">
+                          <span
+                            className={`menu-item-dot${isNonVeg ? " menu-item-dot-nonveg" : " menu-item-dot-veg"}`}
+                            aria-label={isNonVeg ? "Non-veg" : "Veg"}
+                          />
+                          <span
+                            className="menu-item-name"
+                            title={item.name}
+                            tabIndex={0}
+                          >
+                            {item.name}
+                          </span>
+                        </div>
                         <span className="menu-item-price">{item.price}</span>
                       </div>
                       <p className="menu-item-desc">{item.description}</p>
-                    </div>
-                  </article>
-                ))}
+                    </article>
+                  );
+                })}
               </div>
             </div>
           ))}

@@ -37,7 +37,7 @@ body, html {
   background: var(--color-bg);
   color: var(--color-white);
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .page-transition-wrap { opacity: 1; }

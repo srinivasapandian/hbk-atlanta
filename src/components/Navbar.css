@@ -265,17 +265,7 @@
   }
 
   .header-side-badges {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 8px 0 4px;
-    margin-top: 10px;
-  }
-
-  .header-side-badges img {
-    width: 70px;
-    height: 65px;
-    object-fit: contain;
+    display: none;
   }
 
   .nav-bottom-row {

@@ -3,6 +3,8 @@ import "./Hero.css";
 import heroBg from "../assets/imgs/biriyaniInLeaf.png";
 import featImg1 from "../assets/imgs/friedRice-360.webp";
 import featImg2 from "../assets/imgs/frenchSoup-360.webp";
+import badge1 from "../assets/imgs/halalCertificate.png";
+import badge2 from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
 
 export default function Hero() {
   return (
@@ -16,6 +18,10 @@ export default function Hero() {
       <div className="hero-overlay" />
 
       <div className="hero-content">
+        <div className="hero-badges-mobile" aria-hidden="true">
+          <img src={badge1} alt="Halal Certified" />
+          <img src={badge2} alt="35+ Locations" />
+        </div>
         <p className="hero-sub">WELCOME TO</p>
         <h1 className="hero-title">
           HOUSE OF BIRYANIS &amp; KEBABS
@@ -99,7 +105,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <span className="feat-atlanta-tag">📍 Available in Atlanta</span>
+        <span className="feat-atlanta-tag"></span>
       </div>
     </section>
   );

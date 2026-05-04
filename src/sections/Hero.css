@@ -35,7 +35,7 @@
 
 .hero-content {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -75,11 +75,11 @@
 .hero-title {
   font-family: var(--font-judson);
   letter-spacing: 3px;
-  color: #B87333;
+  color: #f5c400;
   text-shadow: none;
   margin: 0 auto;
   font-size: clamp(16px, 2.8vw, 44px);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 0.5;
   text-transform: uppercase;
   position: relative;
@@ -229,6 +229,19 @@
   margin: 0;
 }
 
+/* Push hero text down on smaller laptops to clear the fixed navbar */
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .hero-content {
+    top: 58%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-content {
+    top: 62%;
+  }
+}
+
 @media (min-width: 700px) {
   .featured-card {
     min-width: 580px;
@@ -298,6 +311,7 @@
   }
 
   .hero-content {
+    top: 50%;
     transform: translate(-50%, -50%);
   }
   .hero-title {
@@ -310,9 +324,30 @@
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: clamp(1rem, 5vw, 1.6rem);
+    font-size: clamp(24px, 3vw, 44px);
     letter-spacing: 0.02em;
     white-space: normal;
     max-width: 95vw;
+  }
+}
+
+/* Hero badges — mobile only, sit above hero text inside the hero image */
+.hero-badges-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-badges-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-badges-mobile img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
   }
 }

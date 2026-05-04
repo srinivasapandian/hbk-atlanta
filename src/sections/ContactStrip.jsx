@@ -1,6 +1,6 @@
 import "./ContactStrip.css";
 import halalBadge from "../assets/imgs/halalCertificate.png";
-import locationsBadge from "../assets/imgs/30+location.png";
+import locationsBadge from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
 import brandBadge from "../assets/house_of_biriyani_and_kebabs.svg";
 
 export default function ContactStrip() {

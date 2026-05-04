@@ -1,7 +1,7 @@
-import { useState, useRef, useMemo, useEffect } from 'react';
-import './MenuSection.css';
-import Img from '../components/Img';
-import { allCategories, menuGrouped } from '../data/menuData';
+import { useState, useRef, useMemo, useEffect } from "react";
+import "./MenuSection.css";
+import Img from "../components/Img";
+import { allCategories, menuGrouped } from "../data/menuData";
 
 function filterItems(groups, query) {
   const q = query.trim().toLowerCase();
@@ -13,15 +13,15 @@ function filterItems(groups, query) {
         (item) =>
           item.name.toLowerCase().includes(q) ||
           item.description.toLowerCase().includes(q) ||
-          item.category.toLowerCase().includes(q)
+          item.category.toLowerCase().includes(q),
       ),
     }))
     .filter((g) => g.items.length > 0);
 }
 
 export default function MenuSection({ isMobile, standalone = false }) {
-  const [activeCategory, setActiveCategory] = useState('ALL');
-  const [search, setSearch] = useState('');
+  const [activeCategory, setActiveCategory] = useState("ALL");
+  const [search, setSearch] = useState("");
   const [tabsPinned, setTabsPinned] = useState(false);
   const [tabScrollPct, setTabScrollPct] = useState(0);
 
@@ -32,17 +32,28 @@ export default function MenuSection({ isMobile, standalone = false }) {
   const categoryRefs = useRef({});
 
   const filteredGroups = useMemo(
-    () => filterItems(activeCategory === 'ALL' ? menuGrouped : menuGrouped.filter((g) => g.category === activeCategory), search),
-    [activeCategory, search]
+    () =>
+      filterItems(
+        activeCategory === "ALL"
+          ? menuGrouped
+          : menuGrouped.filter((g) => g.category === activeCategory),
+        search,
+      ),
+    [activeCategory, search],
   );
 
   useEffect(() => {
     const el = sentinelRef.current;
     if (!el) return;
-    const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--navbar-height')) || 84;
+    const navH =
+      parseInt(
+        getComputedStyle(document.documentElement).getPropertyValue(
+          "--navbar-height",
+        ),
+      ) || 84;
     const observer = new IntersectionObserver(
       ([entry]) => setTabsPinned(!entry.isIntersecting),
-      { root: null, threshold: 0, rootMargin: `-${navH}px 0px 0px 0px` }
+      { root: null, threshold: 0, rootMargin: `-${navH}px 0px 0px 0px` },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -59,27 +70,45 @@ export default function MenuSection({ isMobile, standalone = false }) {
   function selectCategory(cat) {
     setActiveCategory(cat);
     requestAnimationFrame(() => {
-      const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--navbar-height')) || 84;
+      const navH =
+        parseInt(
+          getComputedStyle(document.documentElement).getPropertyValue(
+            "--navbar-height",
+          ),
+        ) || 84;
       const stickyH = stickyRef.current?.offsetHeight || 0;
-      const target = cat === 'ALL' ? itemsTopRef.current : categoryRefs.current[cat];
+      const target =
+        cat === "ALL" ? itemsTopRef.current : categoryRefs.current[cat];
       if (!target) return;
-      const top = target.getBoundingClientRect().top + window.scrollY - navH - stickyH - 8;
-      window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
+      const top =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        navH -
+        stickyH -
+        8;
+      window.scrollTo({ top: Math.max(top, 0), behavior: "smooth" });
     });
   }
 
   return (
     <section
       id="menu"
-      className={`menu-section${standalone ? ' menu-section-standalone' : ''}`}
-      style={isMobile ? { padding: '0 16px' } : undefined}
+      className={`menu-section${standalone ? " menu-section-standalone" : ""}`}
+      style={isMobile ? { padding: "0 16px" } : undefined}
     >
       <div className="menu-right">
         <h2 className="menu-title">Menu</h2>
 
-        <div ref={sentinelRef} className="menu-tabs-start-sentinel" aria-hidden="true" />
+        <div
+          ref={sentinelRef}
+          className="menu-tabs-start-sentinel"
+          aria-hidden="true"
+        />
 
-        <div ref={stickyRef} className={`menu-tabs-sticky${tabsPinned ? ' menu-tabs-pinned' : ''}`}>
+        <div
+          ref={stickyRef}
+          className={`menu-tabs-sticky${tabsPinned ? " menu-tabs-pinned" : ""}`}
+        >
           {isMobile ? (
             <div className="menu-mobile-tabs-wrap">
               <select
@@ -89,7 +118,9 @@ export default function MenuSection({ isMobile, standalone = false }) {
                 aria-label="Select menu category"
               >
                 {allCategories.map((cat) => (
-                  <option key={cat} value={cat}>{cat}</option>
+                  <option key={cat} value={cat}>
+                    {cat}
+                  </option>
                 ))}
               </select>
             </div>
@@ -103,12 +134,28 @@ export default function MenuSection({ isMobile, standalone = false }) {
                 {allCategories.map((cat) => {
                   const active = activeCategory === cat;
                   return (
-                    <button key={cat} className="tab" onClick={() => selectCategory(cat)}>
-                      <div className={`tab-line-long${active ? ' tab-line-active' : ''}`} />
-                      <div className={`tab-line-short${active ? ' tab-line-active' : ''}`} />
-                      <span className={`tab-text${active ? ' tab-text-active' : ''}`}>{cat}</span>
-                      <div className={`tab-line-short${active ? ' tab-line-active' : ''}`} />
-                      <div className={`tab-line-long${active ? ' tab-line-active' : ''}`} />
+                    <button
+                      key={cat}
+                      className="tab"
+                      onClick={() => selectCategory(cat)}
+                    >
+                      <div
+                        className={`tab-line-long${active ? " tab-line-active" : ""}`}
+                      />
+                      <div
+                        className={`tab-line-short${active ? " tab-line-active" : ""}`}
+                      />
+                      <span
+                        className={`tab-text${active ? " tab-text-active" : ""}`}
+                      >
+                        {cat}
+                      </span>
+                      <div
+                        className={`tab-line-short${active ? " tab-line-active" : ""}`}
+                      />
+                      <div
+                        className={`tab-line-long${active ? " tab-line-active" : ""}`}
+                      />
                     </button>
                   );
                 })}
@@ -116,14 +163,21 @@ export default function MenuSection({ isMobile, standalone = false }) {
               <div className="menu-tabs-progress-container" aria-hidden="true">
                 <div
                   className="menu-tabs-progress-bar"
-                  style={{ width: '20%', left: `${tabScrollPct * 0.8}%`, transition: 'left 0.1s ease-out' }}
+                  style={{
+                    width: "20%",
+                    left: `${tabScrollPct * 0.8}%`,
+                    transition: "left 0.1s ease-out",
+                  }}
                 />
               </div>
             </>
           )}
         </div>
 
-        <div className={`menu-tabs-spacer${tabsPinned ? ' menu-tabs-spacer-active' : ''}`} aria-hidden="true" />
+        <div
+          className={`menu-tabs-spacer${tabsPinned ? " menu-tabs-spacer-active" : ""}`}
+          aria-hidden="true"
+        />
 
         <div className="menu-controls">
           <input
@@ -158,7 +212,13 @@ export default function MenuSection({ isMobile, standalone = false }) {
                     />
                     <div className="menu-item-content">
                       <div className="menu-item-left">
-                        <span className="menu-item-name">{item.name}</span>
+                        <span
+                          className="menu-item-name"
+                          title={item.name}
+                          tabIndex={0}
+                        >
+                          {item.name}
+                        </span>
                         <span className="menu-item-price">{item.price}</span>
                       </div>
                       <p className="menu-item-desc">{item.description}</p>
@@ -169,11 +229,22 @@ export default function MenuSection({ isMobile, standalone = false }) {
             </div>
           ))}
           {filteredGroups.length === 0 && (
-            <p className="menu-empty-state">No items found for the selected filters.</p>
+            <p className="menu-empty-state">
+              No items found for the selected filters.
+            </p>
           )}
         </div>
 
-        <div className="explore-btn-wrapper" style={{ marginTop: '40px', alignSelf: 'center', cursor: 'default', display: 'flex', justifyContent: 'center' }}>
+        <div
+          className="explore-btn-wrapper"
+          style={{
+            marginTop: "40px",
+            alignSelf: "center",
+            cursor: "default",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <span className="explore-btn-text">View More &rarr;</span>
         </div>
       </div>

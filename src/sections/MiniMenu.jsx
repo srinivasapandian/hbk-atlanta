@@ -1,10 +1,10 @@
-import { useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
-import './MiniMenu.css';
-import Img from '../components/Img';
-import { menuByCategory } from '../data/menuData';
-import menuImg from '../assets/imgs/biriyaniwithLegPiece.png'
-const TABS = ['ALL FOODS', 'APPETIZERS', 'ENTREES', 'DESSERTS'];
+import { useMemo, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import "./MiniMenu.css";
+import Img from "../components/Img";
+import { categories, menuByCategory } from "../data/menuData";
+import menuImg from "../assets/imgs/biriyaniwithLegPiece.png";
+const TABS = ["ALL FOODS", ...categories];
 
 export default function MiniMenu() {
   const [activeTab, setActiveTab] = useState(TABS[0]);
@@ -19,19 +19,19 @@ export default function MiniMenu() {
   }
 
   const displayItems = useMemo(() => {
-    if (activeTab === 'ALL FOODS') {
-      return ['APPETIZERS', 'ENTREES', 'DESSERTS'].flatMap((category) => (menuByCategory[category] || []).slice(0, 3));
+    if (activeTab === "ALL FOODS") {
+      return categories.flatMap((category) => menuByCategory[category] || []);
     }
-    return (menuByCategory[activeTab] || []).slice(0, 3);
+    return menuByCategory[activeTab] || [];
   }, [activeTab]);
 
   const featuredItem = useMemo(() => {
-    const pool = [
-      ...(menuByCategory.APPETIZERS || []),
-      ...(menuByCategory.ENTREES || []),
-      ...(menuByCategory.DESSERTS || []),
-    ];
-    return pool.find((item) => item.name.toLowerCase().includes('vada')) || pool[0];
+    const pool = categories.flatMap(
+      (category) => menuByCategory[category] || [],
+    );
+    return (
+      pool.find((item) => item.name.toLowerCase().includes("vada")) || pool[0]
+    );
   }, []);
 
   return (
@@ -51,32 +51,54 @@ export default function MiniMenu() {
         <div className="home-mini-menu-content">
           <h2 className="home-mini-menu-title">Menu</h2>
 
-          <div className="home-mini-menu-tabs" role="tablist" aria-label="Menu preview categories">
+          <div
+            className="home-mini-menu-tabs"
+            role="tablist"
+            aria-label="Menu preview categories"
+          >
             {TABS.map((tab) => {
               const isActive = activeTab === tab;
               return (
                 <button
                   key={tab}
-                  className={`home-mini-menu-tab${isActive ? ' is-active' : ''}`}
+                  className={`home-mini-menu-tab${isActive ? " is-active" : ""}`}
                   onClick={() => setActiveTab(tab)}
                   role="tab"
                   aria-selected={isActive}
                 >
                   <span className="home-mini-menu-tab-text">{tab}</span>
-                  <span className="home-mini-menu-tab-underline" aria-hidden="true" />
+                  <span
+                    className="home-mini-menu-tab-underline"
+                    aria-hidden="true"
+                  />
                 </button>
               );
             })}
           </div>
 
           <div className="home-mini-menu-list-wrap">
-            <div ref={listRef} onScroll={handleListScroll} className="home-mini-menu-list">
+            <div
+              ref={listRef}
+              onScroll={handleListScroll}
+              className="home-mini-menu-list"
+            >
               {displayItems.map((item) => (
                 <article key={item.id} className="home-mini-menu-item">
                   <div className="home-mini-menu-item-head">
-                    <h3 className="home-mini-menu-item-name">{item.name}</h3>
-                    <span className="home-mini-menu-item-dotline" aria-hidden="true" />
-                    <span className="home-mini-menu-item-price">{item.price}</span>
+                    <h3
+                      className="home-mini-menu-item-name"
+                      title={item.name}
+                      tabIndex={0}
+                    >
+                      {item.name}
+                    </h3>
+                    <span
+                      className="home-mini-menu-item-dotline"
+                      aria-hidden="true"
+                    />
+                    <span className="home-mini-menu-item-price">
+                      {item.price}
+                    </span>
                   </div>
                   <p className="home-mini-menu-item-desc">{item.description}</p>
                 </article>
@@ -85,11 +107,18 @@ export default function MiniMenu() {
             <div className="home-mini-menu-scroll-progress" aria-hidden="true">
               <div
                 className="home-mini-menu-scroll-thumb"
-                style={{ height: '24%', top: `${scrollPct * 0.76}%` }}
+                style={{ height: "24%", top: `${scrollPct * 0.76}%` }}
               />
             </div>
           </div>
-          <div className="explore-btn-wrapper" style={{ marginTop: '20px', alignSelf: 'center', cursor: 'default' }}>
+          <div
+            className="explore-btn-wrapper"
+            style={{
+              marginTop: "20px",
+              alignSelf: "center",
+              cursor: "default",
+            }}
+          >
             <span className="explore-btn-text">View More &rarr;</span>
           </div>
         </div>

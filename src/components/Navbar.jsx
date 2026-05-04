@@ -4,7 +4,7 @@ import "./Navbar.css";
 import { navItems } from "../data/navData";
 import logoImg from "../assets/house_of_biriyani_and_kebabs.svg";
 import badge1 from "../assets/imgs/halalCertificate.png";
-import badge2 from "../assets/imgs/30+location.png";
+import badge2 from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
 
 const routeToSection = {
   "/": "home",
@@ -13,15 +13,41 @@ const routeToSection = {
   "/contact": "contact",
 };
 
+const mobileDrawerOrder = [
+  "home",
+  "about",
+  "menu",
+  "services",
+  "events",
+  "gallery",
+  "contact",
+];
+
+const mobileLabelOverrides = {
+  services: "Catering",
+  events: "Blog",
+  gallery: "Buffet",
+};
+
 export default function Navbar({ isMobile }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     setActiveSection(routeToSection[location.pathname] || "home");
   }, [location.pathname]);
+
+  useEffect(() => {
+    if (!menuOpen) {
+      setDrawerOpen(false);
+      return;
+    }
+    const id = requestAnimationFrame(() => setDrawerOpen(true));
+    return () => cancelAnimationFrame(id);
+  }, [menuOpen]);
 
   function scrollToSection(sectionId) {
     if (location.pathname !== "/") {
@@ -53,9 +79,17 @@ export default function Navbar({ isMobile }) {
     return item.id === activeSection;
   }
 
+  const mobileDrawerLinks = mobileDrawerOrder
+    .map((id) => navItems.find((item) => item.id === id))
+    .filter(Boolean)
+    .map((item) => ({
+      ...item,
+      name: mobileLabelOverrides[item.id] || item.name,
+    }));
+
   return (
     <nav className="nav">
-      {/* Top row: Halal badge | Logo | 30+ Locations badge */}
+      {/* Desktop top row: Halal badge | Logo | 30+ Locations badge */}
       <div className="nav-top-row">
         <div className="nav-badge-group">
           <img src={badge1} alt="Halal Certified" className="nav-badge-img" />
@@ -72,61 +106,99 @@ export default function Navbar({ isMobile }) {
           </Link>
           <img src={badge2} alt="30+ Locations" className="nav-badge-img" />
         </div>
-        {isMobile && (
-          <button
-            className="hamburger"
-            aria-label="Toggle menu"
-            onClick={() => setMenuOpen((v) => !v)}
-          >
-            {menuOpen ? "✕" : "☰"}
-          </button>
-        )}
+      </div>
+
+      {/* Mobile header layout */}
+      <div className="header-top-bar">
+        <span className="header-left-spacer" aria-hidden="true" />
+        <Link
+          to="/"
+          className="header-main-logo"
+          onClick={() => setMenuOpen(false)}
+        >
+          <img
+            src={logoImg}
+            alt="House of Biryanis & Kebabs"
+            className="header-main-logo-img"
+          />
+        </Link>
+        <button
+          className="hamburger-btn"
+          aria-label="Open menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-drawer"
+          onClick={() => setMenuOpen(true)}
+          type="button"
+        >
+          ☰
+        </button>
+      </div>
+      <div className="header-side-badges">
+        <img src={badge1} alt="Halal Certified" />
+        <img src={badge2} alt="30+ Locations" />
       </div>
 
       {/* Bottom row: nav links + order online button */}
-      {!isMobile && (
-        <div className="nav-bottom-row">
-          <div className="nav-links">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                className={`nav-link${isActive(item) ? " nav-link-active" : ""}`}
-                onClick={() => handleNavClick(item)}
-              >
-                {item.name}
-              </button>
-            ))}
-          </div>
-          <button
-            className="order-btn-wrapper"
-            style={{ cursor: 'default' }}
-            onClick={(e) => e.preventDefault()}
-          >
-            Order Online
-          </button>
-        </div>
-      )}
-
-      {/* Mobile dropdown */}
-      {isMobile && menuOpen && (
-        <div className="mobile-menu">
+      <div className="nav-bottom-row">
+        <div className="nav-links">
           {navItems.map((item) => (
             <button
               key={item.id}
-              className={`mobile-link${isActive(item) ? " mobile-link-active" : ""}`}
+              className={`nav-link${isActive(item) ? " nav-link-active" : ""}`}
               onClick={() => handleNavClick(item)}
+              type="button"
             >
               {item.name}
             </button>
           ))}
-          <button
-            className="mobile-order-btn"
-            style={{ cursor: 'default' }}
-            onClick={(e) => e.preventDefault()}
-          >
-            Order Online
-          </button>
         </div>
+        <button
+          className="order-btn-wrapper"
+          style={{ cursor: "default" }}
+          onClick={(e) => e.preventDefault()}
+          type="button"
+        >
+          Order Online
+        </button>
+      </div>
+
+      {/* Mobile drawer */}
+      {menuOpen && (
+        <>
+          <div
+            className={`backdrop${drawerOpen ? " backdrop-open" : ""}`}
+            onClick={() => setMenuOpen(false)}
+            role="presentation"
+          />
+          <aside
+            className={`drawer${drawerOpen ? " drawer-open" : ""}`}
+            id="mobile-drawer"
+            aria-hidden={!menuOpen}
+          >
+            <button
+              className="drawer-close"
+              aria-label="Close menu"
+              onClick={() => setMenuOpen(false)}
+              type="button"
+            >
+              ✕
+            </button>
+            <nav className="drawer-nav">
+              {mobileDrawerLinks.map((item) => (
+                <button
+                  key={item.id}
+                  className={`drawer-link${
+                    isActive(item) ? " drawer-link-active" : ""
+                  }`}
+                  onClick={() => handleNavClick(item)}
+                  type="button"
+                >
+                  {item.name}
+                </button>
+              ))}
+            </nav>
+          </aside>
+        </>
       )}
     </nav>
   );

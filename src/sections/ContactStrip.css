@@ -1,5 +1,5 @@
 .contact-strip {
-  padding: 0 24px 70px;
+  padding: 0 24px 0;
   margin-top: -26px;
 }
 
@@ -30,10 +30,10 @@
 }
 
 .contact-strip-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  border: 1.5px solid var(--color-gold);
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  border: none;
   color: var(--color-gold);
   display: inline-flex;
   align-items: center;
@@ -42,8 +42,8 @@
 }
 
 .contact-strip-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .contact-strip-text-wrap {
@@ -56,7 +56,7 @@
   margin: 0;
   color: var(--color-white);
   font-family: var(--font-dm-sans);
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.4;
 }
 
@@ -69,7 +69,11 @@
   margin: 0;
   color: var(--color-white);
   font-family: var(--font-judson);
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.contact-strip-col-right .contact-strip-text {
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -113,7 +117,7 @@
 
 @media (width <= 768px) {
   .contact-strip {
-    padding: 0 16px 60px;
+    padding: 0 16px 0;
     margin-top: -16px;
   }
 
@@ -123,21 +127,24 @@
   }
 
   .contact-strip-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .contact-strip-label {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .contact-strip-col-right .contact-strip-text {
+    font-size: 15px;
   }
 
   .contact-strip-icon {
-    width: 40px;
-    height: 40px;
+    width: 18px;
+    height: 18px;
   }
 
   .contact-strip-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 
   .contact-strip-center {
@@ -146,10 +153,10 @@
   }
 
   .contact-strip-badge {
-    height: 50px;
+    height: 70px;
   }
 
   .contact-strip-logo {
-    height: 58px;
+    height: 80px;
   }
 }

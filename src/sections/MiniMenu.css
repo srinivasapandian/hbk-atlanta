@@ -30,6 +30,7 @@
   padding: 30px 36px;
   display: flex;
   background: #000;
+  min-height: 0;
 }
 
 .home-mini-menu-title {
@@ -44,11 +45,17 @@
 }
 
 .home-mini-menu-tabs {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 16px;
   border-bottom: none;
-  display: grid;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.home-mini-menu-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .home-mini-menu-tab {
@@ -59,7 +66,8 @@
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  padding: 0 0 6px;
+  padding: 0 12px 6px;
+  flex: 0 0 auto;
   display: flex;
 }
 
@@ -87,6 +95,8 @@
 }
 
 .home-mini-menu-list-wrap {
+  flex: 1;
+  min-height: 0;
   position: relative;
 }
 
@@ -100,6 +110,7 @@
   display: flex;
   overflow-y: auto;
   overflow-x: hidden;
+  min-height: 0;
 }
 
 .home-mini-menu-list::-webkit-scrollbar {
@@ -131,19 +142,30 @@
 }
 
 .home-mini-menu-item-head {
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   display: flex;
+  min-width: 0;
 }
 
 .home-mini-menu-item-name {
   color: var(--color-white);
   font-family: var(--font-judson);
-  white-space: nowrap;
   margin: 0;
   font-size: clamp(1.2rem, 1.9vw, 1.4rem);
   font-weight: 400;
   line-height: 1.2;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.home-mini-menu-item-name:hover,
+.home-mini-menu-item-name:focus {
+  white-space: normal;
+  overflow: visible;
 }
 
 .home-mini-menu-item-dotline {
@@ -151,6 +173,8 @@
   opacity: 0.7;
   flex: 1;
   transform: translateY(2px);
+  align-self: center;
+  min-width: 8px;
 }
 
 .home-mini-menu-item-price {
@@ -161,6 +185,8 @@
   text-align: right;
   flex-shrink: 0;
   line-height: 1.2;
+  align-self: flex-start;
+  white-space: nowrap;
 }
 
 .home-mini-menu-item-desc {
@@ -177,15 +203,61 @@
   }
 
   .home-mini-menu-image-panel {
-    min-height: 340px;
+    width: 100%;
+    min-height: 0;
+    height: 220px;
+  }
+
+  .home-mini-menu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .home-mini-menu-content {
-    padding: 28px 22px;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 28px 16px;
+    box-sizing: border-box;
   }
 
   .home-mini-menu-title {
     text-align: left;
+  }
+
+  .home-mini-menu-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding-bottom: 4px;
+  }
+
+  .home-mini-menu-tab {
+    flex-shrink: 0;
+    display: inline-flex;
+  }
+
+  .home-mini-menu-item-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .home-mini-menu-item-name {
+    width: 100%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .home-mini-menu-item-price {
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .home-mini-menu-item-dotline {
+    display: none;
   }
 
   .home-mini-menu-item-name {
@@ -217,16 +289,8 @@
   }
 
   .home-mini-menu-tabs {
-    display: flex;
     flex-direction: row;
-    overflow-x: auto;
     gap: 0;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .home-mini-menu-tabs::-webkit-scrollbar {
-    display: none;
   }
 
   .home-mini-menu-tab {
@@ -240,33 +304,34 @@
 
   .home-mini-menu-item-head {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
     min-width: 0;
   }
 
   .home-mini-menu-item-dotline {
-    display: block;
-    flex: 1;
-    border-bottom: 1px dashed #d4a017b0;
-    transform: translateY(2px);
-    min-width: 8px;
+    display: none;
   }
 
   .home-mini-menu-item-name {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 100%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
     font-size: 1rem;
     flex-shrink: 1;
     min-width: 0;
-    max-width: 60%;
+    max-width: 100%;
   }
 
   .home-mini-menu-item-price {
     display: block;
     font-size: 1rem;
     flex-shrink: 0;
+    align-self: flex-start;
+    white-space: nowrap;
+    margin-top: 2px;
   }
 
   .home-mini-menu-item-desc {

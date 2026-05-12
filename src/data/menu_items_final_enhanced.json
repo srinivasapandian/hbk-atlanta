@@ -11,9 +11,7 @@
     ],
     "category": "SOUPS",
     "imageUrl": "soups/hot-sour-soup-veg.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "soups-hot-sour-soup-chicken",
@@ -27,9 +25,7 @@
     ],
     "category": "SOUPS",
     "imageUrl": "soups/hot-sour-soup-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "soups-naatu-kodi-soup",
@@ -43,9 +39,7 @@
     ],
     "category": "SOUPS",
     "imageUrl": "soups/naatu-kodi-soup.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "soups-goat-paya-24oz",
@@ -59,9 +53,7 @@
     ],
     "category": "SOUPS",
     "imageUrl": "soups/goat-paya-24oz.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "soups-mutton-marag-24oz",
@@ -75,9 +67,7 @@
     ],
     "category": "SOUPS",
     "imageUrl": "soups/mutton-marag-24oz.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "soups-malai-paya-24oz",
@@ -91,9 +81,7 @@
     ],
     "category": "SOUPS",
     "imageUrl": "soups/malai-paya-24oz.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "veg-apitizers-masala-peanuts-boiled",
@@ -102,14 +90,12 @@
     "variants": [
       {
         "type": "base",
-        "price": 11.99
+        "price": 9.99
       }
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/masala-peanuts-boiled.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-crispy-chili-corn",
@@ -123,10 +109,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/crispy-chili-corn.jpg",
-    "tags": [
-      "veg",
-      "spicy"
-    ]
+    "tags": ["veg", "spicy"]
   },
   {
     "id": "veg-apitizers-gobi-manchurian",
@@ -140,9 +123,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/gobi-manchurian.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-chili-gobi",
@@ -156,10 +137,21 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/chili-gobi.jpg",
-    "tags": [
-      "veg",
-      "spicy"
-    ]
+    "tags": ["veg", "spicy"]
+  },
+  {
+    "id": "veg-apitizers-cashew-gobi-pakoda",
+    "name": "Cashew Gobi Pakoda",
+    "description": "Delicious Cashew Gobi Pakoda prepared in authentic veg apitizers style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 13.99
+      }
+    ],
+    "category": "VEG APITIZERS",
+    "imageUrl": "veg-apitizers/cashew-gobi-pakoda.jpg",
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-gobi-majestic",
@@ -173,9 +165,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/gobi-majestic.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-karampodi-gobi",
@@ -189,9 +179,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/karampodi-gobi.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-ulavacharu-gobi",
@@ -205,9 +193,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/ulavacharu-gobi.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-gongura-gobi",
@@ -221,9 +207,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/gongura-gobi.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-jalapeno-gobi",
@@ -237,9 +221,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/jalapeno-gobi.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-hyderabadi-paneer-65",
@@ -253,9 +235,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/hyderabadi-paneer-65.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-paneer-manchurian",
@@ -269,9 +249,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/paneer-manchurian.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-chili-paneer",
@@ -285,10 +263,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/chili-paneer.jpg",
-    "tags": [
-      "veg",
-      "spicy"
-    ]
+    "tags": ["veg", "spicy"]
   },
   {
     "id": "veg-apitizers-paneer-majestic",
@@ -302,9 +277,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/paneer-majestic.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-paneer-pepper-fry",
@@ -318,10 +291,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/paneer-pepper-fry.jpg",
-    "tags": [
-      "veg",
-      "spicy"
-    ]
+    "tags": ["veg", "spicy"]
   },
   {
     "id": "veg-apitizers-cilantro-paneer",
@@ -335,9 +305,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/cilantro-paneer.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-karampodi-paneer",
@@ -351,9 +319,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/karampodi-paneer.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-ulavacharu-paneer",
@@ -367,9 +333,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/ulavacharu-paneer.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-gongura-paneer",
@@ -383,9 +347,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/gongura-paneer.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-jalapeno-paneer",
@@ -399,9 +361,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/jalapeno-paneer.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-chili-baby-corn",
@@ -415,10 +375,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/chili-baby-corn.jpg",
-    "tags": [
-      "veg",
-      "spicy"
-    ]
+    "tags": ["veg", "spicy"]
   },
   {
     "id": "veg-apitizers-mushroom-majestic",
@@ -432,9 +389,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/mushroom-majestic.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "veg-apitizers-vegetable-manchurian",
@@ -448,9 +403,7 @@
     ],
     "category": "VEG APITIZERS",
     "imageUrl": "veg-apitizers/vegetable-manchurian.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-hyd-chicken-65",
@@ -464,9 +417,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/hyd-chicken-65.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-chicken-manchurian",
@@ -480,9 +431,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/chicken-manchurian.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-chili-chicken",
@@ -496,10 +445,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/chili-chicken.jpg",
-    "tags": [
-      "spicy",
-      "non-veg"
-    ]
+    "tags": ["spicy", "non-veg"]
   },
   {
     "id": "non-veg-apitizers-chicken-majestic",
@@ -513,9 +459,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/chicken-majestic.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-pepper-chicken-fry",
@@ -529,10 +473,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/pepper-chicken-fry.jpg",
-    "tags": [
-      "spicy",
-      "non-veg"
-    ]
+    "tags": ["spicy", "non-veg"]
   },
   {
     "id": "non-veg-apitizers-cilantro-chicken",
@@ -546,9 +487,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/cilantro-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-chicken-555",
@@ -562,9 +501,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/chicken-555.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-mirapakaya-kodi-vepudu-bone-in",
@@ -578,9 +515,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/mirapakaya-kodi-vepudu-bone-in.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-chicken-lollipops-5pcs",
@@ -594,9 +529,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/chicken-lollipops-5pcs.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-drums-of-heaven-5pcs",
@@ -610,9 +543,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/drums-of-heaven-5pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-ginger-chicken",
@@ -626,9 +557,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/ginger-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-karampodi-chicken",
@@ -642,9 +571,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/karampodi-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-ulavacharu-chicken",
@@ -658,9 +585,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/ulavacharu-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-gongura-chicken",
@@ -674,9 +599,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/gongura-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-jalapeno-chicken",
@@ -690,9 +613,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/jalapeno-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-cashew-chicken-pakoda",
@@ -706,9 +627,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/cashew-chicken-pakoda.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "non-veg-apitizers-natukodi-pepper-fry",
@@ -722,10 +641,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/natukodi-pepper-fry.jpg",
-    "tags": [
-      "veg",
-      "spicy"
-    ]
+    "tags": ["veg", "spicy"]
   },
   {
     "id": "non-veg-apitizers-goat-haleem",
@@ -739,9 +655,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/goat-haleem.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-mutton-sukka-bone-in",
@@ -755,14 +669,12 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/mutton-sukka-bone-in.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-talava-ghost",
-    "name": "Talava Ghost",
-    "description": "Delicious Talava Ghost prepared in authentic non veg apitizers style.",
+    "name": "Talawa Ghosh",
+    "description": "Delicious Talawa Ghosh prepared in authentic non veg apitizers style.",
     "variants": [
       {
         "type": "base",
@@ -771,9 +683,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/talava-ghost.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-raju-gari-mamsam-vepudu",
@@ -787,9 +697,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/raju-gari-mamsam-vepudu.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-boti-vepudu",
@@ -803,9 +711,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/boti-vepudu.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-apollo-fish",
@@ -819,9 +725,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/apollo-fish.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-malabar-tawa-fish",
@@ -835,9 +739,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/malabar-tawa-fish.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-andhra-fish-fry",
@@ -851,9 +753,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/andhra-fish-fry.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-hyd-shrimp-65",
@@ -867,9 +767,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/hyd-shrimp-65.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-shrimp-pepper-fry",
@@ -883,10 +781,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/shrimp-pepper-fry.jpg",
-    "tags": [
-      "veg",
-      "spicy"
-    ]
+    "tags": ["veg", "spicy"]
   },
   {
     "id": "non-veg-apitizers-jalapeno-shrimp",
@@ -900,9 +795,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/jalapeno-shrimp.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-karampodi-shrimp",
@@ -916,9 +809,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/karampodi-shrimp.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-ulavacharu-shrimp",
@@ -932,9 +823,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/ulavacharu-shrimp.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-gongura-shrimp",
@@ -948,9 +837,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/gongura-shrimp.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "non-veg-apitizers-chitti-royala-fry",
@@ -964,9 +851,7 @@
     ],
     "category": "NON VEG APITIZERS",
     "imageUrl": "non-veg-apitizers/chitti-royala-fry.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "hyderabadi-specials-spl-shawarma-paneer-chicken",
@@ -982,10 +867,7 @@
     ],
     "category": "HYDERABADI SPECIALS",
     "imageUrl": "hyderabadi-specials/spl-shawarma-paneer-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "hyderabadi-specials-kheema-burji",
@@ -999,9 +881,7 @@
     ],
     "category": "HYDERABADI SPECIALS",
     "imageUrl": "hyderabadi-specials/kheema-burji.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "hyderabadi-specials-street-style-mutton-cutlets",
@@ -1015,9 +895,7 @@
     ],
     "category": "HYDERABADI SPECIALS",
     "imageUrl": "hyderabadi-specials/street-style-mutton-cutlets.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "hyderabadi-specials-corn-masala-vada-6pieces",
@@ -1031,9 +909,7 @@
     ],
     "category": "HYDERABADI SPECIALS",
     "imageUrl": "hyderabadi-specials/corn-masala-vada-6pieces.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "hyderabadi-specials-kheema-with-pav-2pcs-veg-mutton",
@@ -1049,10 +925,7 @@
     ],
     "category": "HYDERABADI SPECIALS",
     "imageUrl": "hyderabadi-specials/kheema-with-pav-2pcs-veg-mutton.jpg",
-    "tags": [
-      "contains-egg",
-      "veg"
-    ]
+    "tags": ["contains-egg", "veg"]
   },
   {
     "id": "hyderabadi-specials-desi-sandwich-paneer-chicken",
@@ -1068,10 +941,7 @@
     ],
     "category": "HYDERABADI SPECIALS",
     "imageUrl": "hyderabadi-specials/desi-sandwich-paneer-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "hyderabadi-specials-street-style-burgers-paneer-chicken-mutton",
@@ -1083,14 +953,14 @@
       },
       {
         "price": 12.99
+      },
+      {
+        "price": 14.99
       }
     ],
     "category": "HYDERABADI SPECIALS",
     "imageUrl": "hyderabadi-specials/street-style-burgers-paneer-chicken-mutton.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "kebabs-paneer-tikka-kebab",
@@ -1104,9 +974,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/paneer-tikka-kebab.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "kebabs-gongura-paneer-tikka-kebab",
@@ -1120,9 +988,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/gongura-paneer-tikka-kebab.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "kebabs-pudina-paneer-tikka-kebab",
@@ -1136,9 +1002,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/pudina-paneer-tikka-kebab.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "kebabs-hara-bhara-kabab",
@@ -1152,9 +1016,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/hara-bhara-kabab.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "kebabs-mix-kebab-veg-veg-paneer-non-veg-chicken-goat-seafood",
@@ -1170,10 +1032,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/mix-kebab-veg-veg-paneer-non-veg-chicken-goat-seafood.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "kebabs-mushroom-tikka-kebab-malai-cheese",
@@ -1187,9 +1046,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/mushroom-tikka-kebab-malai-cheese.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "kebabs-gongura-chicken-tikka-kebab",
@@ -1203,9 +1060,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/gongura-chicken-tikka-kebab.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-tandoori-chicken",
@@ -1219,9 +1074,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/tandoori-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-tangdi-kebab",
@@ -1235,9 +1088,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/tangdi-kebab.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-chicken-tikka-kebab",
@@ -1251,9 +1102,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/chicken-tikka-kebab.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-hariyali-kebab",
@@ -1267,9 +1116,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/hariyali-kebab.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-murgh-malai-kebab",
@@ -1283,9 +1130,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/murgh-malai-kebab.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-sheesh-kebab-chicken-goat",
@@ -1301,10 +1146,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/sheesh-kebab-chicken-goat.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "kebabs-lamb-chops",
@@ -1318,9 +1160,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/lamb-chops.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-tandoori-pomfret",
@@ -1334,9 +1174,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/tandoori-pomfret.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-tandoori-jhinga",
@@ -1350,14 +1188,12 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/tandoori-jhinga.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kebabs-whole-tandoori-chicken",
-    "name": "Whole Tandoori Chicken",
-    "description": "Delicious Whole Tandoori Chicken prepared in authentic kebabs style.",
+    "name": "Whole Grilled Chicken",
+    "description": "Delicious Whole Grilled Chicken prepared in authentic kebabs style.",
     "variants": [
       {
         "type": "base",
@@ -1366,9 +1202,7 @@
     ],
     "category": "KEBABS",
     "imageUrl": "kebabs/whole-tandoori-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "indo-chinese-street-style-hakka-noodles-veg-egg-chicken",
@@ -1387,10 +1221,7 @@
     ],
     "category": "INDO CHINESE",
     "imageUrl": "indo-chinese/street-style-hakka-noodles-veg-egg-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "indo-chinese-burnt-garlic-chili-noodles-veg-egg-chicken",
@@ -1409,11 +1240,7 @@
     ],
     "category": "INDO CHINESE",
     "imageUrl": "indo-chinese/burnt-garlic-chili-noodles-veg-egg-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "spicy",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "spicy", "non-veg"]
   },
   {
     "id": "indo-chinese-street-style-fried-rice-veg-egg-chicken",
@@ -1432,10 +1259,7 @@
     ],
     "category": "INDO CHINESE",
     "imageUrl": "indo-chinese/street-style-fried-rice-veg-egg-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "indo-chinese-burnt-garlic-chili-fried-rice-veg-egg-chicken",
@@ -1454,11 +1278,7 @@
     ],
     "category": "INDO CHINESE",
     "imageUrl": "indo-chinese/burnt-garlic-chili-fried-rice-veg-egg-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "spicy",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "spicy", "non-veg"]
   },
   {
     "id": "indo-chinese-mix-noodles-egg-chicken-shrimp",
@@ -1472,9 +1292,7 @@
     ],
     "category": "INDO CHINESE",
     "imageUrl": "indo-chinese/mix-noodles-egg-chicken-shrimp.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "indo-chinese-mix-fried-rice-egg-chicken-shrimp",
@@ -1488,9 +1306,7 @@
     ],
     "category": "INDO CHINESE",
     "imageUrl": "indo-chinese/mix-fried-rice-egg-chicken-shrimp.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-vegetable-dum-biryani",
@@ -1506,11 +1322,9 @@
         "price": 36.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/vegetable-dum-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-paneer-fry-biryani",
@@ -1526,11 +1340,9 @@
         "price": 42.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/paneer-fry-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-paneer-65-dum-biryani",
@@ -1546,11 +1358,9 @@
         "price": 42.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/paneer-65-dum-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-egg-biryani",
@@ -1563,14 +1373,12 @@
       },
       {
         "type": "family",
-        "price": 36.99
+        "price": 39.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/egg-biryani.jpg",
-    "tags": [
-      "egg"
-    ]
+    "tags": ["egg"]
   },
   {
     "id": "biryanis-and-pulavs-veg-kheema-biryani",
@@ -1586,11 +1394,9 @@
         "price": 43.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/veg-kheema-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-hyderabadi-chicken-dum-biryani",
@@ -1606,11 +1412,9 @@
         "price": 42.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/hyderabadi-chicken-dum-biryani.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-boneless-chicken-biryani",
@@ -1626,16 +1430,14 @@
         "price": 47.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/boneless-chicken-biryani.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-special-chicken-biryani",
-    "name": "Special Chicken Biryani",
-    "description": "Delicious Special Chicken Biryani prepared in authentic biryanis and pulavs style.",
+    "name": "HBK Spl Chicken Biryani",
+    "description": "Delicious HBK Spl Chicken Biryani prepared in authentic biryanis and pulavs style.",
     "variants": [
       {
         "type": "base",
@@ -1646,11 +1448,9 @@
         "price": 49.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/special-chicken-biryani.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-hyderabadi-goat-dum-biryani",
@@ -1666,11 +1466,9 @@
         "price": 51.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/hyderabadi-goat-dum-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-hyderabadi-goat-mughlai-biryani",
@@ -1686,11 +1484,9 @@
         "price": 51.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/hyderabadi-goat-mughlai-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-goat-kheema-dum-biryani",
@@ -1706,11 +1502,9 @@
         "price": 58.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/goat-kheema-dum-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-shrimp-biryani",
@@ -1726,11 +1520,9 @@
         "price": 51.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/shrimp-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-special-fish-biryani",
@@ -1746,11 +1538,9 @@
         "price": 51.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/special-fish-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-mutton-fry-biryani",
@@ -1766,11 +1556,9 @@
         "price": 56.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/mutton-fry-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-chicken-fry-biryani",
@@ -1786,11 +1574,9 @@
         "price": 47.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/chicken-fry-biryani.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-boneless-mutton-fry-dum-biryani",
@@ -1806,11 +1592,9 @@
         "price": 58.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/boneless-mutton-fry-dum-biryani.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-nattukodi-dum-biryani-country-chicken",
@@ -1826,22 +1610,9 @@
         "price": 49.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/nattukodi-dum-biryani-country-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
-  },
-  {
-    "id": "biryanis-and-pulavs-pulavs",
-    "name": "Pulavs:",
-    "description": "Delicious Pulavs: prepared in authentic biryanis and pulavs style.",
-    "variants": [],
-    "category": "BIRYANIS AND PULAVS",
-    "imageUrl": "biryanis-and-pulavs/pulavs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-paneer-fry-pulav",
@@ -1857,11 +1628,9 @@
         "price": 42.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/paneer-fry-pulav.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-guthi-vankaya-pulav",
@@ -1877,11 +1646,9 @@
         "price": 42.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/guthi-vankaya-pulav.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-kofta-pulav",
@@ -1897,11 +1664,9 @@
         "price": 42.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/kofta-pulav.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-green-mirchi-paneer-pulav",
@@ -1917,11 +1682,9 @@
         "price": 42.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/green-mirchi-paneer-pulav.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-green-mirchi-chicken-pulav",
@@ -1937,11 +1700,9 @@
         "price": 47.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/green-mirchi-chicken-pulav.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-chicken-fry-pulav",
@@ -1957,11 +1718,9 @@
         "price": 47.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/chicken-fry-pulav.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-mutton-fry-pulav-bone-in",
@@ -1977,11 +1736,9 @@
         "price": 53.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/mutton-fry-pulav-bone-in.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-boneless-chicken-pulav",
@@ -1997,11 +1754,9 @@
         "price": 47.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/boneless-chicken-pulav.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "biryanis-and-pulavs-boneless-mutton-fry-pulav",
@@ -2017,11 +1772,9 @@
         "price": 53.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "PULAVS",
     "imageUrl": "biryanis-and-pulavs/boneless-mutton-fry-pulav.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-ulavacharu-gongura-biryani-veg-paneer",
@@ -2043,12 +1796,9 @@
         "price": 44.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/ulavacharu-gongura-biryani-veg-paneer.jpg",
-    "tags": [
-      "contains-egg",
-      "veg"
-    ]
+    "tags": ["contains-egg", "veg"]
   },
   {
     "id": "biryanis-and-pulavs-ulavacharu-gongura-biryani-shrimp-fish",
@@ -2064,11 +1814,9 @@
         "price": 55.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/ulavacharu-gongura-biryani-shrimp-fish.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "biryanis-and-pulavs-ulavacharu-gongura-biryani-chicken-goat-egg",
@@ -2097,12 +1845,9 @@
         "price": 41.99
       }
     ],
-    "category": "BIRYANIS AND PULAVS",
+    "category": "BIRYANIS",
     "imageUrl": "biryanis-and-pulavs/ulavacharu-gongura-biryani-chicken-goat-egg.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "kids-specials-jeera-rice",
@@ -2116,9 +1861,7 @@
     ],
     "category": "KIDS SPECIALS",
     "imageUrl": "kids-specials/jeera-rice.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "kids-specials-paneer-rice",
@@ -2132,9 +1875,7 @@
     ],
     "category": "KIDS SPECIALS",
     "imageUrl": "kids-specials/paneer-rice.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "kids-specials-butter-chicken-rice",
@@ -2148,9 +1889,7 @@
     ],
     "category": "KIDS SPECIALS",
     "imageUrl": "kids-specials/butter-chicken-rice.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "kids-specials-kids-chicken-kebab-3pieces",
@@ -2164,9 +1903,7 @@
     ],
     "category": "KIDS SPECIALS",
     "imageUrl": "kids-specials/kids-chicken-kebab-3pieces.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "ethinic-entrees-saag-aloo-chicken",
@@ -2185,10 +1922,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/saag-aloo-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-tikka-masalas-paneer-chicken-lamb-shrimp",
@@ -2210,10 +1944,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/tikka-masalas-paneer-chicken-lamb-shrimp.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-hyderabadi-dalcha-veg-mutton",
@@ -2229,10 +1960,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/hyderabadi-dalcha-veg-mutton.jpg",
-    "tags": [
-      "contains-egg",
-      "veg"
-    ]
+    "tags": ["contains-egg", "veg"]
   },
   {
     "id": "ethinic-entrees-korma-veg-navartan-paneer-chicken-shrimp",
@@ -2260,10 +1988,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/korma-veg-navartan-paneer-chicken-shrimp.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-hyderabadi-dum-ka-gravy-veg-chicken-mutton-prawn",
@@ -2285,10 +2010,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/hyderabadi-dum-ka-gravy-veg-chicken-mutton-prawn.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-kheema-veg-mutton",
@@ -2304,10 +2026,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/kheema-veg-mutton.jpg",
-    "tags": [
-      "contains-egg",
-      "veg"
-    ]
+    "tags": ["contains-egg", "veg"]
   },
   {
     "id": "ethinic-entrees-gongura-sorrel-paneer-chicken-mutton-shrimp",
@@ -2329,10 +2048,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/gongura-sorrel-paneer-chicken-mutton-shrimp.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-chettinadu-curry-veg-chicken-mutton-fish",
@@ -2354,10 +2070,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/chettinadu-curry-veg-chicken-mutton-fish.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-ankapur-chicken-mutton-rara-nellore-fish-curry",
@@ -2376,10 +2089,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/ankapur-chicken-mutton-rara-nellore-fish-curry.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-dum-ka-paneer-egg-chicken-goat",
@@ -2401,10 +2111,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/dum-ka-paneer-egg-chicken-goat.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-tomato-tadka-dal",
@@ -2418,9 +2125,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/tomato-tadka-dal.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-kaju-cury-paneer-chicken",
@@ -2439,10 +2144,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/kaju-cury-paneer-chicken.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-ramba-chicken",
@@ -2456,9 +2158,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/ramba-chicken.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "ethinic-entrees-aloo-mutter-mushroom-gobi-masala",
@@ -2472,9 +2172,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/aloo-mutter-mushroom-gobi-masala.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-paneer-mutter-palak-shahi-curry",
@@ -2488,9 +2186,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/paneer-mutter-palak-shahi-curry.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-egg-pulusu-egg-masala",
@@ -2504,9 +2200,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/egg-pulusu-egg-masala.jpg",
-    "tags": [
-      "egg"
-    ]
+    "tags": ["egg"]
   },
   {
     "id": "ethinic-entrees-malai-kofta",
@@ -2520,9 +2214,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/malai-kofta.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-gutti-vankaya",
@@ -2536,9 +2228,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/gutti-vankaya.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-chana-masala",
@@ -2552,9 +2242,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/chana-masala.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-mirchi-ka-salan",
@@ -2568,9 +2256,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/mirchi-ka-salan.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-hyd-mutton-masala",
@@ -2584,9 +2270,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/hyd-mutton-masala.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "ethinic-entrees-andhra-style-chicken-goat-curry",
@@ -2602,10 +2286,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/andhra-style-chicken-goat-curry.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "ethinic-entrees-goat-rogan-josh",
@@ -2619,9 +2300,7 @@
     ],
     "category": "ETHINIC ENTREES",
     "imageUrl": "ethinic-entrees/goat-rogan-josh.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-plain-naan",
@@ -2635,9 +2314,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/plain-naan.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-butter-naan",
@@ -2651,9 +2328,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/butter-naan.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-bullet-naan",
@@ -2667,9 +2342,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/bullet-naan.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-garlic-naan",
@@ -2683,9 +2356,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/garlic-naan.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-onion-kulcha",
@@ -2699,9 +2370,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/onion-kulcha.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-paratha-2pcs",
@@ -2715,9 +2384,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/paratha-2pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-chef-s-special-naan-paneer",
@@ -2731,9 +2398,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/chef-s-special-naan-paneer.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-chicken-kheema-naan",
@@ -2747,9 +2412,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/chicken-kheema-naan.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "breads-accompainments-mutton-kheema-naan",
@@ -2763,9 +2426,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/mutton-kheema-naan.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-kothu-paratta-veg-egg-chicken-goat",
@@ -2787,10 +2448,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/kothu-paratta-veg-egg-chicken-goat.jpg",
-    "tags": [
-      "contains-egg",
-      "non-veg"
-    ]
+    "tags": ["contains-egg", "non-veg"]
   },
   {
     "id": "breads-accompainments-chapati-2pcs",
@@ -2804,9 +2462,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/chapati-2pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-rumali-roti",
@@ -2820,9 +2476,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/rumali-roti.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "breads-accompainments-phulka-2pcs",
@@ -2836,9 +2490,7 @@
     ],
     "category": "BREADS & ACCOMPAINMENTS",
     "imageUrl": "breads-accompainments/phulka-2pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-qubani-ka-meetha",
@@ -2852,9 +2504,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/qubani-ka-meetha.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-double-ka-meetha",
@@ -2868,9 +2518,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/double-ka-meetha.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-rasamalai",
@@ -2884,9 +2532,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/rasamalai.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-gulab-jamun",
@@ -2900,9 +2546,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/gulab-jamun.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-kaddu-ka-kheer",
@@ -2916,9 +2560,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/kaddu-ka-kheer.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-pine-apple-kesari",
@@ -2932,9 +2574,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/pine-apple-kesari.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-brownie-w-ice-cream",
@@ -2948,9 +2588,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/brownie-w-ice-cream.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-icecreams",
@@ -2959,9 +2597,7 @@
     "variants": [],
     "category": "DESSERTS",
     "imageUrl": "desserts/icecreams.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-vanilla",
@@ -2975,9 +2611,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/vanilla.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-chocolate",
@@ -2991,9 +2625,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/chocolate.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-strawberry",
@@ -3007,9 +2639,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/strawberry.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "desserts-falooda",
@@ -3023,9 +2653,7 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/falooda.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "combos-veg-combo",
@@ -3034,9 +2662,7 @@
     "variants": [],
     "category": "COMBOS",
     "imageUrl": "combos/veg-combo.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "combos-chicken-combo",
@@ -3045,9 +2671,7 @@
     "variants": [],
     "category": "COMBOS",
     "imageUrl": "combos/chicken-combo.jpg",
-    "tags": [
-      "non-veg"
-    ]
+    "tags": ["non-veg"]
   },
   {
     "id": "combos-mutton-combo",
@@ -3056,37 +2680,18 @@
     "variants": [],
     "category": "COMBOS",
     "imageUrl": "combos/mutton-combo.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-cold",
-    "name": "Cold",
+    "name": "Cold:",
     "description": "Delicious Cold prepared in authentic beverages style.",
     "variants": [],
     "category": "BEVERAGES",
     "imageUrl": "beverages/cold.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
-  {
-    "id": "beverages-soft-drinks",
-    "name": "Soft Drinks",
-    "description": "Delicious Soft Drinks prepared in authentic beverages style.",
-    "variants": [
-      {
-        "type": "base",
-        "price": 2.49
-      }
-    ],
-    "category": "BEVERAGES",
-    "imageUrl": "beverages/soft-drinks.jpg",
-    "tags": [
-      "veg"
-    ]
-  },
+  
   {
     "id": "beverages-thums-up",
     "name": "Thums Up",
@@ -3099,9 +2704,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/thums-up.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-limca",
@@ -3115,9 +2718,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/limca.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-mango-lassi",
@@ -3131,9 +2732,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/mango-lassi.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-chikoo-milkshake",
@@ -3147,9 +2746,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/chikoo-milkshake.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-strawberry-milkshake",
@@ -3163,9 +2760,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/strawberry-milkshake.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-rose-milk",
@@ -3179,9 +2774,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/rose-milk.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-badam-milk",
@@ -3195,9 +2788,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/badam-milk.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-orange-juice",
@@ -3211,9 +2802,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/orange-juice.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-sugarcane-juice",
@@ -3227,20 +2816,16 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/sugarcane-juice.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-hot",
-    "name": "Hot",
+    "name": "Hot:",
     "description": "Delicious Hot prepared in authentic beverages style.",
     "variants": [],
     "category": "BEVERAGES",
     "imageUrl": "beverages/hot.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "beverages-irani-chai",
@@ -3256,10 +2841,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/irani-chai.jpg",
-    "tags": [
-      "contains-egg",
-      "veg"
-    ]
+    "tags": ["contains-egg", "veg"]
   },
   {
     "id": "beverages-south-indian-coffee",
@@ -3273,9 +2855,7 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/south-indian-coffee.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-idli-3pcs",
@@ -3289,9 +2869,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/idli-3pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-medhu-vada-3pcs",
@@ -3305,9 +2883,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/medhu-vada-3pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-2idli-1vada",
@@ -3321,9 +2897,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/2idli-1vada.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-sambar-vada-2pcs",
@@ -3337,9 +2911,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/sambar-vada-2pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-sambar-idli-2pcs",
@@ -3353,9 +2925,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/sambar-idli-2pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-punugulu-10pcs",
@@ -3369,9 +2939,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/punugulu-10pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-plain-dosa",
@@ -3385,9 +2953,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/plain-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-masala-dosa",
@@ -3401,9 +2967,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/masala-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-ghee-dosa",
@@ -3417,9 +2981,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/ghee-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-karam-dosa",
@@ -3433,9 +2995,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/karam-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-ghee-karam-dosa",
@@ -3449,9 +3009,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/ghee-karam-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-benne-dosa",
@@ -3465,9 +3023,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/benne-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-podi-dosa",
@@ -3481,9 +3037,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/podi-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-set-dosa",
@@ -3497,9 +3051,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/set-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-onion-dosa",
@@ -3513,9 +3065,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/onion-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-onion-masala-dosa",
@@ -3529,9 +3079,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/onion-masala-dosa.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-peserattu-with-upma",
@@ -3545,9 +3093,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/peserattu-with-upma.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-quick-tiffin-2-idli-1vada-pongal",
@@ -3561,9 +3107,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/quick-tiffin-2-idli-1vada-pongal.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-ghee-pongal",
@@ -3577,9 +3121,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/ghee-pongal.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "tiffins-vegetable-upma",
@@ -3593,9 +3135,7 @@
     ],
     "category": "TIFFINS",
     "imageUrl": "tiffins/vegetable-upma.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "chats-pani-puri",
@@ -3609,9 +3149,7 @@
     ],
     "category": "CHATS",
     "imageUrl": "chats/pani-puri.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "chats-masala-puri",
@@ -3625,9 +3163,7 @@
     ],
     "category": "CHATS",
     "imageUrl": "chats/masala-puri.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "chats-dahi-puri",
@@ -3641,9 +3177,7 @@
     ],
     "category": "CHATS",
     "imageUrl": "chats/dahi-puri.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "chats-papdi-chat",
@@ -3657,9 +3191,7 @@
     ],
     "category": "CHATS",
     "imageUrl": "chats/papdi-chat.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "chats-bhel-puri",
@@ -3673,9 +3205,7 @@
     ],
     "category": "CHATS",
     "imageUrl": "chats/bhel-puri.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "chats-pav-bhaji",
@@ -3689,9 +3219,7 @@
     ],
     "category": "CHATS",
     "imageUrl": "chats/pav-bhaji.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "chats-samosa-chat",
@@ -3705,9 +3233,7 @@
     ],
     "category": "CHATS",
     "imageUrl": "chats/samosa-chat.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-punugulu",
@@ -3721,9 +3247,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/punugulu.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-mysore-bonda",
@@ -3737,9 +3261,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/mysore-bonda.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-plantain-bajji",
@@ -3753,9 +3275,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/plantain-bajji.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-masala-vada",
@@ -3769,9 +3289,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/masala-vada.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-veg-samosa-2pcs",
@@ -3785,9 +3303,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/veg-samosa-2pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-onion-samosa-4pcs",
@@ -3801,9 +3317,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/onion-samosa-4pcs.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-onion-pakora",
@@ -3817,9 +3331,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/onion-pakora.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-bun-maska",
@@ -3833,9 +3345,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/bun-maska.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-mirchi-bajji",
@@ -3849,9 +3359,7 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/mirchi-bajji.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   },
   {
     "id": "quick-snacks-cut-mirchi",
@@ -3865,8 +3373,6 @@
     ],
     "category": "QUICK SNACKS",
     "imageUrl": "quick-snacks/cut-mirchi.jpg",
-    "tags": [
-      "veg"
-    ]
+    "tags": ["veg"]
   }
 ]

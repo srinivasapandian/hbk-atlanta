@@ -4,8 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { navItems } from "../data/navData";
 import logoImg from "../assets/house_of_biriyani_and_kebabs.svg";
-import badge1 from "../assets/imgs/halalCertificate.png";
-import badge2 from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
+import badge2 from "../assets/imgs/halalCertificate.png";
+import badge1 from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
 
 const routeToSection = {
   "/": "home",

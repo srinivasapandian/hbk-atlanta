@@ -19,8 +19,8 @@ export default function Hero() {
 
       <div className="hero-content">
         <div className="hero-badges-mobile" aria-hidden="true">
-          <img src={badge1} alt="Halal Certified" />
-          <img src={badge2} alt="35+ Locations" />
+          <img src={badge2} alt="Halal Certified" />
+          <img src={badge1} alt="35+ Locations" />
         </div>
         <p className="hero-sub">WELCOME TO</p>
         <h1 className="hero-title">

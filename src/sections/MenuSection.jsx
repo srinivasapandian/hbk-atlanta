@@ -3,15 +3,37 @@ import "./MenuSection.css";
 import { allCategories, menuGrouped } from "../data/menuData";
 
 const NON_VEG_KEYWORDS = [
-  "chicken","mutton","fish","prawn","shrimp","egg","lamb","beef",
-  "goat","seafood","kheema","keema","shawarma","crab","lobster",
+  "chicken",
+  "mutton",
+  "fish",
+  "prawn",
+  "shrimp",
+  "egg",
+  "lamb",
+  "beef",
+  "goat",
+  "seafood",
+  "kheema",
+  "keema",
+  "shawarma",
+  "crab",
+  "lobster",
 ];
 
 function isNonVegItem(item) {
+  const tags = Array.isArray(item.tags)
+    ? item.tags.map((tag) => String(tag).toLowerCase())
+    : [];
+  if (tags.includes("non-veg") || tags.includes("non veg")) return true;
   if (item.category.toUpperCase().includes("NON VEG")) return true;
   const nameL = item.name.toLowerCase();
   if (nameL.startsWith("veg ")) return false;
   return NON_VEG_KEYWORDS.some((k) => nameL.includes(k));
+}
+
+function isSubheadingItem(item) {
+  const name = typeof item?.name === "string" ? item.name.trim() : "";
+  return name.endsWith(":");
 }
 
 function filterItems(groups, query) {
@@ -59,7 +81,10 @@ export default function MenuSection({ isMobile, standalone = false }) {
     setActiveCategory(cat);
     requestAnimationFrame(() => {
       if (cat === "ALL") {
-        itemsTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        itemsTopRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
         return;
       }
       const el = categoryRefs.current[cat];
@@ -70,7 +95,9 @@ export default function MenuSection({ isMobile, standalone = false }) {
   return (
     <>
       {/* Title — handles top spacing to clear the absolute navbar */}
-      <div className={`menu-title-area${standalone ? " menu-title-area-standalone" : ""}`}>
+      <div
+        className={`menu-title-area${standalone ? " menu-title-area-standalone" : ""}`}
+      >
         <h2 className="menu-title">Menu</h2>
       </div>
 
@@ -154,7 +181,15 @@ export default function MenuSection({ isMobile, standalone = false }) {
                 <h3 className="menu-category-title">{group.category}</h3>
                 <div className="menu-items-grid">
                   {group.items.map((item) => {
+                    const isSubheading = isSubheadingItem(item);
                     const isNonVeg = isNonVegItem(item);
+                    if (isSubheading) {
+                      return (
+                        <div key={item.id} className="menu-subheading">
+                          {item.name}
+                        </div>
+                      );
+                    }
                     return (
                       <article key={item.id} className="menu-item">
                         <div className="menu-item-top-row">
@@ -172,7 +207,9 @@ export default function MenuSection({ isMobile, standalone = false }) {
                             </span>
                           </div>
                           <div className="menu-item-price-col">
-                            <span className="menu-item-price">{item.price}</span>
+                            <span className="menu-item-price">
+                              {item.price}
+                            </span>
                             {item.familyPrice && (
                               <span className="menu-item-family-price">
                                 Family&nbsp;{item.familyPrice}

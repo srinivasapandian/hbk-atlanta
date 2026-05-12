@@ -49,7 +49,9 @@ html {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 .menu-dropdown-btn:focus {
   outline: none;
@@ -101,7 +103,9 @@ html {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s;
 }
 .menu-dropdown-option:hover {
   background: #ffffff10;
@@ -246,6 +250,15 @@ html {
   gap: 12px;
   width: 100%;
 }
+.menu-subheading {
+  grid-column: 1 / -1;
+  color: #f5c400;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  font-family: var(--font-judson);
+  margin: 4px 0 0;
+  font-weight: 600;
+}
 .menu-item {
   background: #ffffff0d;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -366,7 +379,6 @@ html {
     background: rgba(10, 8, 4, 0.97);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    
   }
   .menu-section {
     margin-top: 0;

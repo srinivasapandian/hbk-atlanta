@@ -37,7 +37,7 @@ export default function ContactStrip() {
 
         <div className="contact-strip-center">
           <img
-            src={halalBadge}
+            src={locationsBadge}
             alt="Halal Certified"
             className="contact-strip-badge"
           />
@@ -47,7 +47,7 @@ export default function ContactStrip() {
             className="contact-strip-logo"
           />
           <img
-            src={locationsBadge}
+            src={halalBadge}
             alt="30+ Locations"
             className="contact-strip-badge"
           />

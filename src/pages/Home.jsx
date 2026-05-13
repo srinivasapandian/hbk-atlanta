@@ -290,7 +290,7 @@ function MenuPreview() {
             </h2>
           </div>
           <div className="reveal delay-2">
-            <p className="hb-note">Updated from current menu data</p>
+            
             <Link className="hb-link" to="/menu">
               View full menu <span aria-hidden="true">-&gt;</span>
             </Link>
@@ -438,16 +438,13 @@ function VisitSection() {
         <div className="hb-contact-lines reveal delay-2">
           <p>
             <span>Address</span>
-            11030 Medlock Bridge Rd - Johns Creek - GA 30097
+            11030 Medlock Bridge Rd, Johns Creek, GA 30097
           </p>
           <p>
             <span>Phone</span>
-            +1 972 294 5002
+            972-294-5002 , 972-294-5044
           </p>
-          <p>
-            <span>Catering</span>
-            +1 972 294 5044
-          </p>
+          
           <p>
             <span>Hours</span>
             Mon-Sun - 11.00 - 22.00
@@ -455,7 +452,7 @@ function VisitSection() {
         </div>
         <a
           className="hb-btn hb-btn-gold reveal delay-3"
-          href="https://maps.google.com/maps?q=11030+Medlock+Bridge+Rd+Johns+Creek+GA+30097"
+          href="https://maps.app.goo.gl/Xe18NtzXKsyCeRmC7"
           target="_blank"
           rel="noopener noreferrer"
         >

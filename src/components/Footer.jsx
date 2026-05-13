@@ -1,6 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
+import logoImg from "../assets/hbkReference/logo-center.png";
 import maghilImg from "../assets/imgs/maghil.png";
+
+const MAP_URL = "https://maps.app.goo.gl/Xe18NtzXKsyCeRmC7";
+const MAP_EMBED_URL = "https://www.google.com/maps?q=11030%20Medlock%20Bridge%20Rd%2C%20Johns%20Creek%2C%20GA%2030097&output=embed";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -16,9 +20,13 @@ export default function Footer() {
       <div className="hb-footer-wrap">
         <div className="hb-footer-top">
           <div className="hb-footer-brand">
-            <h2>
-              HBK <em>Atlanta.</em>
-            </h2>
+            <Link to="/" className="hb-footer-logo-link" aria-label="House of Biryanis and Kebabs home">
+              <img
+                src={logoImg}
+                alt="House of Biryanis and Kebabs"
+                className="hb-footer-logo"
+              />
+            </Link>
             <p>
               House of Biryanis &amp; Kebabs. A modern South Indian table on
               Medlock Bridge, serving Johns Creek and the Atlanta community.
@@ -67,16 +75,30 @@ export default function Footer() {
             <h3>Find us</h3>
             <span>11030 Medlock Bridge Rd</span>
             <span>Johns Creek, GA 30097</span>
-            <a href="tel:+19722945002">+1 972 294 5002</a>
+            <a href="tel:+19722945002">972-294-5002</a>
+            <a href="tel:+19722945044">972-294-5044</a>
             <span>Mon-Sun - 11.00 - 22.00</span>
-            <a
-              href="https://maps.google.com/maps?q=11030+Medlock+Bridge+Rd+Johns+Creek+GA+30097"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open maps
-            </a>
           </div>
+        </div>
+
+        <div className="hb-footer-map-section">
+          <div className="hb-footer-map">
+            <iframe
+              title="House of Biryanis and Kebabs location"
+              src={MAP_EMBED_URL}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+          <a
+            className="hb-footer-map-link"
+            href={MAP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open maps
+          </a>
         </div>
 
         <div className="hb-footer-bottom">

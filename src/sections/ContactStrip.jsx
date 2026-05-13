@@ -68,10 +68,12 @@ export default function ContactStrip() {
           </span>
           <div className="contact-strip-text-wrap">
             <p className="contact-strip-label">Have Question?</p>
-            <p className="contact-strip-text contact-strip-text-strong">
-              FREE 972-294-5002,
-            </p>
-            <p className="contact-strip-text">972-294-5044</p>
+            <a className="contact-strip-text contact-strip-text-strong" href="tel:+19722945002">
+              972-294-5002
+            </a>
+            <a className="contact-strip-text" href="tel:+19722945044">
+              972-294-5044
+            </a>
           </div>
         </div>
       </div>

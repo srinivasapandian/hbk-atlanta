@@ -1,9 +1,10 @@
-import { useState, useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import './ContactSection.css';
 import Button from '../components/Button';
 
 const EMPTY = { name: '', email: '', phone: '', message: '' };
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAP_EMBED_URL = 'https://www.google.com/maps?q=11030%20Medlock%20Bridge%20Rd%2C%20Johns%20Creek%2C%20GA%2030097&output=embed';
 
 function validate(form) {
   const errors = {};
@@ -48,15 +49,19 @@ export default function ContactSection() {
       <div className="contact-top-grid">
         <article className="contact-card">
           <h2 className="contact-card-title">Location</h2>
-          <p className="contact-card-text">Magilhub India Private Limited</p>
-          <p className="contact-card-text">Madurai, Tamil Nadu, India</p>
-          <p className="contact-card-text">Mon – Sun: 11:00 AM – 10:00 PM</p>
+          <p className="contact-card-text">House of Biryanis &amp; Kebabs</p>
+          <p className="contact-card-text">11030 Medlock Bridge Rd</p>
+          <p className="contact-card-text">Johns Creek, GA 30097</p>
+          <p className="contact-card-text">Mon-Sun: 11:00 AM - 10:00 PM</p>
         </article>
         <article className="contact-card">
-          <h2 className="contact-card-title">Address</h2>
-          <p className="contact-card-text">Magilhub India Private Limited</p>
-          <p className="contact-card-text">Madurai, Tamil Nadu</p>
-          <p className="contact-card-text">India</p>
+          <h2 className="contact-card-title">Phone</h2>
+          <p className="contact-card-text">
+            <a href="tel:+19722945002">972-294-5002</a>
+          </p>
+          <p className="contact-card-text">
+            <a href="tel:+19722945044">972-294-5044</a>
+          </p>
         </article>
       </div>
 
@@ -64,8 +69,8 @@ export default function ContactSection() {
         <h2 className="contact-block-title">Find Us on Map</h2>
         <div className="contact-map-frame">
           <iframe
-            title="Restaurant location map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0170179997867!2d78.14124307505293!3d9.932540374191774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c530ee0fd7e5%3A0x8036889aed46ab5!2sMagilhub%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1774862224931!5m2!1sen!2sin"
+            title="House of Biryanis and Kebabs location map"
+            src={MAP_EMBED_URL}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen

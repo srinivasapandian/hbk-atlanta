@@ -143,8 +143,8 @@
 .hb-btn:hover,
 .hb-link:hover {
   border-color: var(--hb-gold);
-  background: var(--color-logo);
-  color: var(--hb-ink);
+  color: var(--color-logo);
+  
   transform: translateY(-1px);
 }
 

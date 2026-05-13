@@ -16,21 +16,21 @@
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: 56px;
-  padding-bottom: 64px;
-  border-bottom: 1px solid rgba(239, 231, 218, 0.14);
+  padding-bottom: 48px;
 }
 
-.hb-footer-brand h2 {
+.hb-footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
   margin: 0 0 18px;
-  color: #efe7da;
-  font-family: var(--font-cormorant), var(--font-judson), "EB Garamond", Georgia, serif;
-  font-size: clamp(44px, 5vw, 58px);
-  font-weight: 400;
-  line-height: 1;
+  text-decoration: none;
 }
 
-.hb-footer-brand h2 em {
-  color: var(--color-logo);
+.hb-footer-logo {
+  width: clamp(112px, 12vw, 156px);
+  height: auto;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.42));
 }
 
 .hb-footer-brand p {
@@ -112,6 +112,40 @@
   color: var(--color-logo);
 }
 
+.hb-footer-map-section {
+  display: grid;
+  gap: 14px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid rgba(239, 231, 218, 0.14);
+}
+
+.hb-footer-map {
+  width: 100%;
+  height: clamp(260px, 28vw, 380px);
+  overflow: hidden;
+  border: 1px solid rgba(239, 231, 218, 0.14);
+  border-radius: 8px;
+  background: #050403;
+}
+
+.hb-footer-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.hb-footer-map-link {
+  width: fit-content;
+  color: #efe7da;
+  font: 400 15px/1.45 var(--font-dm-sans), ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+.hb-footer-map-link:hover {
+  color: var(--color-logo);
+}
+
 .hb-footer-bottom {
   display: flex;
   align-items: center;
@@ -161,6 +195,10 @@
 
   .hb-footer-brand {
     grid-column: auto;
+  }
+
+  .hb-footer-logo {
+    width: 118px;
   }
 
   .hb-footer-bottom {

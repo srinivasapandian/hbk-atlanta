@@ -1,196 +1,120 @@
-import { useState, useEffect } from "react";
-import { createPortal } from "react-dom";
+import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { navItems } from "../data/navData";
-import logoImg from "../assets/house_of_biriyani_and_kebabs.svg";
-import badge2 from "../assets/imgs/halalCertificate.png";
-import badge1 from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
+import logoImg from "../assets/hbkReference/logo-center.png";
+import badgeHalal from "../assets/hbkReference/badge-2.png";
+import badgeLocations from "../assets/hbkReference/badge-1.png";
+
+const navItems = [
+  { name: "Home", id: "home", path: "/" },
+  { name: "About Us", id: "house", path: "/about-us" },
+  { name: "Menu", id: "menu", path: "/menu" },
+  { name: "Catering", id: "services", path: "/services" },
+  { name: "Contact Us", id: "visit", path: "/contact-us" },
+];
 
 const routeToSection = {
   "/": "home",
+  "/home": "home",
+  "/about-us": "house",
   "/menu": "menu",
-  "/events": "events",
-  "/contact": "contact",
+  "/services": "services",
+  "/gallery": "gallery",
+  "/contact-us": "visit",
 };
 
-
-export default function Navbar({ isMobile }) {
+export default function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState(
+    routeToSection[location.pathname] || "home",
+  );
 
   useEffect(() => {
     setActiveSection(routeToSection[location.pathname] || "home");
   }, [location.pathname]);
 
   useEffect(() => {
-    if (!menuOpen) {
-      setDrawerOpen(false);
-      return;
+    function onScroll() {
+      const y = window.scrollY || 0;
+      setIsScrolled(y > 60);
+
+      const bar = document.querySelector(".hb-progress-bar");
+      if (bar) {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = `${max > 0 ? (y / max) * 100 : 0}%`;
+      }
+
+      let current = routeToSection[location.pathname] || "home";
+      document.querySelectorAll("[data-section]").forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.36 && rect.bottom > window.innerHeight * 0.2) {
+          current = section.getAttribute("data-section") || current;
+        }
+      });
+      setActiveSection(current);
     }
-    const id = requestAnimationFrame(() => setDrawerOpen(true));
-    return () => cancelAnimationFrame(id);
-  }, [menuOpen]);
 
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
-  }, [menuOpen]);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [location.pathname]);
 
-  function scrollToSection(sectionId) {
+  function scrollToSection(id) {
     if (location.pathname !== "/") {
       navigate("/", {
-        state: { scrollTo: sectionId, scrollRequestId: Date.now() },
+        state: { scrollTo: id, scrollRequestId: Date.now() },
       });
       return;
     }
-    const el = document.getElementById(sectionId);
+    const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function handleNavClick(item) {
-    setMenuOpen(false);
-    const pageRoutes = {
-      home: "/",
-      menu: "/menu",
-    };
-
-    if (pageRoutes[item.id]) {
-      navigate(pageRoutes[item.id]);
-    } else {
-      scrollToSection(item.id);
+    if (item.id === "menu") {
+      navigate("/menu");
+      return;
     }
+    scrollToSection(item.id);
   }
-
-  function isActive(item) {
-    return item.id === activeSection;
-  }
-
 
   return (
-    <>
-    <nav className="nav">
-      {/* Desktop top row: Halal badge | Logo | 30+ Locations badge */}
-      <div className="nav-top-row">
-        <div className="nav-badge-group">
-          <img src={badge1} alt="35 plus locations" className="nav-badge-img" />
-          <Link
-            to="/"
-            className="nav-logo-link"
-            onClick={() => setMenuOpen(false)}
-          >
-            <img
-              src={logoImg}
-              alt="House of Biryanis & Kebabs"
-              className="navbar-logo-img"
-            />
-          </Link>
-          <img src={badge2} alt="Halal certified" className="nav-badge-img" />
-        </div>
-      </div>
-
-      {/* Mobile header layout */}
-      <div className="header-top-bar">
-        <span className="header-left-spacer" aria-hidden="true" />
-        <Link
-          to="/"
-          className="header-main-logo"
-          onClick={() => setMenuOpen(false)}
-        >
-          <img
-            src={logoImg}
-            alt="House of Biryanis & Kebabs"
-            className="header-main-logo-img"
-          />
+    <div className={`hb-navwrap${isScrolled ? " is-scrolled" : ""}`}>
+      <div className="hb-nav-badges">
+        <Link to="/" className="hb-badge hb-badge-side" aria-label="30 plus locations">
+          <img src={badgeLocations} alt="30 plus locations" />
         </Link>
-        <button
-          className="hamburger-btn"
-          aria-label="Open menu"
-          aria-expanded={menuOpen}
-          aria-controls="mobile-drawer"
-          onClick={() => setMenuOpen(true)}
-          type="button"
-        >
-          <span className="hamburger-lines" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
-        </button>
-      </div>
-      <div className="header-side-badges">
-        <img src={badge1} alt="35 plus locations" />
-        <img src={badge2} alt="Halal certified" />
+        <Link to="/" className="hb-badge hb-badge-center" aria-label="House of Biryanis and Kebabs">
+          <img src={logoImg} alt="House of Biryanis and Kebabs" />
+        </Link>
+        <Link to="/" className="hb-badge hb-badge-side" aria-label="Halal certified">
+          <img src={badgeHalal} alt="Halal certified" />
+        </Link>
       </div>
 
-      {/* Bottom row: nav links + order online button */}
-      <div className="nav-bottom-row">
-        <div className="nav-links">
+      <nav className="hb-nav" aria-label="Primary menu">
+        <div className="hb-nav-links">
           {navItems.map((item) => (
             <button
-              key={item.id}
-              className={`nav-link${isActive(item) ? " nav-link-active" : ""}`}
-              onClick={() => handleNavClick(item)}
               type="button"
+              key={item.id}
+              className={`hb-nav-link${activeSection === item.id ? " is-active" : ""}`}
+              onClick={() => handleNavClick(item)}
             >
               {item.name}
             </button>
           ))}
         </div>
         <button
-          className="order-btn-wrapper"
-          style={{ cursor: "default" }}
-          onClick={(e) => e.preventDefault()}
           type="button"
+          className="hb-nav-order"
+          onClick={(event) => event.preventDefault()}
         >
           Order Online
         </button>
-      </div>
-
-    </nav>
-
-      {/* Mobile drawer rendered in body to escape nav stacking context */}
-      {menuOpen && createPortal(
-        <>
-          <div
-            className={`backdrop${drawerOpen ? " backdrop-open" : ""}`}
-            onClick={() => setMenuOpen(false)}
-            role="presentation"
-          />
-          <aside
-            className={`drawer${drawerOpen ? " drawer-open" : ""}`}
-            id="mobile-drawer"
-            aria-hidden={!menuOpen}
-          >
-            <button
-              className="drawer-close"
-              aria-label="Close menu"
-            onClick={() => setMenuOpen(false)}
-            type="button"
-          >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <nav className="drawer-nav">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  className={`drawer-link${
-                    isActive(item) ? " drawer-link-active" : ""
-                  }`}
-                  onClick={() => handleNavClick(item)}
-                  type="button"
-                >
-                  {item.name}
-                </button>
-              ))}
-            </nav>
-          </aside>
-        </>,
-        document.body
-      )}
-    </>
+      </nav>
+    </div>
   );
 }

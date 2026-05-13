@@ -1,125 +1,92 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
-import { quickLinks } from "../data/navData";
 import maghilImg from "../assets/imgs/maghil.png";
 
-const serviceLinks = [
-  "Dine-in",
-  "Take way",
-  "Delivery",
-  "Catering",
-  "Private Events",
-];
-const newsletterItems = ["Offer", "Updates", "Announcements"];
-
-export default function Footer({ isMobile }) {
+export default function Footer() {
   const navigate = useNavigate();
 
-  function handleQuickLink(name) {
-    const pageMap = {
-      Home: "/",
-      "About Us": "/#about",
-      Menu: "/#menu",
-      Blog: "/",
-      Events: "/events",
-      "Contact Us": "/contact",
-    };
-    const path = pageMap[name];
-    if (!path) return;
-
-    if (path.startsWith("/#")) {
-      const sectionId = path.substring(2);
-      navigate("/", {
-        state: { scrollTo: sectionId, scrollRequestId: Date.now() },
-      });
-    } else {
-      navigate(path);
-    }
+  function scrollHome(sectionId) {
+    navigate("/", {
+      state: { scrollTo: sectionId, scrollRequestId: Date.now() },
+    });
   }
 
   return (
-    <footer id="contact" className="footer">
-      <div className="footer-container">
-        <div className="footer-top">
-          {/* Column 1 – Quick Link */}
-          <div className="footer-col">
-            <h3 className="footer-col-title">
-              <span className="footer-col-title-text">Quick Link</span>
-            </h3>
-            {quickLinks["Quick Link"].map((name) => (
+    <footer id="contact" className="hb-footer" data-section="contact">
+      <div className="hb-footer-wrap">
+        <div className="hb-footer-top">
+          <div className="hb-footer-brand">
+            <h2>
+              HBK <em>Atlanta.</em>
+            </h2>
+            <p>
+              House of Biryanis &amp; Kebabs. A modern South Indian table on
+              Medlock Bridge, serving Johns Creek and the Atlanta community.
+            </p>
+            <div className="hb-footer-actions">
               <button
-                key={name}
-                className="footer-link footer-link-button"
-                onClick={() => handleQuickLink(name)}
+                type="button"
+                className="hb-footer-btn gold"
+                onClick={(event) => event.preventDefault()}
               >
-                {name}
+                Order online
               </button>
-            ))}
+              <Link className="hb-footer-btn" to="/menu">
+                View menu
+              </Link>
+            </div>
           </div>
 
-          {/* Column 2 – Services */}
-          <div className="footer-col">
-            <h3 className="footer-col-title">
-              <span className="footer-col-title-text">Services</span>
-            </h3>
-            {serviceLinks.map((item) => (
-              <span key={item} className="footer-link">
-                {item}
-              </span>
-            ))}
-          </div>
-
-          {/* Column 3 – Newsletter */}
-          <div className="footer-col">
-            <h3 className="footer-col-title">
-              <span className="footer-col-title-text">Newsletter</span>
-            </h3>
-            {newsletterItems.map((item) => (
-              <span key={item} className="footer-link">
-                {item}
-              </span>
-            ))}
-          </div>
-
-          {/* Column 4 – Lets Stay In Touch */}
-          <div className="footer-col">
-            <h3 className="footer-col-title">Lets Stay In Touch</h3>
-            <button
-              className="order-online-btn"
-              style={{ cursor: "default" }}
-              onClick={(e) => e.preventDefault()}
-            >
-              Order Online
+          <div className="hb-footer-col">
+            <h3>The House</h3>
+            <button type="button" onClick={() => scrollHome("house")}>
+              Our story
+            </button>
+            <Link to="/menu">Menu</Link>
+            <button type="button" onClick={() => scrollHome("services")}>
+              Catering
+            </button>
+            <button type="button" onClick={() => scrollHome("gallery")}>
+              Gallery
+            </button>
+            <button type="button" onClick={() => scrollHome("visit")}>
+              Visit
             </button>
           </div>
+
+          <div className="hb-footer-col">
+            <h3>Services</h3>
+            <span>Dine-in</span>
+            <span>Takeout &amp; pickup</span>
+            <span>Delivery</span>
+            <span>Catering</span>
+            <span>Private events</span>
+          </div>
+
+          <div className="hb-footer-col">
+            <h3>Find us</h3>
+            <span>11030 Medlock Bridge Rd</span>
+            <span>Johns Creek, GA 30097</span>
+            <a href="tel:+19722945002">+1 972 294 5002</a>
+            <span>Mon-Sun - 11.00 - 22.00</span>
+            <a
+              href="https://maps.google.com/maps?q=11030+Medlock+Bridge+Rd+Johns+Creek+GA+30097"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open maps
+            </a>
+          </div>
         </div>
 
-        <div className="footer-map-wrapper">
-          <iframe
-            title="South India Restaurant map"
-            src="https://maps.google.com/maps?q=11030+Medlock+Bridge+Rd+Johns+Creek+GA+30097&output=embed"
-            className="footer-map-frame"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-
-        <p className="footer-policy-links">
-          Privacy Policy | Terms &amp; Conditions | Refund Policy
-        </p>
-
-        <div className="footer-bottom">
-          <span className="footer-copy">© Power By&nbsp;</span>
-          <a
-            href="https://maghil.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-maghil-link"
-          >
-            <img src={maghilImg} alt="Maghil" className="footer-maghil-img" />
-          </a>
-          <span className="footer-copy">&nbsp;2026</span>
+        <div className="hb-footer-bottom">
+          <span>2026 HBK Atlanta - House of Biryanis &amp; Kebabs</span>
+          <span className="hb-footer-powered">
+            Powered by
+            <a href="https://maghil.com" target="_blank" rel="noopener noreferrer">
+              <img src={maghilImg} alt="Maghil" />
+            </a>
+          </span>
         </div>
       </div>
     </footer>

@@ -1,181 +1,170 @@
-.footer {
-  background: var(--color-bg);
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-}
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 60px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.footer-top {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.footer-policy-links {
-  color: var(--color-white);
-  font-size: 14px;
-  font-family: var(--font-dm-sans);
-  text-align: center;
-  margin: 24px 0 10px;
-  line-height: 1.5;
-}
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.footer-col-title {
-  color: var(--color-white);
-  font-size: 22px;
-  font-weight: 700;
-  font-family: var(--font-lateef);
-  letter-spacing: 0.5px;
-  margin: 0 0 16px;
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1px;
-}
-.footer-col-title-text {
-  display: contents;
-}
-.footer-link {
-  color: var(--color-white);
-  font-size: 20px;
-  font-weight: 400;
-  font-family: var(--font-lateef);
-  margin-bottom: 12px;
-  line-height: 1.4;
-  text-decoration: none;
-}
-.footer-link-button {
-  text-align: left;
-  cursor: pointer;
-  background: 0 0;
-  border: none;
-  padding: 0;
-}
-.order-online-btn,
-.order-online-btn:link,
-.order-online-btn:visited {
-  width: fit-content;
-  display: block;
-  background: transparent;
-  color: var(--color-white);
-  font-size: 16px;
-  font-weight: 500;
-  font-family: var(--font-dm-sans);
-  letter-spacing: 0.5px;
-  border: 1px solid var(--color-gold);
-  border-radius: 50px;
-  padding: 8px 32px;
-  text-decoration: none;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-.order-online-btn:hover {
-  background: var(--color-gold);
-  color: #000;
-}
-.footer-map-wrapper {
-  width: 100%;
-  max-width: 100%;
-  margin-top: 32px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.footer-map-frame {
-  width: 100%;
-  height: 200px;
-  border: 0;
-  display: block;
-  border-radius: 12px;
-}
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 4px;
-  padding: 8px 0 0;
-}
-.footer-copy {
-  color: var(--color-white);
-  font-size: 13px;
-  font-family: var(--font-dm-sans);
-  margin: 0;
-}
-.footer-maghil-link {
-  display: inline-flex;
-  align-items: center;
-  line-height: 1;
-}
-.footer-maghil-img {
-  height: 22px;
-  width: auto;
-  display: block;
-  opacity: 0.85;
-  transition: opacity 0.2s;
-}
-.footer-maghil-link:hover .footer-maghil-img {
-  opacity: 1;
+.hb-footer {
+  border-top: 1px solid rgba(239, 231, 218, 0.14);
+  background: #14100d;
+  color: #efe7da;
+  padding: clamp(72px, 9vw, 112px) 0 28px;
 }
 
-@media (width <= 1024px) {
-  .footer-container {
-    padding: 40px 24px;
+.hb-footer-wrap {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 64px);
+}
+
+.hb-footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 56px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid rgba(239, 231, 218, 0.14);
+}
+
+.hb-footer-brand h2 {
+  margin: 0 0 18px;
+  color: #efe7da;
+  font-family: var(--font-playfair), var(--font-judson), Georgia, serif;
+  font-size: clamp(44px, 5vw, 58px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hb-footer-brand h2 em {
+  color: #c9a26b;
+}
+
+.hb-footer-brand p {
+  max-width: 38ch;
+  margin: 0 0 32px;
+  color: rgba(239, 231, 218, 0.64);
+  line-height: 1.65;
+}
+
+.hb-footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hb-footer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 14px 20px;
+  border: 1px solid rgba(239, 231, 218, 0.34);
+  background: transparent;
+  color: #efe7da;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hb-footer-btn.gold {
+  border-color: #c9a26b;
+  color: #c9a26b;
+}
+
+.hb-footer-btn:hover {
+  border-color: #c9a26b;
+  background: #c9a26b;
+  color: #0b0908;
+}
+
+.hb-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hb-footer-col h3 {
+  margin: 0 0 10px;
+  color: #c9a26b;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hb-footer-col a,
+.hb-footer-col span,
+.hb-footer-col button {
+  border: 0;
+  background: transparent;
+  color: #efe7da;
+  font: 400 15px/1.45 var(--font-dm-sans), system-ui, sans-serif;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.hb-footer-col button {
+  cursor: pointer;
+}
+
+.hb-footer-col a:hover,
+.hb-footer-col button:hover {
+  color: #c9a26b;
+}
+
+.hb-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 28px;
+  color: rgba(239, 231, 218, 0.64);
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hb-footer-powered {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hb-footer-powered a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.hb-footer-powered img {
+  width: auto;
+  height: 22px;
+  opacity: 0.86;
+}
+
+@media (max-width: 980px) {
+  .hb-footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 42px 28px;
   }
-  .footer-top {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+
+  .hb-footer-brand {
+    grid-column: span 2;
   }
 }
-@media (width <= 768px) {
-  .footer-container {
-    padding: 32px 16px;
+
+@media (max-width: 640px) {
+  .hb-footer-top {
+    grid-template-columns: 1fr;
+    padding-bottom: 44px;
   }
-  .footer-top {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-    text-align: center;
+
+  .hb-footer-brand {
+    grid-column: auto;
   }
-  .footer-col {
-    align-items: center;
-  }
-  .footer-col-title {
-    font-size: 22px;
-    font-weight: 700;
-    text-align: center;
-    width: 100%;
-  }
-  .footer-link,
-  .footer-link-button {
-    text-align: center;
-  }
-  .order-online-btn {
-    margin: 12px auto 0;
-    padding: 8px 20px;
-  }
-  .footer-map-frame {
-    height: 220px;
-  }
-  .footer-policy-links {
-    font-size: 14px;
-  }
-  .footer-bottom {
-    text-align: center;
-    padding: 16px 0 0;
-  }
-  .footer-copy {
-    font-size: 14px;
+
+  .hb-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 1.5;
   }
 }

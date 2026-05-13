@@ -27,13 +27,32 @@ export default function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(
     routeToSection[location.pathname] || "home",
   );
 
   useEffect(() => {
     setActiveSection(routeToSection[location.pathname] || "home");
+    setIsMenuOpen(false);
   }, [location.pathname]);
+
+  useEffect(() => {
+    if (!isMenuOpen) return undefined;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    function onKeyDown(event) {
+      if (event.key === "Escape") setIsMenuOpen(false);
+    }
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isMenuOpen]);
 
   useEffect(() => {
     function onScroll() {
@@ -73,6 +92,7 @@ export default function Navbar() {
   }
 
   function handleNavClick(item) {
+    setIsMenuOpen(false);
     if (item.id === "menu") {
       navigate("/menu");
       return;
@@ -81,7 +101,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className={`hb-navwrap${isScrolled ? " is-scrolled" : ""}`}>
+    <div className={`hb-navwrap${isScrolled ? " is-scrolled" : ""}${isMenuOpen ? " menu-open" : ""}`}>
       <div className="hb-nav-badges">
         <Link to="/" className="hb-badge hb-badge-side" aria-label="30 plus locations">
           <img src={badgeLocations} alt="30 plus locations" />
@@ -114,7 +134,52 @@ export default function Navbar() {
         >
           Order Online
         </button>
+        <button
+          type="button"
+          className="hb-nav-menu-toggle"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="hb-mobile-menu"
+          onClick={() => setIsMenuOpen((open) => !open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </nav>
+
+      <div
+        className="hb-mobile-scrim"
+        aria-hidden="true"
+        onClick={() => setIsMenuOpen(false)}
+      />
+      <aside
+        id="hb-mobile-menu"
+        className="hb-mobile-menu"
+        aria-hidden={!isMenuOpen}
+      >
+        <button
+          type="button"
+          className="hb-mobile-close"
+          aria-label="Close menu"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <span />
+          <span />
+        </button>
+        <div className="hb-mobile-links">
+          {navItems.map((item) => (
+            <button
+              type="button"
+              key={item.id}
+              className={`hb-mobile-link${activeSection === item.id ? " is-active" : ""}`}
+              onClick={() => handleNavClick(item)}
+            >
+              {item.name}
+            </button>
+          ))}
+        </div>
+      </aside>
     </div>
   );
 }

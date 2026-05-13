@@ -17,7 +17,11 @@ html {
   box-sizing: border-box;
 }
 .menu-title-area-standalone {
-  margin-top: 250px;
+  min-height: 390px;
+  max-width: none;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 68%, #000000 100%),
+    url("../assets/imgs/biriyaniInLeaf.png") center / contain no-repeat;
 }
 
 .menu-title {
@@ -370,7 +374,8 @@ html {
     scroll-padding-top: 90px;
   }
   .menu-title-area-standalone {
-    margin-top: 200px;
+   
+    min-height: 300px;
   }
   .menu-dropdown-outer {
     position: sticky;

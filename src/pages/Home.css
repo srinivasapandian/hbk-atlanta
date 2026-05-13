@@ -415,8 +415,11 @@
   position: absolute;
   top: 28px;
   right: 28px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   width: 138px;
   height: 138px;
   border: 1px solid var(--hb-gold);
@@ -429,18 +432,18 @@
 .hb-stamp strong {
   display: block;
   font-family: var(--hb-serif);
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 1;
 }
 
 .hb-stamp span {
   display: block;
-  margin-top: 6px;
   color: var(--hb-bone);
   font-family: var(--hb-mono);
-  font-size: 9px;
-  letter-spacing: 0.2em;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 

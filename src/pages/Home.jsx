@@ -137,7 +137,7 @@ function Hero() {
       <div className="hb-hero-bg" />
       <div className="hb-wrap hb-hero-inner">
         <div className="hb-hero-copy">
-          <p className="hb-serial">EST. 2018 - JOHNS CREEK, GA - NO. 011030</p>
+          <p className="hb-serial">EST. 2018 - 11030 MEDLOCK BRIDGE RD, JOHNS CREEK, GA 30097</p>
           <h1 className="hb-hero-title">
             <span>House of</span>
             <span className="hb-gold">Biryanis</span>
@@ -171,7 +171,7 @@ function Hero() {
         </div>
 
         <div className="hb-hero-art" aria-hidden="true">
-          <span className="hb-ticker">No. 011030 - Medlock Bridge - Atlanta</span>
+          <span className="hb-ticker">11030 Medlock Bridge Rd - Johns Creek, GA 30097</span>
           <div className="hb-frame hb-frame-main">
             <img src={heroMain} alt="" />
           </div>
@@ -218,8 +218,8 @@ function StorySection() {
             <img src={storySide} alt="Tandoor fired chicken kebab" />
           </div>
           <div className="hb-stamp">
-            <strong>N1</strong>
-            <span>In Atlanta</span>
+            <strong>No. 1</strong>
+            <span>Atlanta</span>
           </div>
         </div>
         <div className="hb-story-body reveal delay-1">

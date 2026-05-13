@@ -1,12 +1,12 @@
-import badge from '../assets/imgs/badge.png';
-import badge2 from '../assets/imgs/badge2.png'
-import knife_spoon from '../assets/imgs/knife_spoon.png';
-import Delivery from '../assets/imgs/delivery.png';
-import calender from '../assets/imgs/calender.png';
+import premiumQuality from '../assets/HBK Images/kebabs Platter.jpeg';
+import delivery from '../assets/HBK Images/combo.jpeg';
+import numberOne from '../assets/HBK Images/Mutton Biryani.jpeg';
+import catering from '../assets/HBK Images/naan thali.jpeg';
+import dineIn from '../assets/HBK Images/Cooking.jpeg';
 export const services = [
-  { icon: badge2, label: 'Premium Quality' },
-  { icon: Delivery, label: 'Free Delivery' },
-  { icon: badge, label: 'No 1 in USA' },
-  { icon: calender, label: 'Catering' },
-  { icon: knife_spoon, label: 'Best Dine-In Services' },
+  { icon: premiumQuality, label: 'Premium Quality' },
+  { icon: delivery, label: 'Free Delivery' },
+  { icon: numberOne, label: 'No 1 in USA' },
+  { icon: catering, label: 'Catering' },
+  { icon: dineIn, label: 'Best Dine-In Services' },
 ];

@@ -1,10 +1,10 @@
-import gallery1 from "../assets/gallery/gallery-1.jpg";
-import gallery2 from "../assets/gallery/gallery-2.jpg";
-import gallery3 from "../assets/gallery/gallery-3.jpg";
-import gallery4 from "../assets/gallery/gallery-4.jpg";
-import gallery5 from "../assets/gallery/gallery-5.jpg";
-import gallery6 from "../assets/gallery/gallery-6.jpg";
-import gallery7 from "../assets/gallery/gallery-7.jpg";
+import gallery1 from "../assets/HBK Images/kebabs Platter.jpeg";
+import gallery2 from "../assets/HBK Images/prawn fry.jpg";
+import gallery3 from "../assets/HBK Images/veg thali.jpg";
+import gallery4 from "../assets/HBK Images/fish_curry.jpg";
+import gallery5 from "../assets/HBK Images/mutton chops.jpeg";
+import gallery6 from "../assets/HBK Images/mango dessert.jpeg";
+import gallery7 from "../assets/HBK Images/shahi tukda.jpeg";
 export const galleryImages = [
   gallery1,
   gallery2,

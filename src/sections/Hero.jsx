@@ -1,10 +1,10 @@
 import Img from "../components/Img";
 import "./Hero.css";
-import heroBg from "../assets/imgs/biriyaniInLeaf.png";
-import featImg1 from "../assets/imgs/friedRice-360.webp";
-import featImg2 from "../assets/imgs/frenchSoup-360.webp";
-import badge1 from "../assets/imgs/halalCertificate.png";
-import badge2 from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
+import heroBg from "../assets/HBK Images/Mutton Biryani.jpeg";
+import featImg1 from "../assets/HBK Images/seafood kebab.jpeg";
+import featImg2 from "../assets/HBK Images/kebabs Platter.jpeg";
+import badge1 from "../assets/hbkReference/badge-2.png";
+import badge2 from "../assets/hbkReference/badge-1.png";
 
 export default function Hero() {
   return (

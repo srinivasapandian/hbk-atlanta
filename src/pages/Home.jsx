@@ -10,16 +10,19 @@ import { galleryImages } from "../data/galleryData";
 import logoImg from "../assets/hbkReference/logo-center.png";
 import badgeLocations from "../assets/hbkReference/badge-1.png";
 import badgeHalal from "../assets/hbkReference/badge-2.png";
-import heroMain from "../assets/hbkReference/dish-2.jpg";
-import heroSide from "../assets/hbkReference/biryani.jpg";
-import storyMain from "../assets/hbkReference/dish-1.jpg";
-import storySide from "../assets/hbkReference/chicken-kebab.jpg";
-import featureBg from "../assets/hbkReference/feature.png";
-import biryaniImg from "../assets/hbkReference/biryani.jpg";
-import kebabImg from "../assets/hbkReference/chicken-kebab.jpg";
-import mushroomImg from "../assets/hbkReference/mushroom-soup.jpg";
-import dishOne from "../assets/hbkReference/dish-1.jpg";
-import dishTwo from "../assets/hbkReference/dish-2.jpg";
+import heroMain from "../assets/HBK Images/Mutton Biryani.jpeg";
+import heroSide from "../assets/HBK Images/seafood kebab.jpeg";
+import storyMain from "../assets/HBK Images/Cooking.jpeg";
+import storySide from "../assets/HBK Images/thandoori cooking.jpg";
+import featureBg from "../assets/HBK Images/naan thali.jpeg";
+import biryaniImg from "../assets/HBK Images/Mutton Biryani.jpeg";
+import kebabImg from "../assets/HBK Images/kebabs Platter.jpeg";
+import butterChickenImg from "../assets/HBK Images/butter Chicken.jpg";
+import fishCurryImg from "../assets/HBK Images/fish_curry.jpg";
+import prawnFryImg from "../assets/HBK Images/prawn fry.jpg";
+import vegThaliImg from "../assets/HBK Images/veg thali.jpg";
+import mangoDessertImg from "../assets/HBK Images/mango dessert.jpeg";
+import muttonChopsImg from "../assets/HBK Images/mutton chops.jpeg";
 
 const sectionRouteMap = {
   "/": "home",
@@ -33,12 +36,12 @@ const sectionRouteMap = {
 const menuFallbackImages = [
   biryaniImg,
   kebabImg,
-  dishOne,
-  dishTwo,
-  mushroomImg,
-  heroMain,
-  storyMain,
-  storySide,
+  butterChickenImg,
+  fishCurryImg,
+  prawnFryImg,
+  vegThaliImg,
+  mangoDessertImg,
+  muttonChopsImg,
 ];
 
 const pillars = [
@@ -466,10 +469,9 @@ function VisitSection() {
 function GallerySection() {
   const images = [
     biryaniImg,
-    dishTwo,
     kebabImg,
-    mushroomImg,
-    dishOne,
+    butterChickenImg,
+    fishCurryImg,
     ...galleryImages.slice(0, 2),
   ];
 

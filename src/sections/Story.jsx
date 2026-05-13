@@ -1,6 +1,7 @@
 import { useNavigate, Link } from "react-router-dom";
 import './Story.css';
-import foodImg from "../assets/imgs/storysecImage.png";
+import foodImg from "../assets/HBK Images/Cooking.jpeg";
+import kebabImg from "../assets/HBK Images/chicken Grill.jpeg";
 
 export default function Story({ isMobile }) {
   const navigate = useNavigate();
@@ -40,7 +41,10 @@ export default function Story({ isMobile }) {
         <Link to="/menu" className="explore-btn-wrapper" style={{ textDecoration: 'none' }}>
           <span className="explore-btn-text">Explore Menu &rarr;</span>
         </Link>
-        <div className="veg-steak-card">
+        <div
+          className="veg-steak-card"
+          style={{ backgroundImage: `url(${kebabImg})` }}
+        >
           <div className="veg-steak-overlay" />
           <div className="veg-steak-content">
             <div className="veg-steak-vertical-line" />

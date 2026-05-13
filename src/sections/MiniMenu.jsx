@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./MiniMenu.css";
 import Img from "../components/Img";
 import { categories, menuByCategory } from "../data/menuData";
-import menuImg from "../assets/imgs/biriyaniwithLegPiece.png";
+import menuImg from "../assets/HBK Images/mutton chops biryani.jpeg";
 const TABS = ["ALL FOODS", ...categories];
 
 export default function MiniMenu() {

@@ -178,6 +178,13 @@ export default function Navbar() {
               {item.name}
             </button>
           ))}
+          <button
+            type="button"
+            className="hb-mobile-order"
+            onClick={(event) => event.preventDefault()}
+          >
+            Order Online
+          </button>
         </div>
       </aside>
     </div>

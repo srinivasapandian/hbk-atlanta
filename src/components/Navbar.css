@@ -357,7 +357,7 @@
     border-top: 1px solid rgba(239, 231, 218, 0.07);
     background: transparent;
     color: #efe7da;
-    font: 600 15px/1 var(--font-cormorant), var(--font-judson), Georgia, serif;
+    font: 500 15px/1 var(--font-dm-sans), system-ui, sans-serif;
     text-align: left;
     padding: 0 22px;
     cursor: pointer;
@@ -370,5 +370,25 @@
   .hb-mobile-link:hover,
   .hb-mobile-link.is-active {
     color: var(--color-logo);
+  }
+
+  .hb-mobile-order {
+    align-self: stretch;
+    min-height: 46px;
+    margin: 18px 22px 0;
+    border: 1px solid var(--color-logo);
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-logo);
+    font: 700 13px/1 var(--font-dm-sans), system-ui, sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 220ms ease, color 220ms ease;
+  }
+
+  .hb-mobile-order:hover {
+    background: var(--color-logo);
+    color: #0b0908;
   }
 }

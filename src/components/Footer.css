@@ -23,7 +23,7 @@
 .hb-footer-brand h2 {
   margin: 0 0 18px;
   color: #efe7da;
-  font-family: var(--font-playfair), var(--font-judson), Georgia, serif;
+  font-family: var(--font-cormorant), var(--font-judson), "EB Garamond", Georgia, serif;
   font-size: clamp(44px, 5vw, 58px);
   font-weight: 400;
   line-height: 1;
@@ -55,7 +55,7 @@
   border: 1px solid rgba(239, 231, 218, 0.34);
   background: transparent;
   color: #efe7da;
-  font-family: "Consolas", "Courier New", monospace;
+  font-family: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -84,7 +84,7 @@
 .hb-footer-col h3 {
   margin: 0 0 10px;
   color: var(--color-logo);
-  font-family: "Consolas", "Courier New", monospace;
+  font-family: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -96,7 +96,7 @@
   border: 0;
   background: transparent;
   color: #efe7da;
-  font: 400 15px/1.45 var(--font-dm-sans), system-ui, sans-serif;
+  font: 400 15px/1.45 var(--font-dm-sans), ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
   padding: 0;
   text-align: left;
   text-decoration: none;
@@ -118,7 +118,7 @@
   gap: 16px;
   padding-top: 28px;
   color: rgba(239, 231, 218, 0.64);
-  font-family: "Consolas", "Courier New", monospace;
+  font-family: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
   font-size: 10px;
   letter-spacing: 0.16em;
   text-transform: uppercase;

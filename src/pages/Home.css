@@ -8,9 +8,9 @@
   --hb-rule-strong: rgba(239, 231, 218, 0.34);
   --hb-gold: var(--color-logo);
   --hb-burgundy: #4a1e20;
-  --hb-serif: var(--font-playfair), var(--font-judson), Georgia, serif;
-  --hb-sans: var(--font-dm-sans), system-ui, sans-serif;
-  --hb-mono: "Consolas", "Courier New", monospace;
+  --hb-serif: var(--font-cormorant), var(--font-judson), "EB Garamond", Georgia, serif;
+  --hb-sans: var(--font-dm-sans), ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --hb-mono: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
   --hb-gutter: clamp(20px, 4vw, 64px);
   --hb-max: 1440px;
   background: #000000;

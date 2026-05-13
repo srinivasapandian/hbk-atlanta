@@ -320,7 +320,7 @@ function MenuPreview() {
             const isVeg = tags.some((tag) => String(tag).toLowerCase().includes("veg"));
             return (
               <article
-                className={`hb-dish ${featureClass} reveal delay-${Math.min(index % 4, 3)}`}
+                className={`hb-dish ${featureClass} `}
                 key={dish.id || `${dish.name}-${index}`}
               >
                 <div className="hb-dish-img">
@@ -387,7 +387,7 @@ function ServicesSection() {
                 {index === 2 &&
                   "A confident choice for celebrations, family meals, and community gatherings."}
                 {index === 3 &&
-                  "Custom menus and event support for weddings, parties, and corporate dining."}
+                  "Signature biryanis, kebabs, and South Indian favorites prepared for celebrations and group dining."}
               </p>
             </article>
           ))}

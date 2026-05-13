@@ -7,6 +7,6 @@ export const services = [
   { icon: badge2, label: 'Premium Quality' },
   { icon: Delivery, label: 'Free Delivery' },
   { icon: badge, label: 'No 1 in USA' },
-  { icon: calender, label: 'Book Your Events' },
+  { icon: calender, label: 'Catering' },
   { icon: knife_spoon, label: 'Best Dine-In Services' },
 ];

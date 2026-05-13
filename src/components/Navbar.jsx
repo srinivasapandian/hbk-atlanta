@@ -76,7 +76,7 @@ export default function Navbar({ isMobile }) {
       {/* Desktop top row: Halal badge | Logo | 30+ Locations badge */}
       <div className="nav-top-row">
         <div className="nav-badge-group">
-          <img src={badge1} alt="Halal Certified" className="nav-badge-img" />
+          <img src={badge1} alt="35 plus locations" className="nav-badge-img" />
           <Link
             to="/"
             className="nav-logo-link"
@@ -88,7 +88,7 @@ export default function Navbar({ isMobile }) {
               className="navbar-logo-img"
             />
           </Link>
-          <img src={badge2} alt="30+ Locations" className="nav-badge-img" />
+          <img src={badge2} alt="Halal certified" className="nav-badge-img" />
         </div>
       </div>
 
@@ -114,12 +114,16 @@ export default function Navbar({ isMobile }) {
           onClick={() => setMenuOpen(true)}
           type="button"
         >
-          ☰
+          <span className="hamburger-lines" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
         </button>
       </div>
       <div className="header-side-badges">
-        <img src={badge1} alt="Halal Certified" />
-        <img src={badge2} alt="30+ Locations" />
+        <img src={badge1} alt="35 plus locations" />
+        <img src={badge2} alt="Halal certified" />
       </div>
 
       {/* Bottom row: nav links + order online button */}
@@ -148,7 +152,7 @@ export default function Navbar({ isMobile }) {
 
     </nav>
 
-      {/* Mobile drawer — rendered in <body> to escape nav's stacking context */}
+      {/* Mobile drawer rendered in body to escape nav stacking context */}
       {menuOpen && createPortal(
         <>
           <div
@@ -164,10 +168,10 @@ export default function Navbar({ isMobile }) {
             <button
               className="drawer-close"
               aria-label="Close menu"
-              onClick={() => setMenuOpen(false)}
-              type="button"
-            >
-              ✕
+            onClick={() => setMenuOpen(false)}
+            type="button"
+          >
+              <span aria-hidden="true">&times;</span>
             </button>
             <nav className="drawer-nav">
               {navItems.map((item) => (

@@ -96,12 +96,12 @@
 }
 
 .hero-location {
-  font-family: var(--font-dm-sans);
-  font-size: clamp(18px, 2.5vw, 32px);
-  font-weight: 300;
+  font-family: var(--font-judson);
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 800;
   letter-spacing: 12px;
   text-transform: uppercase;
-  font-style: italic;
+  
   color: rgba(255, 255, 255, 0.85);
   margin: 0;
 }

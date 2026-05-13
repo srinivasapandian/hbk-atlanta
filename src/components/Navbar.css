@@ -114,7 +114,6 @@
   color: #fff;
 }
 
-/* ORDER ONLINE — desktop (scoped to nav-bottom-row) */
 .nav-bottom-row .order-btn-wrapper,
 .nav-bottom-row .order-btn-wrapper:link,
 .nav-bottom-row .order-btn-wrapper:visited {
@@ -255,13 +254,30 @@
   }
 
   .hamburger-btn {
-    margin-left: auto;
-    font-size: 24px;
     cursor: pointer;
     z-index: 10;
-    background: none;
-    border: none;
-    color: var(--color-gold);
+    background: rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(232, 199, 106, 0.38);
+    border-radius: 999px;
+    color: #e8c76a;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger-lines {
+    width: 18px;
+    display: grid;
+    gap: 4px;
+  }
+
+  .hamburger-lines span {
+    display: block;
+    height: 2px;
+    border-radius: 999px;
+    background: currentColor;
   }
 
   .header-side-badges {

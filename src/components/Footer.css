@@ -52,9 +52,9 @@
   justify-content: center;
   min-height: 46px;
   padding: 14px 20px;
-  border: 1px solid rgba(239, 231, 218, 0.34);
-  background: transparent;
-  color: #efe7da;
+  border: 1px solid var(--color-logo);
+  background: #000000;
+  color: var(--color-logo);
   font-family: var(--font-jetbrains-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
   font-size: 11px;
   font-weight: 600;
@@ -66,6 +66,7 @@
 
 .hb-footer-btn.gold {
   border-color: var(--color-logo);
+  background: #000000;
   color: var(--color-logo);
 }
 

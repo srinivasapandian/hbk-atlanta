@@ -125,7 +125,7 @@
   min-height: 42px;
   border: 1px solid var(--color-logo);
   border-radius: 999px;
-  background: transparent;
+  background: #000000;
   color: var(--color-logo);
   font: 600 15px/1 var(--font-dm-sans), system-ui, sans-serif;
   padding: 12px 24px;
@@ -378,7 +378,7 @@
     margin: 18px 22px 0;
     border: 1px solid var(--color-logo);
     border-radius: 0;
-    background: transparent;
+    background: #000000;
     color: var(--color-logo);
     font: 700 13px/1 var(--font-dm-sans), system-ui, sans-serif;
     letter-spacing: 0.08em;

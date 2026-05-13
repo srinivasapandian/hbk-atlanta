@@ -120,9 +120,9 @@
   justify-content: center;
   gap: 12px;
   min-height: 48px;
-  border: 1px solid var(--hb-bone);
-  background: var(--hb-bone);
-  color: var(--hb-ink);
+  border: 1px solid var(--color-logo);
+  background: #000000;
+  color: var(--color-logo);
   font-family: var(--hb-mono);
   font-size: 11px;
   font-weight: 600;
@@ -143,21 +143,21 @@
 .hb-btn:hover,
 .hb-link:hover {
   border-color: var(--hb-gold);
-  background: var(--hb-gold);
+  background: var(--color-logo);
   color: var(--hb-ink);
   transform: translateY(-1px);
 }
 
 .hb-btn-ghost {
-  background: transparent;
-  color: var(--hb-bone);
-  border-color: var(--hb-rule-strong);
+  background: #000000;
+  color: var(--color-logo);
+  border-color: var(--color-logo);
 }
 
 .hb-btn-gold {
-  background: transparent;
-  color: var(--hb-gold);
-  border-color: var(--hb-gold);
+  background: #000000;
+  color: var(--color-logo);
+  border-color: var(--color-logo);
 }
 
 .hb-link {

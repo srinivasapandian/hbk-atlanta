@@ -144,6 +144,17 @@
   left: 0;
 }
 
+.home-mini-menu-content .explore-btn-wrapper {
+  background: #000000;
+  border: 1px solid var(--color-logo);
+  color: var(--color-logo);
+}
+
+.home-mini-menu-content .explore-btn-wrapper:hover {
+  background: var(--color-logo);
+  color: #000;
+}
+
 .home-mini-menu-item {
   flex-direction: column;
   gap: 4px;

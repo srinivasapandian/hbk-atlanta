@@ -30,7 +30,7 @@
 }
 
 .hb-footer-brand h2 em {
-  color: #c9a26b;
+  color: var(--color-logo);
 }
 
 .hb-footer-brand p {
@@ -65,13 +65,13 @@
 }
 
 .hb-footer-btn.gold {
-  border-color: #c9a26b;
-  color: #c9a26b;
+  border-color: var(--color-logo);
+  color: var(--color-logo);
 }
 
 .hb-footer-btn:hover {
-  border-color: #c9a26b;
-  background: #c9a26b;
+  border-color: var(--color-logo);
+  background: var(--color-logo);
   color: #0b0908;
 }
 
@@ -83,7 +83,7 @@
 
 .hb-footer-col h3 {
   margin: 0 0 10px;
-  color: #c9a26b;
+  color: var(--color-logo);
   font-family: "Consolas", "Courier New", monospace;
   font-size: 10px;
   letter-spacing: 0.22em;
@@ -108,7 +108,7 @@
 
 .hb-footer-col a:hover,
 .hb-footer-col button:hover {
-  color: #c9a26b;
+  color: var(--color-logo);
 }
 
 .hb-footer-bottom {

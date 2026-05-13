@@ -6,7 +6,7 @@
   --hb-muted: rgba(239, 231, 218, 0.64);
   --hb-rule: rgba(239, 231, 218, 0.14);
   --hb-rule-strong: rgba(239, 231, 218, 0.34);
-  --hb-gold: #c9a26b;
+  --hb-gold: var(--color-logo);
   --hb-burgundy: #4a1e20;
   --hb-serif: var(--font-playfair), var(--font-judson), Georgia, serif;
   --hb-sans: var(--font-dm-sans), system-ui, sans-serif;

@@ -23,6 +23,9 @@ import prawnFryImg from "../assets/HBK Images/prawn fry.jpg";
 import vegThaliImg from "../assets/HBK Images/veg thali.jpg";
 import mangoDessertImg from "../assets/HBK Images/mango dessert.jpeg";
 import muttonChopsImg from "../assets/HBK Images/mutton chops.jpeg";
+import rasamalaiImg from "../assets/HBK Images/rasamalai.jpeg";
+import samosaImg from "../assets/HBK Images/samosa.jpeg";
+import comboImg from "../assets/HBK Images/combo.jpeg";
 
 const sectionRouteMap = {
   "/": "home",
@@ -33,15 +36,18 @@ const sectionRouteMap = {
   "/contact-us": "visit",
 };
 
-const menuFallbackImages = [
-  biryaniImg,
-  kebabImg,
-  butterChickenImg,
-  fishCurryImg,
-  prawnFryImg,
-  vegThaliImg,
-  mangoDessertImg,
-  muttonChopsImg,
+const homeMenuImageMatches = [
+  { name: "Hyderabadi Goat Dum Biryani", image: biryaniImg },
+  { name: "Mix Kebab(Veg: Veg&Paneer) / (Non Veg: Chicken, Goat&Seafood)", image: kebabImg },
+  { name: "Butter Chicken Rice", image: butterChickenImg },
+  { name: "(Ankapur Chicken/ Mutton Rara/Nellore Fish Curry)", image: fishCurryImg },
+  { name: "Shrimp Pepper Fry", image: prawnFryImg },
+  { name: "Veg Combo", image: vegThaliImg },
+  { name: "Mango Lassi", image: mangoDessertImg },
+  { name: "Lamb Chops", image: muttonChopsImg },
+  { name: "Rasamalai", image: rasamalaiImg },
+  { name: "Veg Samosa(2pcs)", image: samosaImg },
+  { name: "Chicken Combo", image: comboImg },
 ];
 
 const pillars = [
@@ -271,16 +277,34 @@ function Pillars() {
 }
 
 function MenuPreview() {
-  const tabs = useMemo(() => ["ALL", ...categories.slice(0, 4)], []);
+  const matchedDishes = useMemo(
+    () =>
+      homeMenuImageMatches
+        .map(({ name, image }) => {
+          const item = menuItems.find((dish) => dish.name === name);
+          return item ? { ...item, previewImage: image } : null;
+        })
+        .filter(Boolean),
+    [],
+  );
+  const tabs = useMemo(
+    () => [
+      "ALL",
+      ...categories.filter((category) =>
+        matchedDishes.some((dish) => dish.category === category),
+      ),
+    ],
+    [matchedDishes],
+  );
   const [activeTab, setActiveTab] = useState("ALL");
 
   const dishes = useMemo(() => {
     const pool =
       activeTab === "ALL"
-        ? menuItems
-        : menuItems.filter((item) => item.category === activeTab);
+        ? matchedDishes
+        : matchedDishes.filter((item) => item.category === activeTab);
     return pool.slice(0, 8);
-  }, [activeTab]);
+  }, [activeTab, matchedDishes]);
 
   return (
     <section id="menu" className="hb-section hb-menu" data-section="menu">
@@ -328,7 +352,7 @@ function MenuPreview() {
               >
                 <div className="hb-dish-img">
                   <img
-                    src={menuFallbackImages[index % menuFallbackImages.length]}
+                    src={dish.previewImage}
                     alt={dish.name}
                     loading="lazy"
                   />

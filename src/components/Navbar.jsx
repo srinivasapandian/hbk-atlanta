@@ -23,7 +23,7 @@ const routeToSection = {
   "/contact-us": "visit",
 };
 
-export default function Navbar() {
+export default function Navbar({ sticky = true }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -101,7 +101,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className={`hb-navwrap${isScrolled ? " is-scrolled" : ""}${isMenuOpen ? " menu-open" : ""}`}>
+    <div className={`hb-navwrap${sticky ? "" : " hb-navwrap-static"}${isScrolled ? " is-scrolled" : ""}${isMenuOpen ? " menu-open" : ""}`}>
       <div className="hb-nav-badges">
         <Link to="/" className="hb-badge hb-badge-side" aria-label="30 plus locations">
           <img src={badgeLocations} alt="30 plus locations" />

@@ -17,7 +17,7 @@ export default function MenuPage() {
   return (
     <div className="root">
       <SeoHead {...seoConfig.menu} />
-      <header><Navbar isMobile={isMobile} /></header>
+      <header><Navbar sticky={false} /></header>
       <main><MenuSection isMobile={isMobile} standalone /></main>
       <Footer isMobile={isMobile} />
     </div>

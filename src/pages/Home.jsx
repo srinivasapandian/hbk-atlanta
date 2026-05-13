@@ -347,7 +347,7 @@ function MenuPreview() {
         </div>
 
         <div className="hb-menu-foot reveal">
-          <p className="hb-note">Prices in USD - Dine-in - Takeout - Catering</p>
+          <p className="hb-note"> Dine-in - Takeout - Catering</p>
           <div className="hb-actions">
             <OrderButton className="hb-btn-gold" />
             <Link className="hb-btn hb-btn-ghost" to="/menu">

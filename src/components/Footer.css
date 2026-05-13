@@ -1,6 +1,6 @@
 .hb-footer {
   border-top: 1px solid rgba(239, 231, 218, 0.14);
-  background: #14100d;
+  background: #000000;
   color: #efe7da;
   padding: clamp(72px, 9vw, 112px) 0 28px;
 }

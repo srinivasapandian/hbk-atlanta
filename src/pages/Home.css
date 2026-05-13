@@ -1,7 +1,7 @@
 .hb-page {
-  --hb-ink: #0b0908;
-  --hb-ink-2: #14100d;
-  --hb-espresso: #1a1411;
+  --hb-ink: #000000;
+  --hb-ink-2: #000000;
+  --hb-espresso: #000000;
   --hb-bone: #efe7da;
   --hb-muted: rgba(239, 231, 218, 0.64);
   --hb-rule: rgba(239, 231, 218, 0.14);
@@ -13,7 +13,7 @@
   --hb-mono: "Consolas", "Courier New", monospace;
   --hb-gutter: clamp(20px, 4vw, 64px);
   --hb-max: 1440px;
-  background: var(--hb-ink);
+  background: #000000;
   color: var(--hb-bone);
   font-family: var(--hb-sans);
   overflow-x: clip;
@@ -47,10 +47,12 @@
 
 .hb-section {
   position: relative;
+  background: #000000;
   padding: clamp(96px, 12vw, 160px) 0;
 }
 
 .hb-section-tight {
+  background: #000000;
   padding: clamp(64px, 8vw, 96px) 0;
 }
 
@@ -174,6 +176,7 @@
 
 .hb-hero {
   position: relative;
+  background: #000000;
   min-height: 100vh;
   padding: 250px 0 80px;
   isolation: isolate;
@@ -184,19 +187,11 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background:
-    radial-gradient(ellipse at 74% 28%, rgba(201, 162, 107, 0.22), transparent 52%),
-    radial-gradient(ellipse at 18% 88%, rgba(74, 30, 32, 0.45), transparent 56%),
-    linear-gradient(180deg, #0b0908 0%, #1a1411 42%, #0b0908 100%);
+  background: #000000;
 }
 
 .hb-hero-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 5px 5px;
-  opacity: 0.55;
+  content: none;
 }
 
 .hb-hero-inner {
@@ -337,7 +332,7 @@
   overflow: hidden;
   border-top: 1px solid var(--hb-rule);
   border-bottom: 1px solid var(--hb-rule);
-  background: var(--hb-ink-2);
+  background: #000000;
   padding: 22px 0;
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
@@ -522,9 +517,7 @@
 
 .hb-menu,
 .hb-services {
-  background:
-    radial-gradient(ellipse at 92% 12%, rgba(201, 162, 107, 0.1), transparent 50%),
-    var(--hb-ink);
+  background: #000000;
 }
 
 .hb-menu-head {
@@ -729,11 +722,13 @@
 .hb-visit {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background: #000000;
   border-top: 1px solid var(--hb-rule);
 }
 
 .hb-visit-pane {
   position: relative;
+  background: #000000;
   padding: clamp(52px, 7vw, 112px) clamp(28px, 5vw, 80px);
   border-right: 1px solid var(--hb-rule);
   overflow: hidden;
@@ -767,9 +762,7 @@
 }
 
 .hb-visit-map {
-  background:
-    linear-gradient(180deg, rgba(11, 9, 8, 0.52), rgba(11, 9, 8, 0.86)),
-    var(--visit-bg) center / cover no-repeat;
+  background: #000000;
 }
 
 .hb-contact-lines {

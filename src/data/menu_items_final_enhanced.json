@@ -2577,6 +2577,15 @@
     "tags": ["veg"]
   },
   {
+    "id": "desserts-icecreams",
+    "name": "Ice Cream:",
+    "description": "Delicious Ice Cream prepared in authentic desserts style.",
+    "variants": [],
+    "category": "DESSERTS",
+    "imageUrl": "desserts/icecreams.jpg",
+    "tags": ["veg"]
+  },
+  {
     "id": "desserts-brownie-w-ice-cream",
     "name": "Brownie W/ Ice Cream",
     "description": "Delicious Brownie W/ Ice Cream prepared in authentic desserts style.",
@@ -2588,15 +2597,6 @@
     ],
     "category": "DESSERTS",
     "imageUrl": "desserts/brownie-w-ice-cream.jpg",
-    "tags": ["veg"]
-  },
-  {
-    "id": "desserts-icecreams",
-    "name": "IceCreams",
-    "description": "Delicious IceCreams prepared in authentic desserts style.",
-    "variants": [],
-    "category": "DESSERTS",
-    "imageUrl": "desserts/icecreams.jpg",
     "tags": ["veg"]
   },
   {
@@ -2691,7 +2691,7 @@
     "imageUrl": "beverages/cold.jpg",
     "tags": ["veg"]
   },
-  
+
   {
     "id": "beverages-thums-up",
     "name": "Thums Up",
@@ -2855,6 +2855,160 @@
     ],
     "category": "BEVERAGES",
     "imageUrl": "beverages/south-indian-coffee.jpg",
+    "tags": ["veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-chicken-kheema-dosa",
+    "name": "Chicken Kheema Dosa",
+    "description": "Delicious Chicken Kheema Dosa prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 14.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/chicken-kheema-dosa.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-mutton-kheema-dosa",
+    "name": "Mutton Kheema Dosa",
+    "description": "Delicious Mutton Kheema Dosa prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 16.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/mutton-kheema-dosa.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-dosa-chicken-curry",
+    "name": "Dosa w/ Chicken Curry",
+    "description": "Delicious Dosa w/ Chicken Curry prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 14.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/dosa-chicken-curry.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-dosa-mutton-curry",
+    "name": "Dosa w/ Mutton Curry",
+    "description": "Delicious Dosa w/ Mutton Curry prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 16.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/dosa-mutton-curry.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-garelu-chicken-curry",
+    "name": "Garelu w/ Chicken Curry",
+    "description": "Delicious Garelu w/ Chicken Curry prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 14.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/garelu-chicken-curry.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-idli-chicken-curry",
+    "name": "Idli W/ Chicken Curry",
+    "description": "Delicious Idli W/ Chicken Curry prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 13.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/idli-chicken-curry.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-idli-mutton-curry",
+    "name": "Idli W/ Mutton Curry",
+    "description": "Delicious Idli W/ Mutton Curry prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 15.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/idli-mutton-curry.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-idli-paya",
+    "name": "Idli W/ Paya",
+    "description": "Delicious Idli W/ Paya prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 13.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/idli-paya.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-kheema-kichidi",
+    "name": "Kheema Kichidi",
+    "description": "Delicious Kheema Kichidi prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 15.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/kheema-kichidi.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-paya-tandoori-roti",
+    "name": "Paya w/ Tandoori Roti",
+    "description": "Delicious Paya w/ Tandoori Roti prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 15.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/paya-tandoori-roti.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-spot-idli",
+    "name": "Spot Idli",
+    "description": "Delicious Spot Idli prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
+      {
+        "type": "base",
+        "price": 12.99
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/spot-idli.jpg",
     "tags": ["veg"]
   },
   {

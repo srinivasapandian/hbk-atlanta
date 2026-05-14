@@ -23,14 +23,15 @@
 
 .gallery-title {
   max-width: 760px;
-  font-family: var(--font-playfair), var(--font-judson), serif;
-  color: var(--color-white);
-  letter-spacing: 0;
+  font-family: var(--font-judson);
+  color: var(--color-copper);
+  letter-spacing: 0.05em;
   margin: 0;
-  font-size: clamp(2.4rem, 5vw, 5rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 700;
-  line-height: 0.98;
+  line-height: 1.1;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .gallery-scroll {
@@ -90,7 +91,7 @@
   }
 
   .gallery-title {
-    font-size: clamp(2.1rem, 10vw, 3.4rem);
+    font-size: clamp(2rem, 9vw, 3.2rem);
   }
 
   .gallery-scroll {

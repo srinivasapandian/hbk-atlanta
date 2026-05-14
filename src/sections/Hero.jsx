@@ -1,8 +1,8 @@
 import Img from "../components/Img";
 import "./Hero.css";
 import heroBg from "../assets/imgs/biriyaniInLeaf.png";
-import featImg1 from "../assets/imgs/friedRice-360.webp";
-import featImg2 from "../assets/imgs/frenchSoup-360.webp";
+import featImg1 from "../assets/HBK Images/25.jpeg";
+import featImg2 from "../assets/HBK Images/4.jpg";
 import badge1 from "../assets/imgs/halalCertificate.png";
 import badge2 from "../assets/imgs/HBK-35+-Locations-Logo-PNG.png";
 
@@ -42,7 +42,9 @@ export default function Hero() {
           </span>
         </h1>
         <div className="hero-location-divider" aria-hidden="true" />
-        <p className="hero-location"><span aria-hidden="true"></span> ATLANTA</p>
+        <p className="hero-location">
+          <span aria-hidden="true"></span> ATLANTA
+        </p>
       </div>
 
       {/* Floating featured dish card — bottom right of hero */}
@@ -70,7 +72,7 @@ export default function Hero() {
               <Img
                 className="feat-img"
                 src={featImg1}
-                alt="Veg Biryani"
+                alt="Mutton Biryani"
                 loading="lazy"
                 decoding="async"
                 width="160"
@@ -78,9 +80,9 @@ export default function Hero() {
               />
             </div>
             <div className="feat-text">
-              <span className="feat-name">Veg Biryani</span>
+              <span className="feat-name">Mutton Biryani</span>
               <span className="feat-desc">
-                Fragrant rice with mixed vegetables and spices.
+                Slow-cooked mutton layered with fragrant basmati rice.
               </span>
             </div>
           </div>
@@ -90,7 +92,7 @@ export default function Hero() {
               <Img
                 className="feat-img"
                 src={featImg2}
-                alt="Creamy Mushroom Soup"
+                alt="Tomato Soup"
                 loading="lazy"
                 decoding="async"
                 width="160"
@@ -98,9 +100,9 @@ export default function Hero() {
               />
             </div>
             <div className="feat-text">
-              <span className="feat-name">Creamy Mushroom Soup</span>
+              <span className="feat-name">Tomato Soup</span>
               <span className="feat-desc">
-                Rich and smooth with a deep umami depth.
+                Slow-simmered tomato soup with warm spices.
               </span>
             </div>
           </div>

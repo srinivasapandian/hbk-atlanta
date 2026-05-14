@@ -4,7 +4,7 @@ import gallery3 from "../assets/gallery/gallery-3.jpg";
 import gallery4 from "../assets/gallery/gallery-4.jpg";
 import gallery5 from "../assets/gallery/gallery-5.jpg";
 import gallery6 from "../assets/gallery/gallery-6.jpg";
-import gallery7 from "../assets/gallery/gallery-7.jpg";
+
 export const galleryImages = [
   gallery1,
   gallery2,
@@ -12,5 +12,5 @@ export const galleryImages = [
   gallery4,
   gallery5,
   gallery6,
-  gallery7,
+ 
 ];

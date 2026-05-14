@@ -8,7 +8,6 @@ import SeoHead, { seoConfig } from "../components/SeoHead";
 import Hero from "../sections/Hero";
 import Story from "../sections/Story";
 import MiniMenu from "../sections/MiniMenu";
-import EventsSection from "../sections/EventsSection";
 import ContactStrip from "../sections/ContactStrip";
 
 const Services = lazy(() => import("./Services"));
@@ -127,7 +126,6 @@ export default function Home() {
         </div>
         <Story isMobile={isMobile} />
         <MiniMenu />
-        <EventsSection isMobile={isMobile} />
 
         <div ref={sectionRefs.services} data-load-section="services" />
         {loaded.services && (

@@ -2858,16 +2858,26 @@
     "tags": ["veg"]
   },
   {
-    "id": "hyderabadi-special-breakfast-chicken-mutton-kheer",
-    "name": "Chicken/ Mutton Kheer",
-    "description": "Delicious Chicken/ Mutton Kheer prepared in authentic hyderabadi special breakfast style.",
+    "id": "hyderabadi-special-breakfast-chicken-kheema-dosa",
+    "name": "Chicken Kheema Dosa",
+    "description": "Delicious Chicken Kheema Dosa prepared in authentic hyderabadi special breakfast style.",
     "variants": [
       {
-        "type": "chicken",
+        "type": "base",
         "price": 14.99
-      },
+      }
+    ],
+    "category": "HYDERABADI SPECIAL BREAKFAST",
+    "imageUrl": "hyderabadi-special-breakfast/chicken-mutton-kheer.jpg",
+    "tags": ["non-veg"]
+  },
+  {
+    "id": "hyderabadi-special-breakfast-mutton-kheema-dosa",
+    "name": "Mutton Kheema Dosa",
+    "description": "Delicious Mutton Kheema Dosa prepared in authentic hyderabadi special breakfast style.",
+    "variants": [
       {
-        "type": "mutton",
+        "type": "base",
         "price": 16.99
       }
     ],
